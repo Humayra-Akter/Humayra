@@ -1,6 +1,8 @@
-
-
 import { useState, useEffect } from "react";
+import sun from "../src/images/sun.png";
+import moon from "../src/images/moon.png";
+import Navbar from "./components/Shared/Navbar";
+import Home from "./components/Home/Home";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -15,16 +17,19 @@ function App() {
   };
 
   return (
-    <div className={`${darkMode && "dark"}`}>
-      <div className="h-screen bg-white dark:bg-black flex flex-col items-center justify-center">
-        <h1 className="text-3xl text-center font-bold underline text-black dark:text-white">
-          Hello world!
-        </h1>
+    <div className={`min-h-screen ${darkMode && "dark"}`}>
+      <div className="bg-white dark:bg-black min-h-screen">
+        <Navbar />
+        <Home />
         <button
           onClick={toggleDarkMode}
-          className="mt-4 px-4 py-2 bg-primary text-secondary rounded"
+          className="p-2 bg-primary text-secondary fixed bottom-5 left-5 rounded-full"
         >
-          {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          {darkMode ? (
+            <img className="w-10 h-10" src={sun} alt="Light Mode" />
+          ) : (
+            <img className="w-10 h-10" src={moon} alt="Dark Mode" />
+          )}
         </button>
       </div>
     </div>
