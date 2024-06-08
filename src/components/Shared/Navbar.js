@@ -26,7 +26,7 @@ const Navbar = () => {
               onClick={() => setSelected(item)}
             >
               <a
-                href={`#${item.toLowerCase()}`}
+                to={`/${item.toLowerCase()}`}
                 className="text-white dark:text-secondary transition duration-300"
               >
                 {item}

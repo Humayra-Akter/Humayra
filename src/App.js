@@ -4,6 +4,8 @@ import moon from "../src/images/moon.png";
 import Navbar from "./components/Shared/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Shared/Footer";
+import { Route, Routes } from "react-router-dom";
+import Error from "./components/Shared/Error";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,7 +23,11 @@ function App() {
     <div className={`min-h-screen ${darkMode && "dark"}`}>
       <div className="bg-white dark:bg-black min-h-screen">
         <Navbar />
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+        <Footer />
         <button
           onClick={toggleDarkMode}
           className="p-2 bg-primary text-secondary fixed bottom-5 left-5 rounded-full"
@@ -32,7 +38,6 @@ function App() {
             <img className="w-10 h-10" src={moon} alt="Dark Mode" />
           )}
         </button>
-        <Footer />
       </div>
     </div>
   );
