@@ -3,7 +3,7 @@ import humayra from "../../images/humayra.png";
 
 const Banner = () => {
   return (
-    <div className="pt-36 mx-20 lg:grid grid-cols-3">
+    <div className="pt-28 mx-20 lg:grid grid-cols-3">
       <div className="text-left sm:text-center sm:pt-10 lg:mt-32">
         <h1
           className="text-6xl font-bold bg-clip-text text-primary dark:text-secondary"

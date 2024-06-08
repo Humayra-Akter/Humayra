@@ -6,7 +6,12 @@ const Navbar = () => {
   const navItems = ["Home", "About", "Services", "Contact"];
 
   return (
-    <div className="navbar bg-primary text-secondary fixed w-full z-50 top-0">
+    <div
+      className="navbar bg-primary text-secondary fixed w-full z-50 top-0"
+      style={{
+        fontFamily: "'Poetsen One', sans-serif",
+      }}
+    >
       <div className="navbar-start"></div>
       <div className="navbar-center hidden lg:flex relative">
         <ul className="menu menu-horizontal px-1 space-x-10 text-center relative">
