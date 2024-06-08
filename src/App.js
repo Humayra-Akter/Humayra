@@ -3,6 +3,7 @@ import sun from "../src/images/sun.png";
 import moon from "../src/images/moon.png";
 import Navbar from "./components/Shared/Navbar";
 import Home from "./components/Home/Home";
+import Footer from "./components/Shared/Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,6 +32,7 @@ function App() {
             <img className="w-10 h-10" src={moon} alt="Dark Mode" />
           )}
         </button>
+        <Footer />
       </div>
     </div>
   );
