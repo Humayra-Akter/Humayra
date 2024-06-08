@@ -5,5 +5,21 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          primary: "#660064",
+          secondary: "#FFF",
+        },
+      },
+      {
+        dark: {
+          primary: "#800000",
+          secondary: "#FFD700",
+        },
+      },
+    ],
+  },
 };
