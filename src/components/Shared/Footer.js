@@ -46,37 +46,37 @@ const Footer = () => {
             <Link to="https://www.facebook.com/profile.php?id=100004821604675">
               <img
                 src={facebook}
-                className="bg-secondary rounded-full p-1 w-10 h-10 "
+                className="bg-secondary rounded-full p-1 w-10 h-10"
               />
             </Link>
             <Link to="https://www.instagram.com/_humayra_akter_/?fbclid=IwAR2SOC8p0UQ3qLRU_XiyatERdlTfYBFVr6Jl9wkjIdKUFk3w178ydmNHcjM">
               <img
                 src={insta}
-                className="bg-secondary rounded-full p-1 w-10 h-10 "
+                className="bg-secondary rounded-full p-1 w-10 h-10"
               />
             </Link>
             <Link to="https://github.com/Humayra-Akter">
               <img
                 src={github}
-                className="bg-secondary rounded-full p-1 w-10 h-10 "
+                className="bg-secondary rounded-full p-1 w-10 h-10"
               />
             </Link>
             <a href="mailto:humayraakter25@gmail.com">
               <img
                 src={email}
-                className="bg-secondary rounded-full p-1 w-10 h-10 "
+                className="bg-secondary rounded-full p-1 w-10 h-10"
               />
             </a>
             <Link to="https://www.linkedin.com/in/humayra-akter-56bb46229/">
               <img
                 src={linkedIn}
-                className="bg-secondary rounded-full p-1 w-10 h-10 "
+                className="bg-secondary rounded-full p-1 w-10 h-10"
               />
             </Link>
             <Link to="https://t.me/humayraakter">
               <img
                 src={telegram}
-                className="bg-secondary rounded-full p-1 w-10 h-10 "
+                className="bg-secondary rounded-full p-1 w-10 h-10"
               />
             </Link>
           </div>

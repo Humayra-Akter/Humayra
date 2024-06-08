@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Slide } from "react-awesome-reveal";
 import contactImageLight from "../../images/contact-light.png";
-import purple from "../../images/purple.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
