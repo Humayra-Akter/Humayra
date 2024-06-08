@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Education from "./Education";
 import WorkExperience from "./WorkExperience";
 import TechStack from "./TechStack";
+import Certificates from "./Certificates";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       {/* <Education /> */}
       <WorkExperience />
       <TechStack />
+      <Certificates />
     </div>
   );
 };
