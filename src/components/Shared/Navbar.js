@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [selected, setSelected] = useState("Home");
 
-  const navItems = ["Home", "About", "Services", "Contact"];
+  const navItems = ["Home", "About", "Projects", "Contact"];
 
   return (
     <div
@@ -25,12 +26,12 @@ const Navbar = () => {
               }`}
               onClick={() => setSelected(item)}
             >
-              <a
+              <Link
                 to={`/${item.toLowerCase()}`}
                 className="text-white dark:text-secondary transition duration-300"
               >
                 {item}
-              </a>
+              </Link>
               {selected === item}
             </li>
           ))}

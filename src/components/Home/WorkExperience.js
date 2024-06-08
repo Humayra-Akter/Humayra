@@ -73,7 +73,7 @@ const WorkExperience = () => {
       }}
     >
       <h3
-        className="text-2xl mt-20 mb-10 font-semibold text-primary text-center dark:text-secondary"
+        className="text-3xl mt-20 mb-10 font-semibold text-primary text-center dark:text-secondary"
         style={{
           fontFamily: "'Poetsen One', sans-serif",
         }}
@@ -83,6 +83,7 @@ const WorkExperience = () => {
       <ul
         id="slider"
         className="list-none p-0 m-0 gap-10 flex transition-transform duration-300"
+      
         style={{
           transform: `translateX(-${sliderWidth * currentSlide}px)`,
         }}

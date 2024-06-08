@@ -5,6 +5,7 @@ import WorkExperience from "./WorkExperience";
 import TechStack from "./TechStack";
 import Certificates from "./Certificates";
 import Contact from "../Contact/Contact";
+import Services from "./Services";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Banner />
       {/* <Education /> */}
       <WorkExperience />
+      <Services />
       <TechStack />
       <Certificates />
       <Contact />

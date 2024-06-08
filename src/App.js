@@ -6,6 +6,8 @@ import Home from "./components/Home/Home";
 import Footer from "./components/Shared/Footer";
 import { Route, Routes } from "react-router-dom";
 import Error from "./components/Shared/Error";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -25,6 +27,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { Slide } from "react-awesome-reveal";
 import contactImageLight from "../../images/contact-light.png";
-import contactImageDark from "../../images/contact-dark.png";
+import purple from "../../images/purple.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -55,10 +56,84 @@ const Contact = () => {
     setShowThankYou(false);
   };
 
+  const waveStyle = {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    width: "100%",
+    height: "20vh",
+    backgroundImage: "url(https://i.imgur.com/DLD3N2t.png)",
+    // background: `url(${purple})`,
+    backgroundSize: "cover",
+    backgroundSize: "100vw 20vh",
+  };
+
+  const wave1Style = {
+    ...waveStyle,
+    animation: "animate 20s linear infinite",
+    zIndex: 15,
+    opacity: 0.9,
+    animationDelay: "0s",
+    bottom: 0,
+  };
+
+  const wave2Style = {
+    ...waveStyle,
+    animation: "animate2 15s linear infinite",
+    zIndex: 10,
+    opacity: 0.1,
+    animationDelay: "-5s",
+    bottom: "10px",
+  };
+
+  const wave3Style = {
+    ...waveStyle,
+    animation: "animate 10s linear infinite",
+    zIndex: 5,
+    opacity: 0.4,
+    animationDelay: "-2s",
+    bottom: "15px",
+  };
+
+  const wave4Style = {
+    ...waveStyle,
+    animation: "animate2 5s linear infinite",
+    zIndex: 1,
+    opacity: 0.5,
+    animationDelay: "-5s",
+    bottom: "20px",
+  };
+
+  const sectionStyle = {
+    position: "relative",
+    width: "100%",
+    height: "100vh",
+    overflow: "hidden",
+    fontFamily: "'Poetsen One', sans-serif",
+  };
+
+  const keyframesAnimate = `
+    @keyframes animate {
+      0% { background-position-x: 0; }
+      100% { background-position-x: 100vw; }
+    }
+  `;
+
+  const keyframesAnimate2 = `
+    @keyframes animate2 {
+      0% { background-position-x: 0; }
+      100% { background-position-x: -100vw; }
+    }
+  `;
+
   return (
-    <div style={{ fontFamily: "'Poetsen One', sans-serif" }}>
+    <div style={sectionStyle}>
+      <style>
+        {keyframesAnimate}
+        {keyframesAnimate2}
+      </style>
       <h3 className="text-2xl font-semibold text-center text-primary mt-20 mb-8 dark:text-secondary">
-        Contact Us
+        Contact Me
       </h3>
       <div className="max-w-5xl mx-auto p-8 flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-8">
         <div className="flex-grow">
@@ -116,25 +191,26 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="flex-shrink-0">
-          <img
-            src={contactImageLight}
-            alt="Contact Us"
-            className="w-full lg:w-96 border border-primary rounded-md"
-          />
-          <h3 className="text-2xl font-semibold text-primary mb-4 dark:text-secondary">
-            Get in Touch
-          </h3>
-          <p className="text-primary text-wrap text-justify w-96 mb-8 dark:text-secondary">
-            Don't be shy!!!
-            <br />
-            Feel free to get in touch with me. I am always open to discussing
-            new projects, creative ideas or opportunities to be part of your
-            vision.
-          </p>
-        </div>
+        <Slide cascade damping={0.5}>
+          <div className="flex-shrink-0">
+            <img
+              src={contactImageLight}
+              alt="Contact Us"
+              className="w-full lg:w-96 border border-primary rounded-md"
+            />
+            <h3 className="text-2xl font-semibold text-primary mb-4 dark:text-secondary">
+              Get in Touch
+            </h3>
+            <p className="text-primary text-wrap text-justify w-96 mb-8 dark:text-secondary">
+              Don't be shy!!!
+              <br />
+              Feel free to get in touch with me. I am always open to discussing
+              new projects, creative ideas or opportunities to be part of your
+              vision.
+            </p>
+          </div>
+        </Slide>
       </div>
-
       {showThankYou && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 shadow-lg max-w-md mx-auto">
@@ -156,6 +232,10 @@ const Contact = () => {
           </div>
         </div>
       )}
+      <div className="wave" style={wave1Style}></div>
+      <div className="wave" style={wave2Style}></div>
+      <div className="wave" style={wave3Style}></div>
+      <div className="wave" style={wave4Style}></div>
     </div>
   );
 };
