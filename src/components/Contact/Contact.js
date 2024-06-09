@@ -134,7 +134,7 @@ const Contact = () => {
       <h3 className="text-2xl font-semibold text-center text-primary mt-20 mb-8 dark:text-secondary">
         Contact Me
       </h3>
-      <div className="max-w-5xl mx-auto p-8 flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-8">
+      <div className="lg:max-w-5xl mx-auto p-8 lg:flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-8">
         <div className="flex-grow">
           <form
             onSubmit={handleSubmit}

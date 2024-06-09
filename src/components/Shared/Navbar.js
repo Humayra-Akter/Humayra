@@ -14,7 +14,7 @@ const Navbar = () => {
       }}
     >
       <div className="navbar-start"></div>
-      <div className="navbar-center hidden lg:flex relative">
+      <div className="navbar-center flex relative">
         <ul className="menu menu-horizontal px-1 space-x-10 text-center relative">
           {navItems.map((item) => (
             <li

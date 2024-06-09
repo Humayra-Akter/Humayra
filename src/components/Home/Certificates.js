@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import txbd from "../../images/TechnocianBD.png";
 import devSprint from "../../images/devSprint.jpg";
 import caseCraft from "../../images/BUETCasecraft.jpg";
@@ -8,6 +8,9 @@ import gpTownhall from "../../images/gp.png";
 import idpc from "../../images/idpc.png";
 import robot from "../../images/robotOlympiad.jpg";
 import remove from "../../images/remove.png";
+import click from "../../images/tap.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const certificateImages = {
   "1st Technoxian Bangladesh: National Round, Finalist - 8 March 2024": txbd,
@@ -34,6 +37,10 @@ const Certificates = () => {
     setSelectedImage(image);
   };
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   const handleCloseModal = () => {
     setSelectedCertificate("");
     setSelectedImage("");
@@ -59,10 +66,14 @@ const Certificates = () => {
           ([certificate, image], index) => (
             <div
               key={index}
+              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
               className="bg-primary text-secondary p-4 rounded-md shadow-md transition-transform transform hover:scale-105 cursor-pointer"
               onClick={() => handleCertificateClick(certificate, image)}
             >
-              <p>{certificate}</p>
+              <p>
+                {certificate}
+                <img src={click} className="w-5 h-5 fixed bottom-3 right-3" />
+              </p>
             </div>
           )
         )}

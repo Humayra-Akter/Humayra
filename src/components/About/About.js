@@ -14,7 +14,8 @@ const About = () => {
       <h2 className="text-2xl font-semibold text-primary mt-20 mb-8 dark:text-secondary">
         About Me
       </h2>
-      <div className="flex mx-32 gap-8">
+
+      <div className="lg:flex lg:mx-32 gap-8">
         <svg
           className="absolute pt-10 w-auto h-96 text-primary"
           viewBox="0 0 200 200"
@@ -32,6 +33,7 @@ const About = () => {
           className="relative h-96 pl-10"
           style={{ zIndex: 10 }}
         />
+
         <Slide cascade damping={0.5}>
           <div className="text-primary text-wrap text-justify w-full lg:w-auto dark:text-secondary">
             <p className="mb-4">
