@@ -4,6 +4,8 @@ import devSprint from "../../images/devSprint.jpg";
 import caseCraft from "../../images/BUETCasecraft.jpg";
 import kiron from "../../images/kironPython.png";
 import leetcon from "../../images/leetcon.jpg";
+import trust from "../../images/TrustBank.png";
+import genAI from "../../images/GenAI.png";
 import gpTownhall from "../../images/gp.png";
 import idpc from "../../images/idpc.png";
 import robot from "../../images/robotOlympiad.jpg";
@@ -13,6 +15,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const certificateImages = {
+  "Introduction to Generative AI by Google Cloud 2024": genAI,
+  "Trust Bank Presents Creaventure 3.0 National idea pitching competition by DUEDC 2024":
+    trust,
   "1st Technoxian Bangladesh: National Round, Finalist - 8 March 2024": txbd,
   "BUET DevSprint 2024: Inter-University Software Development Competition, finalist - 1 March 2024":
     devSprint,
