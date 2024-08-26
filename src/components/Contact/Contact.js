@@ -134,6 +134,15 @@ const Contact = () => {
       <h3 className="text-2xl font-semibold text-center text-primary mt-20 mb-8 dark:text-secondary">
         Contact Me
       </h3>
+      <div className="relative">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+        >
+          <div className="blur-[106px] h-56 bg-gradient-to-tr from-primary to-purple-400 dark:from-gray-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-l from-cyan-400 to-sky-300 dark:to-white"></div>
+        </div>
+      </div>
       <div className="lg:max-w-5xl mx-auto p-8 lg:flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-8">
         <div className="flex-grow">
           <form
