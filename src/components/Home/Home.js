@@ -6,10 +6,12 @@ import TechStack from "./TechStack";
 import Certificates from "./Certificates";
 import Contact from "../Contact/Contact";
 import Services from "./Services";
+import Hero from "./Hero";
 
 const Home = () => {
   return (
     <div>
+      <Hero />
       <Banner />
       {/* <Education /> */}
       <WorkExperience />

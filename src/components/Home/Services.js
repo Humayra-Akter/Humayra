@@ -27,7 +27,16 @@ const Services = () => {
     >
       <h3 className="text-3xl font-semibold text-center text-primary mb-10 dark:text-secondary">
         My Services
-      </h3>{" "}
+      </h3>
+      <div className="relative">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+        >
+          <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-gray-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-white"></div>
+        </div>
+      </div>
       <Slide cascade damping={0.5} direction="down">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
