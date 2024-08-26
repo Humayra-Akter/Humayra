@@ -4,6 +4,9 @@ import devSprint from "../../images/devSprint.jpg";
 import caseCraft from "../../images/BUETCasecraft.jpg";
 import kiron from "../../images/kironPython.png";
 import leetcon from "../../images/leetcon.jpg";
+import ieee from "../../images/IEEECSBDC.jpeg";
+import bohubrihi from "../../images/Bohubrihi.png";
+import bohubrihi2 from "../../images/bohubrihi2.png";
 import trust from "../../images/TrustBank.png";
 import genAI from "../../images/GenAI.png";
 import gpTownhall from "../../images/gp.png";
@@ -15,9 +18,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const certificateImages = {
+  "IEEE Computer Society Bangladesh chapter Web and IT Committee Frontend Volunteer":
+    ieee,
   "Introduction to Generative AI by Google Cloud 2024": genAI,
   "Trust Bank Presents Creaventure 3.0 National idea pitching competition by DUEDC 2024":
     trust,
+  "Pathway to Software Engineering by Bohubrihi": bohubrihi,
+  "Introduction to Data Analytics by Bohubrihi": bohubrihi2,
   "1st Technoxian Bangladesh: National Round, Finalist - 8 March 2024": txbd,
   "BUET DevSprint 2024: Inter-University Software Development Competition, finalist - 1 March 2024":
     devSprint,
