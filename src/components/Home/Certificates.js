@@ -3,6 +3,7 @@ import txbd from "../../images/TechnocianBD.png";
 import devSprint from "../../images/devSprint.jpg";
 import caseCraft from "../../images/BUETCasecraft.jpg";
 import kiron from "../../images/kironPython.png";
+import uiu from "../../images/uiu_participate_certificate.png";
 import leetcon from "../../images/leetcon.jpg";
 import ieee from "../../images/IEEECSBDC.jpeg";
 import bohubrihi from "../../images/Bohubrihi.png";
@@ -26,6 +27,7 @@ const certificateImages = {
   "Pathway to Software Engineering by Bohubrihi": bohubrihi,
   "Introduction to Data Analytics by Bohubrihi": bohubrihi2,
   "1st Technoxian Bangladesh: National Round, Finalist - 8 March 2024": txbd,
+  "Certificate of Participation: LaunchPad by UIHP@UIU Program UIUEDF": uiu,
   "BUET DevSprint 2024: Inter-University Software Development Competition, finalist - 1 March 2024":
     devSprint,
   "BUET CaseCraft AutoRealm competition: 2nd Runner-up - 26 January 2024":
