@@ -42,6 +42,14 @@ const certificateImages = {
     leetcon,
   "Hosting and volunteering in 'MIST Campus Townhall' by GP Academy 2023 at MIST":
     gpTownhall,
+  "Certificate for successful completion of ADAPTATION TO CUSTOMER BEHAVIOR in GP Academy":
+    gpAdaption,
+  "Certificate for successful completion of CV WRITING FOR PROFESSIONALS in GP Academy":
+    gpCv,
+  "Certificate for successful completion of MS POWERPOINT ADVANCED COURSE in GP Academy":
+    gpMS,
+  "Certificate for successful completion of ONLINE SAFETY in GP Academy":
+    gpOnlineSafety,
   "IDPC (Independence Day Programming Contest) 2023 -- Position: 23rd": idpc,
   "Robot Olympiad Quiz 2019 -- Position: 14th": robot,
 };
