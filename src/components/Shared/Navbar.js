@@ -49,18 +49,27 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile Menu Icon */}
-        <div className="md:hidden ">
+        {/* Mobile Left Icon */}
+        <div className="md:hidden flex items-center">
+          <h2
+            style={{
+              fontFamily: "'Poetsen One', sans-serif",
+            }}
+          >
+            Humayra
+          </h2>
+        </div>
+        <div className="md:hidden flex items-center ml-auto">
           <button onClick={toggleMenu} aria-label="Toggle menu">
             {isOpen ? (
               <FontAwesomeIcon
                 icon={faTimes}
-                className="h-8 w-8 text-secondary"
+                className="h-6 w-6 text-secondary"
               />
             ) : (
               <FontAwesomeIcon
                 icon={faBars}
-                className="h-8 w-8 text-secondary"
+                className="h-6 w-6 text-secondary"
               />
             )}
           </button>

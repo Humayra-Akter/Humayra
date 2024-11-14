@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Education = () => {
-  // Array of education objects
+  useEffect(() => {
+    Aos.init({ duration: 800, offset: 200, easing: "ease-in-out" });
+  }, []);
+
   const educationData = [
     {
       institution: "Military Institute of Science and Technology",
@@ -26,40 +31,65 @@ const Education = () => {
   ];
 
   return (
-    <div>
+    <div className="mt-24">
       <h3
-        className="text-2xl mt-20 font-semibold text-primary text-center dark:text-secondary"
+        className="text-3xl font-semibold text-primary text-center dark:text-secondary"
         style={{
           fontFamily: "'Poetsen One', sans-serif",
         }}
       >
         Education
       </h3>
-      <div
-        className="grid lg:grid-cols-4 gap-5 mx-20"
-        style={{
-          fontFamily: "'Poetsen One', sans-serif",
-        }}
-      >
+
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 mx-8 lg:mx-20">
         {educationData.map((education, index) => (
           <div
             key={index}
-            className="mt-4 bg-primary hover:bg-black shadow-md border dark:border-secondary rounded-lg overflow-hidden transition-colors duration-300 hover:text-black"
+            data-aos="fade-up"
+            data-aos-delay={index * 200}
+            className="relative bg-primary dark:bg-slate-800 hover:bg-black dark:hover:bg-slate-700 transition-all duration-300 transform hover:-translate-y-2 shadow-lg rounded-lg overflow-hidden"
           >
-            <div className="px-6 py-4">
-              <div className="font-bold text-white text-center text-xl mb-2">
+            <div className="p-6 text-center text-white dark:text-secondary">
+              <div className="font-bold text-xl mb-2">
                 {education.institution}
               </div>
-              <p className="text-white pt-2 text-base text-center dark:text-secondary">
-                {education.degree}
-              </p>
-              <p className="text-white text-base text-center dark:text-secondary">
-                {education.year}
-              </p>
+              <p className="text-base mt-1">{education.degree}</p>
+              <p className="text-sm mt-2 text-gray-300">{education.year}</p>
             </div>
+
+            {/* Background animation */}
+            <div
+              className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-20 z-0 pointer-events-none animate-slow-pulse"
+              style={{
+                animationDelay: `${index * 0.3}s`,
+                animationDuration: "6s",
+              }}
+            ></div>
           </div>
         ))}
       </div>
+
+      {/* Additional styles */}
+      <style jsx>{`
+        @keyframes slow-pulse {
+          0% {
+            transform: scale(1);
+            opacity: 0.8;
+          }
+          50% {
+            transform: scale(1.05);
+            opacity: 0.6;
+          }
+          100% {
+            transform: scale(1);
+            opacity: 0.8;
+          }
+        }
+
+        .animate-slow-pulse {
+          animation: slow-pulse 6s ease-in-out infinite;
+        }
+      `}</style>
     </div>
   );
 };

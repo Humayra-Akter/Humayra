@@ -4,6 +4,9 @@ import download from "../../images/file.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Slide } from "react-awesome-reveal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Banner = () => {
   useEffect(() => {
@@ -17,6 +20,20 @@ const Banner = () => {
         fontFamily: "'Poetsen One', sans-serif",
       }}
     >
+      {/* Distorted Animated Lines */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        {[...Array(15)].map((_, index) => (
+          <div
+            key={index}
+            className={`absolute bg-slate-200 dark:bg-slate-800 opacity-60 w-[2px] h-full animate-flicker line-${index}`}
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              transform: `rotate(${Math.random() * 45 - 22.5}deg)`,
+            }}
+          ></div>
+        ))}
+      </div>
       <Slide cascade damping={0.5} direction="right">
         <div className="text-left sm:text-center sm:pt-10 lg:mt-24">
           <h1 className="text-6xl font-bold bg-clip-text text-primary dark:text-secondary">
@@ -24,7 +41,20 @@ const Banner = () => {
           </h1>
           <h2 className="text-6xl font-bold bg-clip-text text-primary dark:text-secondary">
             Akter
-          </h2>
+          </h2>{" "}
+          <p className="text-lg lg:text-xl text-gray-300 mt-10">
+            <span className="text-lg text-primary dark:text-secondary">
+              Full Stack Developer
+            </span>{" "}
+            |{" "}
+            <span className="text-lg text-primary dark:text-secondary">
+              UI/UX Enthusiast
+            </span>{" "}
+            |{" "}
+            <span className="text-lg text-primary dark:text-secondary">
+              Innovator
+            </span>
+          </p>
           <div className="inline-block">
             <a
               href="/Humayra_Akter_CV.pdf"
@@ -34,6 +64,21 @@ const Banner = () => {
               <img src={download} className="w-6" />
               Download My CV
             </a>
+          </div>
+          {/* Social Icons */}
+          <div className="flex space-x-6 mt-6 items-center justify-center">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="text-2xl text-primary dark:text-secondary hover:scale-125  transition-colors duration-200"
+            />
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="text-2xl text-primary dark:text-secondary hover:scale-125  transition-colors duration-200"
+            />
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="text-2xl text-primary dark:text-secondary hover:scale-125  transition-colors duration-200"
+            />
           </div>
         </div>
       </Slide>
@@ -74,7 +119,67 @@ const Banner = () => {
             </p>
           </div>
         </Slide>
-      </div>
+      </div>{" "}
+      <style jsx>{`
+        @keyframes flicker {
+          0%,
+          100% {
+            opacity: 0.2;
+            transform: scaleY(1) translateY(0);
+          }
+          50% {
+            opacity: 0.8;
+            transform: scaleY(1.5) translateY(-20px);
+          }
+        }
+
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes fade-in-delay {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        .animate-flicker {
+          animation: flicker 3s infinite ease-in-out;
+        }
+        .animate-fade-in-up {
+          animation: fade-in-up 1.5s ease-out forwards;
+        }
+        .animate-fade-in {
+          animation: fade-in 2s ease-out forwards;
+        }
+        .animate-fade-in-delay {
+          animation: fade-in 3s ease-out forwards;
+        }
+
+        /* Randomized line animation delays */
+        ${[...Array(15)].map(
+          (_, i) => `.line-${i} { animation-delay: ${Math.random() * 2}s; }`
+        )}
+      `}</style>
     </div>
   );
 };

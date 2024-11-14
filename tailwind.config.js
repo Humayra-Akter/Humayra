@@ -10,14 +10,15 @@ module.exports = {
     themes: [
       {
         light: {
-          primary: "#660064",
+          primary: "#800000",
           secondary: "#FFF",
         },
       },
       {
         dark: {
-          primary: "#800000",
+          primary: "#660064",
           secondary: "#FFD700",
+          accent: "#66fcf1",
         },
       },
     ],
