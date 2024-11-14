@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+import { Slide } from "react-awesome-reveal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 const Education = () => {
-  useEffect(() => {
-    Aos.init({ duration: 800, offset: 200, easing: "ease-in-out" });
-  }, []);
-
+  // Array of education objects
   const educationData = [
     {
       institution: "Military Institute of Science and Technology",
@@ -31,67 +29,65 @@ const Education = () => {
   ];
 
   return (
-    <div className="mt-24">
-      <h3
-        className="text-3xl font-semibold text-primary text-center dark:text-secondary"
-        style={{
-          fontFamily: "'Poetsen One', sans-serif",
-        }}
-      >
+    <div
+      className="my-20 px-6 lg:px-20"
+      style={{ fontFamily: "'Poetsen One', sans-serif" }}
+    >
+      <h3 className="text-3xl font-semibold text-center text-primary dark:text-secondary mb-10">
+        <FontAwesomeIcon
+          icon={faGraduationCap}
+          className="text-primary dark:text-secondary text-3xl mr-6 animate-pulse"
+        />
         Education
       </h3>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 mx-8 lg:mx-20">
-        {educationData.map((education, index) => (
-          <div
-            key={index}
-            data-aos="fade-up"
-            data-aos-delay={index * 200}
-            className="relative bg-primary dark:bg-slate-800 hover:bg-black dark:hover:bg-slate-700 transition-all duration-300 transform hover:-translate-y-2 shadow-lg rounded-lg overflow-hidden"
-          >
-            <div className="p-6 text-center text-white dark:text-secondary">
-              <div className="font-bold text-xl mb-2">
-                {education.institution}
-              </div>
-              <p className="text-base mt-1">{education.degree}</p>
-              <p className="text-sm mt-2 text-gray-300">{education.year}</p>
-            </div>
+      {/* Education Timeline */}
 
-            {/* Background animation */}
-            <div
-              className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-20 z-0 pointer-events-none animate-slow-pulse"
-              style={{
-                animationDelay: `${index * 0.3}s`,
-                animationDuration: "6s",
-              }}
-            ></div>
-          </div>
-        ))}
+      <div className="mt-12 max-w-6xl mx-auto text-center">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {educationData.map((education, index) => (
+            <Slide key={index} direction={index % 2 === 0 ? "left" : "right"}>
+              <ul className="flex space-x-8 shadow-lg border-x-4 border-y-0 dark:border-slate-800 p-4 rounded-lg transform transition-all duration-500 hover:scale-105">
+                <li className="flex flex-col items-center text-primary -mt-10 dark:text-secondary">
+                  <div
+                    className="w-20 h-20 flex items-center justify-center rounded-full border-4 border-primary relative"
+                    style={{
+                      animation: "bounce 2s infinite",
+                    }}
+                  >
+                    <span className="dark:text-white text-yellow-800 font-semibold">
+                      {education.year}
+                    </span>
+                  </div>
+                  <h4 className="text-primary dark:text-secondary mt-4 text-lg font-semibold">
+                    {education.institution}
+                  </h4>
+                  <p className="text-black dark:text-white text-xs mt-2">
+                    {education.degree}
+                  </p>
+                </li>
+              </ul>
+            </Slide>
+          ))}
+        </div>
       </div>
-
-      {/* Additional styles */}
-      <style jsx>{`
-        @keyframes slow-pulse {
-          0% {
-            transform: scale(1);
-            opacity: 0.8;
-          }
-          50% {
-            transform: scale(1.05);
-            opacity: 0.6;
-          }
-          100% {
-            transform: scale(1);
-            opacity: 0.8;
-          }
-        }
-
-        .animate-slow-pulse {
-          animation: slow-pulse 6s ease-in-out infinite;
-        }
-      `}</style>
     </div>
   );
 };
 
 export default Education;
+
+// Add the following CSS for the circle animation
+<style jsx>{`
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+`}</style>;
