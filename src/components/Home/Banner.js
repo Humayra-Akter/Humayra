@@ -4,9 +4,7 @@ import download from "../../images/file.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Slide } from "react-awesome-reveal";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import SocialMedia from "./SocialMedia";
 
 const Banner = () => {
   useEffect(() => {
@@ -66,20 +64,8 @@ const Banner = () => {
             </a>
           </div>
           {/* Social Icons */}
-          <div className="flex space-x-6 mt-6 items-center justify-center">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="text-2xl text-primary dark:text-secondary hover:scale-125  transition-colors duration-200"
-            />
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="text-2xl text-primary dark:text-secondary hover:scale-125  transition-colors duration-200"
-            />
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className="text-2xl text-primary dark:text-secondary hover:scale-125  transition-colors duration-200"
-            />
-          </div>
+          <SocialMedia />
+         
         </div>
       </Slide>
       <Slide cascade damping={0.5} direction="up">
