@@ -75,11 +75,11 @@ const WorkExperience = () => {
         Experiences
       </h3>
       <div
-        className="relative h-52 max-w-4xl mx-auto p-8 bg-gradient-to-br from-primary to-secondary rounded-lg shadow-lg overflow-hidden transform transition duration-500 ease-in-out scale-95 hover:scale-100"
+        className="relative h-52 max-w-4xl mx-auto p-8 shadow-2xl rounded-lg  overflow-hidden transform transition duration-500 ease-in-out scale-95 hover:scale-100"
         style={{ animation: "fadeIn 1s ease-in-out" }}
       >
         {/* Background Glow Effect */}
-        <div className="absolute -inset-3 rounded-lg bg-gradient-to-r from-green-500 via-blue-500 to-blue-500 opacity-30 blur-lg"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-red-500 via-yellow-500 to-red-500 rounded-lg opacity-25 pointer-events-none transform transition duration-500 hover:opacity-50"></div>
 
         {/* Quote Icon */}
         <FaQuoteLeft className="absolute top-4 left-4 text-5xl text-primary dark:text-secondary opacity-50" />
@@ -96,10 +96,10 @@ const WorkExperience = () => {
           <p className="mt-10 text-xl text-primary dark:text-secondary font-medium text-center transition-opacity duration-500 opacity-100">
             {slides[current].text}
           </p>
-          <p className="mt-1 text-lg font-medium text-center transition-opacity duration-500 opacity-100">
+          <p className="mt-1 text-lg font-medium text-center dark:text-white transition-opacity duration-500 opacity-100">
             {slides[current]?.text2}
           </p>{" "}
-          <p className="mt-1 text-lg font-medium text-center transition-opacity duration-500 opacity-100">
+          <p className="mt-1 text-lg font-medium text-center dark:text-white transition-opacity duration-500 opacity-100">
             {slides[current].year}
           </p>
         </div>
