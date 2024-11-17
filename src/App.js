@@ -9,6 +9,7 @@ import Error from "./components/Shared/Error";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
+import Certificate from "./components/Certificate/Certificate";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,7 +32,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/certificate" element={<Certificate />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

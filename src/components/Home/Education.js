@@ -43,12 +43,12 @@ const Education = () => {
 
       {/* Education Timeline */}
 
-      <div className="mt-12 max-w-6xl mx-auto text-center">
+      <div className="mt-12 max-w-6xl mx-auto text-center items-center justify-center flex">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {educationData.map((education, index) => (
             <Slide key={index} direction={index % 2 === 0 ? "left" : "right"}>
               <ul className="flex space-x-8 shadow-lg border-x-4 border-y-0 dark:border-slate-800 p-4 rounded-lg transform transition-all duration-500 hover:scale-105">
-                <li className="flex flex-col items-center text-primary -mt-10 dark:text-secondary">
+                <li className="flex flex-col items-center justify-center text-primary -mt-8 dark:text-secondary">
                   <div
                     className="w-20 h-20 flex items-center justify-center rounded-full border-4 border-primary relative"
                     style={{

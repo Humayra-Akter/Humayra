@@ -25,20 +25,103 @@ const certificates = [
     title:
       "IEEE Computer Society Bangladesh chapter Web and IT Committee Frontend Volunteer",
     image1: ieee,
-    image2: trust,
+    image2: ieee,
   },
   {
     title: "Introduction to Generative AI by Google Cloud 2024",
     image1: genAI,
-    image2: bohubrihi,
+    image2: genAI,
   },
   {
     title:
-      "BUET DevSprint 2024: Inter-University Software Development Competition, finalist",
+      "Trust Bank Presents Creaventure 3.0 National idea pitching competition by DUEDC 2024",
+    image1: trust,
+    image2: trust,
+  },
+  {
+    title: "Pathway to Software Engineering by Bohubrihi",
+    image1: bohubrihi,
+    image2: bohubrihi,
+  },
+  {
+    title: "Introduction to Data Analytics by Bohubrihi",
+    image1: bohubrihi2,
+    image2: bohubrihi2,
+  },
+  {
+    title: "1st Technoxian Bangladesh: National Round, Finalist - 8 March 2024",
+    image1: txbd,
+    image2: txbd,
+  },
+  {
+    title: "Certificate of Participation: LaunchPad by UIHP@UIU Program UIUEDF",
+    image1: uiu,
+    image2: uiu,
+  },
+  {
+    title:
+      "BUET DevSprint 2024: Inter-University Software Development Competition, finalist - 1 March 2024",
     image1: devSprint,
+    image2: devSprint,
+  },
+  {
+    title:
+      "BUET CaseCraft AutoRealm competition: 2nd Runner-up - 26 January 2024",
+    image1: caseCraft,
+    image2: caseCraft,
+  },
+  {
+    title:
+      "Certificate of Completion on Python Fundamentals Kiron, Ascend International Limited - 14 July 2021",
+    image1: kiron,
+    image2: kiron,
+  },
+  {
+    title:
+      "Certificate of Volunteering on MIST LeetCon 2023: HackMeIfYouCan - 20 May 2023",
+    image1: leetcon,
     image2: leetcon,
   },
-  // Add more certificates as needed
+  {
+    title:
+      "Hosting and volunteering in 'MIST Campus Townhall' by GP Academy 2023 at MIST",
+    image1: gpTownhall,
+    image2: gpTownhall,
+  },
+  {
+    title:
+      "Certificate for successful completion of ADAPTATION TO CUSTOMER BEHAVIOR in GP Academy",
+    image1: gpAdaption,
+    image2: gpAdaption,
+  },
+  {
+    title:
+      "Certificate for successful completion of CV WRITING FOR PROFESSIONALS in GP Academy",
+    image1: gpCv,
+    image2: gpCv,
+  },
+  {
+    title:
+      "Certificate for successful completion of MS POWERPOINT ADVANCED COURSE in GP Academy",
+    image1: gpMS,
+    image2: gpMS,
+  },
+  {
+    title:
+      "Certificate for successful completion of ONLINE SAFETY in GP Academy",
+    image1: gpOnlineSafety,
+    image2: gpOnlineSafety,
+  },
+  {
+    title: "IDPC (Independence Day Programming Contest) 2023 -- Position: 23rd",
+    image1: idpc,
+    image2: idpc,
+  },
+  {
+    title: "Robot Olympiad Quiz 2019 -- Position: 14th",
+    image1: robot,
+    image2: robot,
+  },
 ];
 
 const Certificate = () => {

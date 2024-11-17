@@ -33,8 +33,8 @@ const Banner = () => {
         ))}
       </div>
       <Slide cascade damping={0.5} direction="right">
-        <div className="text-left sm:text-center sm:pt-10 lg:mt-24">
-          <h1 className="text-6xl font-bold bg-clip-text text-primary dark:text-secondary">
+        <div className="lg:text-left text-center sm:pt-10 lg:mt-24">
+          <h1 className="text-6xl font-bold bg-clip-text  text-primary dark:text-secondary">
             Humayra
           </h1>
           <h2 className="text-6xl font-bold bg-clip-text text-primary dark:text-secondary">
@@ -57,7 +57,7 @@ const Banner = () => {
             <a
               href="/Humayra_Akter_CV.pdf"
               download
-              className="bg-primary text-secondary py-2 px-4 rounded-md hover:bg-secondary border-primary dark:border-secondary hover:text-primary transition-colors mt-12 flex gap-2"
+              className="bg-primary text-secondary py-2 px-4 rounded-md hover:bg-secondary border-primary dark:border-secondary hover:text-primary transition-colors mt-8 flex gap-2"
             >
               <img src={download} className="w-6" />
               Download My CV
@@ -65,11 +65,10 @@ const Banner = () => {
           </div>
           {/* Social Icons */}
           <SocialMedia />
-         
         </div>
       </Slide>
       <Slide cascade damping={0.5} direction="up">
-        <div className="sm:mt-10 flex justify-center items-center">
+        <div className="mt-10 flex justify-center items-center">
           <svg
             className="absolute pt-10 w-auto h-96 text-primary"
             viewBox="0 0 200 200"
@@ -92,8 +91,8 @@ const Banner = () => {
       </Slide>
       <div>
         <Slide cascade damping={0.5}>
-          <div className="text-justify sm:mt-10 lg:mt-32">
-            <h3 className="text-2xl font-semibold text-primary dark:text-secondary">
+          <div className="text-justify mt-10 lg:mt-32">
+            <h3 className="text-2xl text-center lg:text-left font-semibold text-primary dark:text-secondary">
               About Me
             </h3>
             <p className="text-base text-primary dark:text-secondary mt-2">

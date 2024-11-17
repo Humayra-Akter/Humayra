@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faT, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-scroll";
-import icon from '../../images/humayra.png'
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("/home");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleSetActive = (value) => {
-    setActive(value);
+  const handleSetActive = (path) => {
+    setActive(path);
   };
 
   return (
@@ -26,23 +25,27 @@ const Navbar = () => {
       <div className="container mx-auto px-6 lg:px-10 py-4 flex justify-center items-center">
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-lg">
-          {["home", "about", "projects", "contact"].map((item) => (
+          {[
+            { path: "/home", label: "Home" },
+            { path: "/about", label: "About" },
+            { path: "/projects", label: "Projects" },
+            { path: "/certificate", label: "Certificate" },
+          ].map((item) => (
             <Link
-              key={item}
-              to={item}
-              spy={true}
-              smooth={true}
-              duration={700}
+              key={item.path}
+              to={item.path}
               className={`cursor-pointer relative transition-all duration-500 ${
-                active === item ? "text-yellow-300" : "hover:text-yellow-300"
+                active === item.path
+                  ? "text-yellow-300"
+                  : "hover:text-yellow-300"
               }`}
-              onClick={() => handleSetActive(item)}
+              onClick={() => handleSetActive(item.path)}
             >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
+              {item.label}
               {/* Underline effect with smooth animation */}
               <span
                 className={`absolute left-0 right-0 bottom-[-2px] h-[2px] bg-yellow-300 transition-all duration-300 ${
-                  active === item ? "w-full" : "w-0"
+                  active === item.path ? "w-full" : "w-0"
                 }`}
               />
             </Link>
@@ -93,26 +96,30 @@ const Navbar = () => {
             >
               <FontAwesomeIcon icon={faTimes} className="h-8 w-8" />
             </button>
-            {["home", "about", "projects", "contact"].map((item) => (
+            {[
+              { path: "/home", label: "Home" },
+              { path: "/about", label: "About" },
+              { path: "/projects", label: "Projects" },
+              { path: "/certificate", label: "Certificate" },
+            ].map((item) => (
               <Link
-                key={item}
-                to={item}
-                spy={true}
-                smooth={true}
-                duration={700}
+                key={item.path}
+                to={item.path}
                 className={`block cursor-pointer relative transition-all duration-500 ${
-                  active === item ? "text-yellow-300" : "hover:text-yellow-300"
+                  active === item.path
+                    ? "text-yellow-300"
+                    : "hover:text-yellow-300"
                 }`}
                 onClick={() => {
-                  handleSetActive(item);
+                  handleSetActive(item.path);
                   setIsOpen(false); // Close the menu after selection
                 }}
               >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
+                {item.label}
                 {/* Underline effect with smooth animation */}
                 <span
                   className={`absolute left-0 right-0 bottom-[-2px] h-[2px] bg-yellow-300 transition-all duration-300 ${
-                    active === item ? "w-2/3" : "w-0"
+                    active === item.path ? "w-2/3" : "w-0"
                   }`}
                 />
               </Link>

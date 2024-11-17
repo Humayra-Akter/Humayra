@@ -240,10 +240,10 @@ const Contact = () => {
           </div>
         </div>
       )}
-      <div className="wave" style={wave1Style}></div>
+      {/* <div className="wave" style={wave1Style}></div>
       <div className="wave" style={wave2Style}></div>
       <div className="wave" style={wave3Style}></div>
-      <div className="wave" style={wave4Style}></div>
+      <div className="wave" style={wave4Style}></div> */}
     </div>
   );
 };
