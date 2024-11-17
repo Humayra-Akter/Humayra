@@ -57,11 +57,12 @@ const TechStack = () => {
       style={{ fontFamily: "'Poetsen One', sans-serif" }}
     >
       <h3
-        className="text-2xl mt-20 mb-10 font-semibold text-primary text-center dark:text-secondary"
+        className="text-3xl mt-20 mb-10 font-semibold text-primary text-center dark:text-secondary"
         style={{ fontFamily: "'Poetsen One', sans-serif" }}
       >
         Tech Stack
       </h3>
+     
       <div className="flex flex-wrap justify-center gap-4">
         {techStack.map((tech, index) => (
           <div

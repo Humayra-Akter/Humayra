@@ -7,6 +7,7 @@ import Certificates from "./Certificates";
 import Contact from "../Contact/Contact";
 import Services from "./Services";
 import Hero from "./Hero";
+import HomeCertificatePreview from "./HomeCertificatePreview";
 
 const Home = () => {
   return (
@@ -17,7 +18,8 @@ const Home = () => {
       <WorkExperience />
       <Services />
       <TechStack />
-      <Certificates />
+      {/* <Certificates /> */}
+      <HomeCertificatePreview />
       <Contact />
     </div>
   );

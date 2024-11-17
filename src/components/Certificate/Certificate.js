@@ -1,11 +1,16 @@
 import React, { useEffect } from "react";
 import txbd from "../../images/TechnocianBD.png";
+import txbd2 from "../../images/txbd.jpg";
 import devSprint from "../../images/devSprint.jpg";
+import devSprint2 from "../../images/devSprint2.jpg";
 import caseCraft from "../../images/BUETCasecraft.jpg";
+import caseCraft2 from "../../images/casecraft.jpg";
 import kiron from "../../images/kironPython.png";
 import uiu from "../../images/uiu_participate_certificate.png";
 import leetcon from "../../images/leetcon.jpg";
+import leetcon2 from "../../images/leetcon2.jpg";
 import ieee from "../../images/IEEECSBDC.jpeg";
+import ieee2 from "../../images/IEEECSBDC.jpg";
 import bohubrihi from "../../images/Bohubrihi.png";
 import bohubrihi2 from "../../images/bohubrihi2.png";
 import trust from "../../images/TrustBank.png";
@@ -15,7 +20,9 @@ import gpMS from "../../images/gpMSWord.png";
 import gpCv from "../../images/gpCVWriting.png";
 import gpAdaption from "../../images/gpCustomerBehavior.png";
 import gpTownhall from "../../images/gp.png";
+import gpTownhall2 from "../../images/gpTownhall.jpg";
 import idpc from "../../images/idpc.png";
+import idpc2 from "../../images/idpc.jpg";
 import robot from "../../images/robotOlympiad.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -25,18 +32,52 @@ const certificates = [
     title:
       "IEEE Computer Society Bangladesh chapter Web and IT Committee Frontend Volunteer",
     image1: ieee,
-    image2: ieee,
+    image2: ieee2,
   },
   {
-    title: "Introduction to Generative AI by Google Cloud 2024",
-    image1: genAI,
-    image2: genAI,
+    title:
+      "BUET DevSprint 2024: Inter-University Software Development Competition, finalist - 1 March 2024",
+    image1: devSprint,
+    image2: devSprint2,
+  },
+  {
+    title:
+      "BUET CaseCraft AutoRealm competition: 2nd Runner-up - 26 January 2024",
+    image1: caseCraft2,
+    image2: caseCraft,
+  },
+  {
+    title: "1st Technoxian Bangladesh: National Round, Finalist - 8 March 2024",
+    image1: txbd2,
+    image2: txbd,
+  },
+  {
+    title:
+      "Hosting and volunteering in 'MIST Campus Townhall' by GP Academy 2023 at MIST",
+    image1: gpTownhall,
+    image2: gpTownhall2,
+  },
+  {
+    title: "IDPC (Independence Day Programming Contest) 2023 -- Position: 23rd",
+    image1: idpc,
+    image2: idpc2,
+  },
+  {
+    title:
+      "Certificate of Volunteering on MIST LeetCon 2023: HackMeIfYouCan - 20 May 2023",
+    image1: leetcon2,
+    image2: leetcon,
   },
   {
     title:
       "Trust Bank Presents Creaventure 3.0 National idea pitching competition by DUEDC 2024",
     image1: trust,
     image2: trust,
+  },
+  {
+    title: "Introduction to Generative AI by Google Cloud 2024",
+    image1: genAI,
+    image2: genAI,
   },
   {
     title: "Pathway to Software Engineering by Bohubrihi",
@@ -48,46 +89,20 @@ const certificates = [
     image1: bohubrihi2,
     image2: bohubrihi2,
   },
-  {
-    title: "1st Technoxian Bangladesh: National Round, Finalist - 8 March 2024",
-    image1: txbd,
-    image2: txbd,
-  },
+
   {
     title: "Certificate of Participation: LaunchPad by UIHP@UIU Program UIUEDF",
     image1: uiu,
     image2: uiu,
   },
-  {
-    title:
-      "BUET DevSprint 2024: Inter-University Software Development Competition, finalist - 1 March 2024",
-    image1: devSprint,
-    image2: devSprint,
-  },
-  {
-    title:
-      "BUET CaseCraft AutoRealm competition: 2nd Runner-up - 26 January 2024",
-    image1: caseCraft,
-    image2: caseCraft,
-  },
+
   {
     title:
       "Certificate of Completion on Python Fundamentals Kiron, Ascend International Limited - 14 July 2021",
     image1: kiron,
     image2: kiron,
   },
-  {
-    title:
-      "Certificate of Volunteering on MIST LeetCon 2023: HackMeIfYouCan - 20 May 2023",
-    image1: leetcon,
-    image2: leetcon,
-  },
-  {
-    title:
-      "Hosting and volunteering in 'MIST Campus Townhall' by GP Academy 2023 at MIST",
-    image1: gpTownhall,
-    image2: gpTownhall,
-  },
+
   {
     title:
       "Certificate for successful completion of ADAPTATION TO CUSTOMER BEHAVIOR in GP Academy",
@@ -112,11 +127,7 @@ const certificates = [
     image1: gpOnlineSafety,
     image2: gpOnlineSafety,
   },
-  {
-    title: "IDPC (Independence Day Programming Contest) 2023 -- Position: 23rd",
-    image1: idpc,
-    image2: idpc,
-  },
+
   {
     title: "Robot Olympiad Quiz 2019 -- Position: 14th",
     image1: robot,
