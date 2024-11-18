@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SocialMedia = () => {
   return (
-    <div className="mt-8 flex justify-center space-x-4">
+    <div className="mt-8 flex justify-center lg:justify-start space-x-4">
       <Link
         to="https://www.facebook.com/profile.php?id=100004821604675"
         className="text-2xl text-primary dark:text-secondary hover:scale-125  transition-colors duration-200"

@@ -41,15 +41,15 @@ const Banner = () => {
             Akter
           </h2>{" "}
           <p className="text-lg lg:text-xl text-gray-300 mt-10">
-            <span className="text-lg text-primary dark:text-secondary">
+            <span className="text-lg text-primary dark:text-white">
               Full Stack Developer
             </span>{" "}
             |{" "}
-            <span className="text-lg text-primary dark:text-secondary">
+            <span className="text-lg text-primary dark:text-white">
               UI/UX Enthusiast
             </span>{" "}
             |{" "}
-            <span className="text-lg text-primary dark:text-secondary">
+            <span className="text-lg text-primary dark:text-white">
               Innovator
             </span>
           </p>
@@ -95,7 +95,7 @@ const Banner = () => {
             <h3 className="text-2xl text-center lg:text-left font-semibold text-primary dark:text-secondary">
               About Me
             </h3>
-            <p className="text-base text-primary dark:text-secondary mt-2">
+            <p className="text-base text-primary dark:text-white mt-2">
               Dedicated and innovative computer science undergraduate with a
               passion for programming and problem-solving. Committed to
               leveraging skills in C, CPP, and JavaScript, Typescript along with

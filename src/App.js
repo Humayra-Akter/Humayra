@@ -10,6 +10,7 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
 import Certificate from "./components/Certificate/Certificate";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
