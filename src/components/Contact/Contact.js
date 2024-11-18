@@ -57,32 +57,27 @@ const Contact = () => {
 
   const waveStyle = {
     position: "absolute",
-    bottom: 0,
     left: 0,
     width: "100%",
-    height: "20vh",
+    height: "10vh",
     backgroundImage: "url(https://i.imgur.com/DLD3N2t.png)",
-    // background: `url(${purple})`,
-    backgroundSize: "cover",
-    backgroundSize: "100vw 20vh",
+    backgroundSize: "100vw 10vh",
   };
 
   const wave1Style = {
     ...waveStyle,
     animation: "animate 20s linear infinite",
-    zIndex: 15,
-    opacity: 0.9,
-    animationDelay: "0s",
+    zIndex: 1,
     bottom: 0,
+    opacity: 0.9,
   };
 
   const wave2Style = {
     ...waveStyle,
-    animation: "animate2 15s linear infinite",
-    zIndex: 10,
-    opacity: 0.1,
-    animationDelay: "-5s",
+    animation: "animate2 12s linear infinite",
+    zIndex: 0,
     bottom: "10px",
+    opacity: 0.3,
   };
 
   const wave3Style = {
@@ -96,7 +91,7 @@ const Contact = () => {
 
   const wave4Style = {
     ...waveStyle,
-    animation: "animate2 5s linear infinite",
+    animation: "animate2 16s linear infinite",
     zIndex: 1,
     opacity: 0.5,
     animationDelay: "-5s",
@@ -109,6 +104,7 @@ const Contact = () => {
     height: "100vh",
     overflow: "hidden",
     fontFamily: "'Poetsen One', sans-serif",
+    zIndex: 0,
   };
 
   const keyframesAnimate = `
@@ -131,7 +127,7 @@ const Contact = () => {
         {keyframesAnimate}
         {keyframesAnimate2}
       </style>
-      <h3 className="text-2xl font-semibold text-center text-primary mt-20 mb-8 dark:text-secondary">
+      <h3 className="text-3xl font-semibold text-center text-primary mt-20 mb-8 dark:text-secondary">
         Contact Me
       </h3>
       <div className="relative">
@@ -143,8 +139,8 @@ const Contact = () => {
           <div className="blur-[106px] h-32 bg-gradient-to-l from-cyan-400 to-sky-300 dark:to-white"></div>
         </div>
       </div>
-      <div className="lg:max-w-5xl mx-auto p-8 lg:flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-8">
-        <div className="flex-grow">
+      <div className="lg:max-w-5xl mx-auto p-8 flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-8">
+        <div className="flex-grow w-full lg:w-1/2">
           <form
             onSubmit={handleSubmit}
             className="space-y-4 p-4 rounded-lg border-2 border-gradient-to-r from-blue-500 to-purple-500 bg-white shadow-lg"
@@ -159,7 +155,7 @@ const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="p-2 border rounded-md"
+                className="p-2 border rounded-md z-10 relative"
                 required
               />
             </div>
@@ -173,7 +169,7 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="p-2 border rounded-md"
+                className="p-2 border rounded-md z-10 relative"
                 required
               />
             </div>
@@ -186,25 +182,25 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="p-2 border rounded-md"
+                className="p-2 border rounded-md z-10 relative"
                 rows="6"
                 required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="bg-primary text-secondary py-2 px-4 rounded-md hover:bg-secondary hover:text-primary transition-colors"
+              className="bg-primary text-secondary py-2 px-4 rounded-md hover:bg-secondary hover:border-2 hover:border-slate-600 hover:text-primary transition-colors"
             >
               Send Message
             </button>
           </form>
         </div>
-        <Slide cascade damping={0.5}>
-          <div className="flex-shrink-0">
+        <Slide cascade damping={0.5} className="hidden lg:block lg:w-1/2">
+          <div className="flex-shrink-0 text-center lg:text-left">
             <img
               src={contactImageLight}
               alt="Contact Us"
-              className="w-full lg:w-96 border border-primary rounded-md"
+              className="w-full bg-cover lg:w-96 border border-primary rounded-md mx-auto"
             />
             <h3 className="text-2xl font-semibold text-primary mb-4 dark:text-secondary">
               Get in Touch
@@ -240,10 +236,11 @@ const Contact = () => {
           </div>
         </div>
       )}
-      {/* <div className="wave" style={wave1Style}></div>
-      <div className="wave" style={wave2Style}></div>
-      <div className="wave" style={wave3Style}></div>
-      <div className="wave" style={wave4Style}></div> */}
+
+      <div className="wave mt-20" style={wave1Style}></div>
+      <div className="wave mt-20" style={wave2Style}></div>
+      <div className="wave mt-20" style={wave3Style}></div>
+      <div className="wave mt-20" style={wave4Style}></div>
     </div>
   );
 };
