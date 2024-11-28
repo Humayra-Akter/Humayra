@@ -11,7 +11,21 @@ const About = () => {
         fontFamily: "'Poetsen One', sans-serif",
       }}
     >
-      <h2 className="text-2xl font-semibold text-primary mt-20 mb-8 dark:text-secondary">
+      {" "}
+      <div className="absolute inset-0 -z-1 pointer-events-none">
+        {[...Array(15)].map((_, index) => (
+          <div
+            key={index}
+            className={`absolute bg-slate-200 dark:bg-slate-800 opacity-60 w-[1.5px] h-40 animate-flicker line-${index}`}
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              transform: `rotate(${Math.random() * 45 - 22.5}deg)`,
+            }}
+          ></div>
+        ))}
+      </div>
+      <h2 className="text-3xl text-primary mt-20 mb-8  dark:text-secondary">
         About Me
       </h2>
       <div className="relative">
@@ -20,7 +34,7 @@ const About = () => {
           className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
         >
           <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-gray-100"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-white"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-100 to-sky-300 dark:to-white"></div>
         </div>
       </div>
       <div className="lg:flex lg:mx-32 gap-8">
@@ -35,15 +49,10 @@ const About = () => {
             transform="translate(100 100)"
           />
         </svg>
-        <img
-          src={me}
-          alt="Humayra"
-          className="relative h-96 pl-10"
-          style={{ zIndex: 10 }}
-        />
+        <img src={me} alt="Humayra" className="relative h-96 w-auto pl-10" />
 
         <Slide cascade damping={0.5}>
-          <div className="text-primary text-wrap text-justify w-full lg:w-auto dark:text-secondary">
+          <div className="text-primary font-extralight text-wrap text-justify w-full lg:w-auto dark:text-white">
             <p className="mb-4">
               Hi, I'm Humayra Akter, a passionate and dedicated junior software
               developer with a strong interest in web development and software
@@ -83,7 +92,67 @@ const About = () => {
         className="bg-primary text-secondary py-2 px-4 rounded-md hover:bg-secondary hover:text-primary transition-colors mt-8 inline-block"
       >
         Download My CV
-      </a>
+      </a>{" "}
+      <style jsx>{`
+        @keyframes flicker {
+          0%,
+          100% {
+            opacity: 0.2;
+            transform: scaleY(1) translateY(0);
+          }
+          50% {
+            opacity: 0.8;
+            transform: scaleY(1.5) translateY(-20px);
+          }
+        }
+
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes fade-in-delay {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        .animate-flicker {
+          animation: flicker 3s infinite ease-in-out;
+        }
+        .animate-fade-in-up {
+          animation: fade-in-up 1.5s ease-out forwards;
+        }
+        .animate-fade-in {
+          animation: fade-in 2s ease-out forwards;
+        }
+        .animate-fade-in-delay {
+          animation: fade-in 3s ease-out forwards;
+        }
+
+        /* Randomized line animation delays */
+        ${[...Array(15)].map(
+          (_, i) => `.line-${i} { animation-delay: ${Math.random() * 2}s; }`
+        )}
+      `}</style>
     </div>
   );
 };

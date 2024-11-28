@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "name": "Laundry Mate",
+    "description": "A laundry service app with home pickup and delivery.",
+    "technologies": ["React Native", "Firebase", "Expo"],
+    "screenshots": [
+      "/assets/projects/laundryMate/screenshot1.png",
+      "/assets/projects/laundryMate/screenshot2.png"
+    ],
+    "video": "/assets/projects/laundryMate/demo.mp4",
+    "liveDemo": "https://laundrymate.example.com",
+    "github": "https://github.com/Humayra-Akter/laundryMate"
+  },
+  {
+    "id": 2,
+    "name": "Bubble Shooter Game",
+    "description": "An interactive bubble shooter game with custom images.",
+    "technologies": ["React", "Tailwind CSS"],
+    "screenshots": ["/assets/projects/bubbleShooter/screenshot1.png"],
+    "video": "/assets/projects/bubbleShooter/demo.mp4",
+    "liveDemo": "https://bubbleshooter.example.com",
+    "github": "https://github.com/Humayra-Akter/bubbleShooter"
+  }
+]
