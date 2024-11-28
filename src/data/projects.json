@@ -1,25 +1,144 @@
 [
   {
     "id": 1,
-    "name": "Laundry Mate",
-    "description": "A laundry service app with home pickup and delivery.",
-    "technologies": ["React Native", "Firebase", "Expo"],
+    "name": "clock app",
+    "description": "A clock app with day-night conditional change",
+    "technologies": ["React Native", "Expo"],
     "screenshots": [
-      "/assets/projects/laundryMate/screenshot1.png",
-      "/assets/projects/laundryMate/screenshot2.png"
+      "/project/clock-app1.png",
+      "/project/clock-app2.png",
+      "/project/clock-app3.png",
+      "/project/clock-app4.png"
     ],
     "video": "/assets/projects/laundryMate/demo.mp4",
-    "liveDemo": "https://laundrymate.example.com",
-    "github": "https://github.com/Humayra-Akter/laundryMate"
+    "liveDemo": "https://github.com/Humayra-Akter/clock-app",
+    "github": "https://github.com/Humayra-Akter/clock-app"
   },
   {
     "id": 2,
-    "name": "Bubble Shooter Game",
-    "description": "An interactive bubble shooter game with custom images.",
-    "technologies": ["React", "Tailwind CSS"],
-    "screenshots": ["/assets/projects/bubbleShooter/screenshot1.png"],
-    "video": "/assets/projects/bubbleShooter/demo.mp4",
-    "liveDemo": "https://bubbleshooter.example.com",
-    "github": "https://github.com/Humayra-Akter/bubbleShooter"
+    "name": "blooming elegance",
+    "description": "This project is a full-stack Flower Shop managing Application where users can see the products, can edit and delete also.",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "daisyUI",
+      "React-Firebase-Hooks",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Firebase"
+    ],
+    "screenshots": [
+      "/project/blooming-elegance1.png",
+      "/project/blooming-elegance2.png",
+      "/project/blooming-elegance3.png",
+      "/project/blooming-elegance4.png"
+    ],
+    "github": "https://github.com/Humayra-Akter/Blooming-Elegance"
+  },
+  {
+    "id": 3,
+    "name": "Currency flatlist",
+    "description": "This is a react native project about the currency conversion, tic-tac-toe game. Using personalized images and flatlist the project is done",
+    "technologies": ["React native", "Typescript"],
+    "screenshots": [
+      "/project/currancy1.png",
+      "/project/currancy2.png",
+      "/project/currancy3.png"
+    ],
+    "github": "https://github.com/Humayra-Akter/currency-flatlist"
+  },
+  {
+    "id": 4,
+    "name": "Password Generator",
+    "description": "This is a react native project about the currency conversion, tic-tac-toe game. Using personalized images and flatlist the project is done",
+    "technologies": ["React native", "Typescript"],
+    "screenshots": ["/project/pass-gen1.png", "/project/pass-gen2.png"],
+    "github": "https://github.com/Humayra-Akter/password-generator"
+  },
+  {
+    "id": 5,
+    "name": "Monthly Budget",
+    "description": "This is a html-css project about the monthly budget calculation. Using personalized images the project is done",
+    "technologies": ["html", "CSS", "javaScript"],
+    "screenshots": ["/project/monthly-budget.png"],
+    "github": "https://github.com/Humayra-Akter/monthly-budget"
+  },
+  {
+    "id": 6,
+    "name": "Convention Center",
+    "description": "This is a html-css project about a convention center. Using personalized images the project is done",
+    "technologies": ["html", "CSS", "javaScript"],
+    "screenshots": ["/project/convention-center.png"],
+    "github": "https://github.com/Humayra-Akter/Convention-centre"
+  },
+  {
+    "id": 7,
+    "name": "A Demo Front Page",
+    "description": "This is a html-css project about a Front page or landing page. Using personalized images the project is done",
+    "technologies": ["html", "CSS"],
+    "screenshots": ["/project/front-pg.png"],
+
+    "github": "https://github.com/Humayra-Akter/front-page-demo"
+  },
+  {
+    "id": 8,
+    "name": "Weather App",
+    "description": "This is a html-css project about weather using API. Using personalized images the project is done",
+    "technologies": ["html", "CSS", "javaScript", "api"],
+    "screenshots": ["/project/weather1.png", "/project/weather2.png"],
+    "github": "https://github.com/Humayra-Akter/weather-app"
+  },
+  {
+    "id": 9,
+    "name": "Pin Matcher",
+    "description": "A pin generation app that allows users to generate secure 4-digit pins and verify input against the generated pin.",
+    "technologies": ["html", "CSS", "javaScript", "Bootstrap"],
+    "screenshots": ["/project/pin-generator.png"],
+    "github": "https://github.com/Humayra-Akter/pin-matcher"
+  },
+  {
+    "id": 10,
+    "name": "Shopping Cart",
+    "description": "T A simple and interactive shopping cart system built with HTML, CSS, JavaScript, and Bootstrap. The cart allows users to add/remove items, adjust quantities, and see real-time total calculations.",
+    "technologies": ["html", "CSS", "javaScript", "Bootstrap"],
+    "screenshots": ["/project/Shopping-cart.png"],
+    "github": "https://github.com/Humayra-Akter/shopping-cart"
+  },
+
+  {
+    "id": 11,
+    "name": "Baap er Bank",
+    "description": "This is a html-css project about weather using API. Using personalized images the project is done",
+    "technologies": ["html", "CSS", "javaScript", "api"],
+    "screenshots": ["/project/baperbank1.png", "/project/baperbank2.png"],
+    "github": "https://github.com/Humayra-Akter/baap-er-bank"
+  },
+
+  {
+    "id": 12,
+    "name": "Panda Commerce",
+    "description": "This is a html-css project about weather using API. Using personalized images the project is done",
+    "technologies": ["html", "CSS", "javaScript", "api"],
+    "screenshots": ["/project/panda.png"],
+    "github": "https://github.com/Humayra-Akter/panda-commerce-bootstrap"
+  },
+
+  {
+    "id": 13,
+    "name": "Influencer Gear",
+    "description": "This is a html-css project about weather using API. Using personalized images the project is done",
+    "technologies": ["html", "CSS", "javaScript", "api"],
+    "screenshots": ["/project/influencer-gears.png"],
+    "github": "https://github.com/Humayra-Akter/influencer-gear"
+  },
+
+  {
+    "id": 14,
+    "name": "Amajon Shopping Cart",
+    "description": "This is a html-css dummy page of shopping cart. Using personalized images the project is done",
+    "technologies": ["html", "CSS", "javaScript", "api"],
+    "screenshots": ["/project/amazon-shop.png"],
+    "github": "https://github.com/Humayra-Akter/amajon-shopping-cart"
   }
 ]

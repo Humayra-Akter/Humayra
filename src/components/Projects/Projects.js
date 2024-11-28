@@ -12,9 +12,9 @@ const Projects = () => {
             className="bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-lg transition"
           >
             <img
-              src={project.screenshots[0]}
+              src={project?.screenshots[0]}
               alt={project.name}
-              className="rounded mb-4"
+              className="rounded mb-4 h-40"
             />
             <h3 className="text-xl font-semibold text-white">{project.name}</h3>
             <p className="text-gray-400 mb-4">{project.description}</p>
@@ -29,16 +29,21 @@ const Projects = () => {
               ))}
             </div>
             <div className="flex justify-between">
+              {project?.liveDemo ? (
+                <a
+                  href={project?.liveDemo}
+                  className="text-blue-400 hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
+              ) : (
+                <span></span>
+              )}
+
               <a
-                href={project.liveDemo}
-                className="text-blue-400 hover:text-blue-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo
-              </a>
-              <a
-                href={project.github}
+                href={project?.github}
                 className="text-blue-400 hover:text-blue-300"
                 target="_blank"
                 rel="noopener noreferrer"
