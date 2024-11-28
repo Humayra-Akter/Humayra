@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "clock app",
-    "description": "A clock app with day-night conditional change",
+    "name": "Clock App",
+    "description": "A visually stunning clock application with real-time transitions between day and night modes based on the current time. Features a user-friendly and dynamic interface built with React Native and Expo.",
     "technologies": ["React Native", "Expo"],
     "screenshots": [
       "/project/clock-app1.png",
@@ -16,8 +16,8 @@
   },
   {
     "id": 2,
-    "name": "blooming elegance",
-    "description": "This project is a full-stack Flower Shop managing Application where users can see the products, can edit and delete also.",
+    "name": "Blooming Elegance",
+    "description": "A full-stack flower shop management application where users can browse, edit, and delete products. Built with a modern tech stack and responsive design for an enhanced user experience.",
     "technologies": [
       "React",
       "Tailwind CSS",
@@ -38,9 +38,9 @@
   },
   {
     "id": 3,
-    "name": "Currency flatlist",
-    "description": "This is a react native project about the currency conversion, tic-tac-toe game. Using personalized images and flatlist the project is done",
-    "technologies": ["React native", "Typescript"],
+    "name": "Currency Flatlist",
+    "description": "A React Native application featuring a currency converter and a tic-tac-toe game. Uses flatlist components and personalized images for a polished look.",
+    "technologies": ["React Native", "TypeScript"],
     "screenshots": [
       "/project/currancy1.png",
       "/project/currancy2.png",
@@ -51,93 +51,88 @@
   {
     "id": 4,
     "name": "Password Generator",
-    "description": "This is a react native project about the currency conversion, tic-tac-toe game. Using personalized images and flatlist the project is done",
-    "technologies": ["React native", "Typescript"],
+    "description": "A secure and customizable password generator built with React Native and TypeScript. Features a sleek UI and generates strong passwords with ease.",
+    "technologies": ["React Native", "TypeScript"],
     "screenshots": ["/project/pass-gen1.png", "/project/pass-gen2.png"],
     "github": "https://github.com/Humayra-Akter/password-generator"
   },
   {
     "id": 5,
     "name": "Monthly Budget",
-    "description": "This is a html-css project about the monthly budget calculation. Using personalized images the project is done",
-    "technologies": ["html", "CSS", "javaScript"],
+    "description": "A simple HTML and CSS project for managing monthly budgets. Provides a clean UI for entering expenses and calculating totals.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/monthly-budget.png"],
     "github": "https://github.com/Humayra-Akter/monthly-budget"
   },
   {
     "id": 6,
     "name": "Convention Center",
-    "description": "This is a html-css project about a convention center. Using personalized images the project is done",
-    "technologies": ["html", "CSS", "javaScript"],
+    "description": "A visually appealing website for a convention center, showcasing its facilities and services. Built with HTML, CSS, and JavaScript.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/convention-center.png"],
     "github": "https://github.com/Humayra-Akter/Convention-centre"
   },
   {
     "id": 7,
-    "name": "A Demo Front Page",
-    "description": "This is a html-css project about a Front page or landing page. Using personalized images the project is done",
-    "technologies": ["html", "CSS"],
+    "name": "Demo Front Page",
+    "description": "A beautifully designed landing page created with HTML and CSS, demonstrating a modern and responsive layout.",
+    "technologies": ["HTML", "CSS"],
     "screenshots": ["/project/front-pg.png"],
-
     "github": "https://github.com/Humayra-Akter/front-page-demo"
   },
   {
     "id": 8,
     "name": "Weather App",
-    "description": "This is a html-css project about weather using API. Using personalized images the project is done",
-    "technologies": ["html", "CSS", "javaScript", "api"],
+    "description": "A weather application leveraging APIs to fetch real-time weather data. Built with HTML, CSS, and JavaScript for a seamless user experience.",
+    "technologies": ["HTML", "CSS", "JavaScript", "API"],
     "screenshots": ["/project/weather1.png", "/project/weather2.png"],
     "github": "https://github.com/Humayra-Akter/weather-app"
   },
   {
     "id": 9,
     "name": "Pin Matcher",
-    "description": "A pin generation app that allows users to generate secure 4-digit pins and verify input against the generated pin.",
-    "technologies": ["html", "CSS", "javaScript", "Bootstrap"],
+    "description": "A secure PIN generator and verification tool. Allows users to create and validate 4-digit PINs with ease.",
+    "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
     "screenshots": ["/project/pin-generator.png"],
     "github": "https://github.com/Humayra-Akter/pin-matcher"
   },
   {
     "id": 10,
     "name": "Shopping Cart",
-    "description": "T A simple and interactive shopping cart system built with HTML, CSS, JavaScript, and Bootstrap. The cart allows users to add/remove items, adjust quantities, and see real-time total calculations.",
-    "technologies": ["html", "CSS", "javaScript", "Bootstrap"],
+    "description": "An interactive shopping cart system that enables users to manage items, adjust quantities, and view real-time price updates. Built with modern web technologies.",
+    "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
     "screenshots": ["/project/Shopping-cart.png"],
     "github": "https://github.com/Humayra-Akter/shopping-cart"
   },
-
   {
     "id": 11,
     "name": "Baap er Bank",
-    "description": "This is a html-css project about weather using API. Using personalized images the project is done",
-    "technologies": ["html", "CSS", "javaScript", "api"],
+    "description": "A banking application showcasing deposit and withdrawal functionality with real-time updates. Built using APIs for data management.",
+    "technologies": ["HTML", "CSS", "JavaScript", "API"],
     "screenshots": ["/project/baperbank1.png", "/project/baperbank2.png"],
     "github": "https://github.com/Humayra-Akter/baap-er-bank"
   },
-
   {
     "id": 12,
     "name": "Panda Commerce",
-    "description": "This is a html-css project about weather using API. Using personalized images the project is done",
-    "technologies": ["html", "CSS", "javaScript", "api"],
+    "description": "A dummy e-commerce page built with HTML, CSS, and JavaScript, showcasing a modern and responsive design.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/panda.png"],
     "github": "https://github.com/Humayra-Akter/panda-commerce-bootstrap"
   },
-
   {
     "id": 13,
     "name": "Influencer Gear",
-    "description": "This is a html-css project about weather using API. Using personalized images the project is done",
-    "technologies": ["html", "CSS", "javaScript", "api"],
+    "description": "A product showcase website for influencer gear, featuring dynamic content and a user-friendly layout. Built with HTML, CSS, and JavaScript.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/influencer-gears.png"],
     "github": "https://github.com/Humayra-Akter/influencer-gear"
   },
-
   {
     "id": 14,
     "name": "Amajon Shopping Cart",
-    "description": "This is a html-css dummy page of shopping cart. Using personalized images the project is done",
-    "technologies": ["html", "CSS", "javaScript", "api"],
+    "description": "A dummy shopping cart page showcasing interactive features like item management and price calculation, built with modern web technologies.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/amazon-shop.png"],
     "github": "https://github.com/Humayra-Akter/amajon-shopping-cart"
   }

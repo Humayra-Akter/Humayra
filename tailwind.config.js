@@ -3,9 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class",
   theme: {
-    extend: {
-     
-    },
+    extend: {},
   },
   plugins: [require("daisyui")],
   daisyui: {
@@ -14,6 +12,7 @@ module.exports = {
         light: {
           primary: "#800000",
           secondary: "#FFF",
+          accent: "#782e2e",
         },
       },
       {
