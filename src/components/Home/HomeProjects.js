@@ -1,16 +1,84 @@
-import React, { useState, useEffect } from "react";
-import projects from "../../data/projects.json";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Projects = () => {
+const homeProjects = [
+  {
+    id: 3,
+    name: "PC Builder",
+    description:
+      "Create a PC Builder app using Next.js with SSG for product/category detail pages and SSR for the PC Builder page.",
+    technologies: [
+      "NEXTJS",
+      "TypeScript",
+      "Redux",
+      "Tailwind CSS",
+      "NextAuth",
+      "Node.js/Express ",
+    ],
+    screenshots: [
+      "/project/pc-builder1.png",
+      "/project/pc-builder2.png",
+      "/project/pc-builder3.png",
+      "/project/pc-builder4.png",
+    ],
+    video:
+      "https://drive.google.com/file/d/1jWTzOmadK1whnSSFishYFu-hySMrcugK/view?usp=drive_link",
+    liveDemo: "https://pc-builder-sage-pi.vercel.app",
+    github: "https://github.com/Humayra-Akter/pc-builder",
+    category: "Productivity Tool",
+  },
+  {
+    id: 4,
+    name: "Laundry Mate",
+    description:
+      "Laundry mate is a mobile app that transforms traditional laundry service management. Users can choose convenient time slots, Clear pricing structures, efficient Service Delivery.",
+    technologies: [
+      "React native expo",
+      "JavaScript",
+      "Redux",
+      "Tailwind CSS",
+      "Firebase",
+      "Node.js/Express ",
+    ],
+    screenshots: [
+      "/project/laundry-mate1.png",
+      "/project/laundry-mate2.png",
+      "/project/laundry-mate3.png",
+      "/project/laundry-mate4.png",
+      "/project/laundry-mate5.png",
+    ],
+    video:
+      "https://drive.google.com/file/d/14HGTF1TmVMq3SuOrOL01NFURsnQFCk2G/view?usp=drive_link",
+    liveDemo:
+      "https://drive.google.com/file/d/1nJpN_Z8nNqN0dFGOD3T6sb6ioSBKvY2L/view?usp=drive_link",
+    github: "https://github.com/Humayra-Akter/laundry-mate-app",
+    category: "Service-Based Mobile Application",
+  },
+  {
+    id: 1,
+    name: "Book Catalog",
+    description:
+      "This project is a full-stack Event Book Application where users can add book, search book with many criteria using redux. User can add book to wish =list and read later.",
+    technologies: ["React", "TypeScript", "Redux", "Tailwind CSS", "Firebase"],
+    screenshots: [
+      "/project/book-catalog1.png",
+      "/project/book-catalog2.png",
+      "/project/book-catalog3.png",
+    ],
+    video:
+      "https://drive.google.com/file/d/1YtdSmiL8VVPTytpBx5KmsDu-C-4gf0JT/view?usp=drive_link",
+    liveDemo: "https://comforting-swan-178107.netlify.app/",
+    github: "https://github.com/Humayra-Akter/book-catalog",
+    category: "Full-Stack Web Application",
+  },
+];
+
+const HomeProjects = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [expandedDescriptions, setExpandedDescriptions] = useState({});
-
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -29,30 +97,25 @@ const Projects = () => {
     }));
   };
 
+useEffect(() => {
+  Aos.init({ duration: 1000 });
+}, []);
+
   return (
     <div
-      className="container mx-auto p-8 dark:bg-gray-900 bg-white"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
       style={{
         fontFamily: "'Poetsen One', sans-serif",
       }}
     >
-      <div className="relative">
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
-        >
-          <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300"></div>
-        </div>
-      </div>
-      <h3 className="text-2xl mt-20 mb-10 font-semibold text-primary text-center dark:text-secondary">
-        Projects
+      <h3 className="text-3xl mt-10 mb-6 font-semibold text-primary text-center dark:text-secondary">
+        Featured Projects
       </h3>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects?.map((project, index) => (
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {homeProjects?.map((project, index) => (
           <div
             key={project.id}
-            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+            data-aos="fade-right"
             className="p-4 rounded-lg shadow-md dark:bg-slate-800 bg-slate-300 dark:text-white hover:shadow-accent hover:shadow-md border-2 dark:border-primary border-rose-200"
           >
             <div className="mb-4">
@@ -141,7 +204,6 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      {/* Modal for Image Preview */}
       {isModalOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
@@ -165,17 +227,18 @@ const Projects = () => {
           </div>
         </div>
       )}
-      <div className="relative">
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+      <div className="text-center mt-6 mb-16">
+        <Link
+          to="/projects"
+          className="inline-block px-6 py-2 text-sm font-medium text-white bg-primary rounded-md shadow hover:bg-secondary transition"
         >
-          <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300"></div>
-        </div>
+          See All
+        </Link>
       </div>
+
+      <hr />
     </div>
   );
 };
 
-export default Projects;
+export default HomeProjects;

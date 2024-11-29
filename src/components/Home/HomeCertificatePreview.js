@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ieee from "../../images/IEEECSBDC.jpeg";
 import ieee2 from "../../images/IEEECSBDC.jpg";
@@ -6,6 +6,8 @@ import devSprint from "../../images/devSprint.jpg";
 import devSprint2 from "../../images/devSprint2.jpg";
 import caseCraft from "../../images/BUETCasecraft.jpg";
 import caseCraft2 from "../../images/casecraft.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const homeCertificates = [
   {
@@ -29,6 +31,9 @@ const homeCertificates = [
 ];
 
 const HomeCertificatePreview = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div
       className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
@@ -36,6 +41,15 @@ const HomeCertificatePreview = () => {
         fontFamily: "'Poetsen One', sans-serif",
       }}
     >
+      <div className="relative">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+        >
+          <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-gray-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-white"></div>
+        </div>
+      </div>
       <h3 className="text-3xl mt-10 mb-6 font-semibold text-primary text-center dark:text-secondary">
         Featured Certificates
       </h3>
@@ -43,6 +57,7 @@ const HomeCertificatePreview = () => {
         {homeCertificates.map((certificate, index) => (
           <div
             key={index}
+            data-aos="fade-left"
             className="relative bg-primary text-secondary p-4 rounded-md shadow-md transition-transform transform hover:scale-105"
           >
             <div className="relative group h-64 overflow-hidden rounded-md">
@@ -70,7 +85,7 @@ const HomeCertificatePreview = () => {
           to="/certificate"
           className="inline-block px-6 py-2 text-sm font-medium text-white bg-primary rounded-md shadow hover:bg-secondary transition"
         >
-          See More
+          See All
         </Link>
       </div>
     </div>

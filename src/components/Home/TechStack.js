@@ -62,17 +62,26 @@ const TechStack = () => {
       >
         Tech Stack
       </h3>
-     
+
       <div className="flex flex-wrap justify-center gap-4">
-        {techStack.map((tech, index) => (
+        {techStack?.map((tech, index) => (
           <div
             key={index}
             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-            className="bg-primary text-secondary py-2 px-4 rounded-full text-sm transition-transform transform hover:scale-105"
+            className="bg-primary text-secondary py-2 px-4 rounded-full text-sm hover:scale-105"
           >
             {tech}
           </div>
         ))}
+      </div>
+      <div className="relative">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+        >
+          <div className="blur-[106px] h-56 bg-gradient-to-tr from-primary to-purple-400 dark:from-gray-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-l from-cyan-400 to-sky-300 dark:to-white"></div>
+        </div>
       </div>
     </div>
   );
