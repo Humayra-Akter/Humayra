@@ -1,6 +1,216 @@
 [
   {
     "id": 1,
+    "name": "Book Catalog",
+    "description": "This project is a full-stack Event Book Application where users can add book, search book with many criteria using redux. User can add book to wish =list and read later.",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "Tailwind CSS",
+      "Firebase"
+    ],
+    "screenshots": [
+      "/project/book-catalog1.png",
+      "/project/book-catalog2.png",
+      "/project/book-catalog3.png"
+    ],
+    "video": "https://drive.google.com/file/d/1YtdSmiL8VVPTytpBx5KmsDu-C-4gf0JT/view?usp=drive_link",
+    "liveDemo": "https://comforting-swan-178107.netlify.app/",
+    "github": "https://github.com/Humayra-Akter/book-catalog",
+    "category": "Full-Stack Web Application"
+  },
+  {
+    "id": 2,
+    "name": "Ticket Booking",
+    "description": "This project is a full-stack Event Booking Application where users can book events, both free and paid, using Stripe for payment processing.",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "Tailwind CSS",
+      "Firebase",
+      "Node.js/Express "
+    ],
+    "screenshots": [
+      "/project/ticket-booking1.png",
+      "/project/ticket-booking2.png",
+      "/project/ticket-booking3.png",
+      "/project/ticket-booking4.png"
+    ],
+    "video": "https://drive.google.com/file/d/1YZE4Pua3B79ZMTO-tjI1RmcIV4r2NaQ1/view?usp=drive_link",
+    "liveDemo": "https://ticket-booking-tawny.vercel.app/",
+    "github": "https://github.com/Humayra-Akter/ticket-booking",
+    "category": "E-Commerce Web Application"
+  },
+  {
+    "id": 3,
+    "name": "PC Builder",
+    "description": "Create a PC Builder app using Next.js with SSG for product/category detail pages and SSR for the PC Builder page.",
+    "technologies": [
+      "NEXTJS",
+      "TypeScript",
+      "Redux",
+      "Tailwind CSS",
+      "NextAuth",
+      "Node.js/Express "
+    ],
+    "screenshots": [
+      "/project/pc-builder1.png",
+      "/project/pc-builder2.png",
+      "/project/pc-builder3.png",
+      "/project/pc-builder4.png"
+    ],
+    "video": "https://drive.google.com/file/d/1jWTzOmadK1whnSSFishYFu-hySMrcugK/view?usp=drive_link",
+    "liveDemo": "https://pc-builder-sage-pi.vercel.app",
+    "github": "https://github.com/Humayra-Akter/pc-builder",
+    "category": "Productivity Tool"
+  },
+  {
+    "id": 4,
+    "name": "Laundry Mate",
+    "description": "Laundry mate is a mobile app that transforms traditional laundry service management. Users can choose convenient time slots, Clear pricing structures, efficient Service Delivery.",
+    "technologies": [
+      "React native expo",
+      "JavaScript",
+      "Redux",
+      "Tailwind CSS",
+      "Firebase",
+      "Node.js/Express "
+    ],
+    "screenshots": [
+      "/project/laundry-mate1.png",
+      "/project/laundry-mate2.png",
+      "/project/laundry-mate3.png",
+      "/project/laundry-mate4.png",
+      "/project/laundry-mate5.png"
+    ],
+    "video": "https://drive.google.com/file/d/14HGTF1TmVMq3SuOrOL01NFURsnQFCk2G/view?usp=drive_link",
+    "liveDemo": "https://drive.google.com/file/d/1nJpN_Z8nNqN0dFGOD3T6sb6ioSBKvY2L/view?usp=drive_link",
+    "github": "https://github.com/Humayra-Akter/laundry-mate-app",
+    "category": "Service-Based Mobile Application"
+  },
+  {
+    "id": 5,
+    "name": "EduTrio Dynamix",
+    "description": "The Open-Source Project Hub fosters collaboration and skill development by connecting teachers and students through multidisciplinary projects, interactive tools, and impact-driven learning resources, empowering innovation and growth.",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Firebase",
+      "Node.js/Express "
+    ],
+    "screenshots": ["/project/edutrio-dynamix.png"],
+    "video": "https://drive.google.com/file/d/1qtCXIMNVPCfX6119QxPnBOJX5jvWY_av/view?usp=drive_link",
+    "github": "https://github.com/edu-trio-dynamix/edu-trio-dynamix",
+    "category": "Education Platform"
+  },
+  {
+    "id": 6,
+    "name": "Car Service",
+    "description": "A project created with bootstrap framework for authorized user managing the product and control over the database",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "json web token",
+      "Bootstrap",
+      "Firebase",
+      "Node.js/Express "
+    ],
+    "screenshots": [
+      "/project/car-service1.png",
+      "/project/car-service2.png",
+      "/project/car-service3.png",
+      "/project/car-service4.png"
+    ],
+    "video": "https://drive.google.com/file/d/1gyWjfn5_PKdhflx79OqtqTSzbBpMm8G1/view?usp=drive_link",
+    "github": "https://github.com/Humayra-Akter/car-service",
+    "category": "CRUD Management System"
+  },
+  {
+    "id": 7,
+    "name": "Microsoft loop clone",
+    "description": "A project created with bootstrap framework for authorized user managing the product and control over the database",
+    "technologies": [
+      "NEXTJS",
+      "TypeScript",
+      "Editorjs-alert",
+      "Liveblocks",
+      "Tailwind CSS",
+      "React Dom"
+    ],
+    "screenshots": [
+      "/project/microsoft-loop-clone1.png",
+      "/project/microsoft-loop-clone2.png",
+      "/project/microsoft-loop-clone3.png",
+      "/project/microsoft-loop-clone4.png",
+      "/project/microsoft-loop-clone5.png"
+    ],
+    "video": "https://drive.google.com/file/d/1B-jNXosdccWRTrbmNhO8EPFgySyRpq-7/view?usp=drive_link",
+    "github": "https://github.com/Humayra-Akter/microsoft-loop-clone",
+    "category": "Collaborative Productivity Tool"
+  },
+  {
+    "id": 8,
+    "name": "Skill for Tomorrow",
+    "description": "The Open-Source Project Hub fosters collaboration and skill development by connecting teachers and students through multidisciplinary projects, interactive tools, and impact-driven learning resources, empowering innovation and growth.",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Firebase",
+      "Node.js/Express "
+    ],
+    "screenshots": [
+      "/project/skill-for-tomorrow1.png",
+      "/project/skill-for-tomorrow2.png",
+      "/project/skill-for-tomorrow3.png",
+      "/project/skill-for-tomorrow4.png"
+    ],
+    "video": "https://drive.google.com/file/d/1fQ8j8EzxGzez38ysErfCD9alXpY6sIMH/view?usp=drive_link",
+    "github": "https://github.com/Humayra-Akter/skillsForTomorrow",
+    "category": "Vocational learning Platform"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": 9,
+    "name": "Cyber Security Club",
+    "description": "The Open-Source Project Hub fosters collaboration and skill development by connecting teachers and students through multidisciplinary projects, interactive tools, and impact-driven learning resources, empowering innovation and growth.",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Firebase",
+      "Node.js/Express "
+    ],
+    "screenshots": [
+      "/project/cyber-security-club1.png",
+      "/project/cyber-security-club2.png",
+      "/project/cyber-security-club3.png",
+      "/project/cyber-security-club4.png"
+    ],
+    "video": "https://drive.google.com/file/d/1hEl7djYkSPpV2nZyDI3luD4GFNV1Gd3l/view?usp=drive_link",
+    "github": "https://github.com/Humayra-Akter/cyber-security-club",
+    "category": "Cybersecurity Learning Platform"
+  },
+  {
+    "id": 10,
     "name": "Clock App",
     "description": "A visually stunning clock application with real-time transitions between day and night modes based on the current time. Features a user-friendly and dynamic interface built with React Native and Expo.",
     "technologies": ["React Native", "Expo"],
@@ -10,12 +220,11 @@
       "/project/clock-app3.png",
       "/project/clock-app4.png"
     ],
-    "video": "/assets/projects/laundryMate/demo.mp4",
-    "liveDemo": "https://github.com/Humayra-Akter/clock-app",
-    "github": "https://github.com/Humayra-Akter/clock-app"
+    "github": "https://github.com/Humayra-Akter/clock-app",
+    "category": "Utility Mobile Application"
   },
   {
-    "id": 2,
+    "id": 11,
     "name": "Blooming Elegance",
     "description": "A full-stack flower shop management application where users can browse, edit, and delete products. Built with a modern tech stack and responsive design for an enhanced user experience.",
     "technologies": [
@@ -34,10 +243,11 @@
       "/project/blooming-elegance3.png",
       "/project/blooming-elegance4.png"
     ],
-    "github": "https://github.com/Humayra-Akter/Blooming-Elegance"
+    "github": "https://github.com/Humayra-Akter/Blooming-Elegance",
+    "category": "E-Commerce Management Application"
   },
   {
-    "id": 3,
+    "id": 12,
     "name": "Currency Flatlist",
     "description": "A React Native application featuring a currency converter and a tic-tac-toe game. Uses flatlist components and personalized images for a polished look.",
     "technologies": ["React Native", "TypeScript"],
@@ -46,94 +256,106 @@
       "/project/currancy2.png",
       "/project/currancy3.png"
     ],
-    "github": "https://github.com/Humayra-Akter/currency-flatlist"
+    "github": "https://github.com/Humayra-Akter/currency-flatlist",
+    "category": "Currency Converter and Game"
   },
   {
-    "id": 4,
+    "id": 13,
     "name": "Password Generator",
     "description": "A secure and customizable password generator built with React Native and TypeScript. Features a sleek UI and generates strong passwords with ease.",
     "technologies": ["React Native", "TypeScript"],
     "screenshots": ["/project/pass-gen1.png", "/project/pass-gen2.png"],
-    "github": "https://github.com/Humayra-Akter/password-generator"
+    "github": "https://github.com/Humayra-Akter/password-generator",
+    "category": "Security Tool"
   },
   {
-    "id": 5,
+    "id": 14,
     "name": "Monthly Budget",
     "description": "A simple HTML and CSS project for managing monthly budgets. Provides a clean UI for entering expenses and calculating totals.",
     "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/monthly-budget.png"],
-    "github": "https://github.com/Humayra-Akter/monthly-budget"
+    "github": "https://github.com/Humayra-Akter/monthly-budget",
+    "category": "Financial Management Application"
   },
   {
-    "id": 6,
+    "id": 15,
     "name": "Convention Center",
     "description": "A visually appealing website for a convention center, showcasing its facilities and services. Built with HTML, CSS, and JavaScript.",
     "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/convention-center.png"],
-    "github": "https://github.com/Humayra-Akter/Convention-centre"
+    "github": "https://github.com/Humayra-Akter/Convention-centre",
+    "category": "Showcase Website"
   },
   {
-    "id": 7,
+    "id": 16,
     "name": "Demo Front Page",
     "description": "A beautifully designed landing page created with HTML and CSS, demonstrating a modern and responsive layout.",
     "technologies": ["HTML", "CSS"],
     "screenshots": ["/project/front-pg.png"],
-    "github": "https://github.com/Humayra-Akter/front-page-demo"
+    "github": "https://github.com/Humayra-Akter/front-page-demo",
+    "category": "Landing Page"
   },
   {
-    "id": 8,
+    "id": 17,
     "name": "Weather App",
     "description": "A weather application leveraging APIs to fetch real-time weather data. Built with HTML, CSS, and JavaScript for a seamless user experience.",
     "technologies": ["HTML", "CSS", "JavaScript", "API"],
     "screenshots": ["/project/weather1.png", "/project/weather2.png"],
-    "github": "https://github.com/Humayra-Akter/weather-app"
+    "github": "https://github.com/Humayra-Akter/weather-app",
+    "category": "Weather Forecast App"
   },
   {
-    "id": 9,
+    "id": 18,
     "name": "Pin Matcher",
     "description": "A secure PIN generator and verification tool. Allows users to create and validate 4-digit PINs with ease.",
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
     "screenshots": ["/project/pin-generator.png"],
-    "github": "https://github.com/Humayra-Akter/pin-matcher"
+    "github": "https://github.com/Humayra-Akter/pin-matcher",
+    "category": "PIN Verification Tool"
   },
   {
-    "id": 10,
+    "id": 19,
     "name": "Shopping Cart",
     "description": "An interactive shopping cart system that enables users to manage items, adjust quantities, and view real-time price updates. Built with modern web technologies.",
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
     "screenshots": ["/project/Shopping-cart.png"],
-    "github": "https://github.com/Humayra-Akter/shopping-cart"
+    "github": "https://github.com/Humayra-Akter/shopping-cart",
+    "category": "Shopping Cart Application"
   },
   {
-    "id": 11,
+    "id": 20,
     "name": "Baap er Bank",
     "description": "A banking application showcasing deposit and withdrawal functionality with real-time updates. Built using APIs for data management.",
     "technologies": ["HTML", "CSS", "JavaScript", "API"],
     "screenshots": ["/project/baperbank1.png", "/project/baperbank2.png"],
-    "github": "https://github.com/Humayra-Akter/baap-er-bank"
+    "github": "https://github.com/Humayra-Akter/baap-er-bank",
+    "category": "Banking System"
   },
   {
-    "id": 12,
+    "id": 21,
     "name": "Panda Commerce",
     "description": "A dummy e-commerce page built with HTML, CSS, and JavaScript, showcasing a modern and responsive design.",
     "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/panda.png"],
-    "github": "https://github.com/Humayra-Akter/panda-commerce-bootstrap"
+    "github": "https://github.com/Humayra-Akter/panda-commerce-bootstrap",
+    "category": "E-Commerce Dummy Website"
   },
   {
-    "id": 13,
+    "id": 22,
     "name": "Influencer Gear",
     "description": "A product showcase website for influencer gear, featuring dynamic content and a user-friendly layout. Built with HTML, CSS, and JavaScript.",
     "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/influencer-gears.png"],
-    "github": "https://github.com/Humayra-Akter/influencer-gear"
+    "github": "https://github.com/Humayra-Akter/influencer-gear",
+    "category": "Product Showcase Website"
   },
   {
-    "id": 14,
+    "id": 23,
     "name": "Amajon Shopping Cart",
     "description": "A dummy shopping cart page showcasing interactive features like item management and price calculation, built with modern web technologies.",
     "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/amazon-shop.png"],
-    "github": "https://github.com/Humayra-Akter/amajon-shopping-cart"
+    "github": "https://github.com/Humayra-Akter/amajon-shopping-cart",
+    "category": "Shopping Cart Management"
   }
 ]
