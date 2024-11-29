@@ -61,7 +61,7 @@ const WorkExperience = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000); // Slide changes every 5 seconds
+    }, 5000); 
     return () => clearInterval(interval);
   }, []);
 
@@ -79,7 +79,7 @@ const WorkExperience = () => {
         style={{ animation: "fadeIn 1s ease-in-out" }}
       >
         {/* Background Glow Effect */}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-red-500 via-yellow-500 to-red-500 rounded-lg opacity-25 pointer-events-none transform transition duration-500 hover:opacity-50"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-purple-500 via-pink-500 to-fuchsia-500 dark:bg-gradient-to-l dark:from-green-500 dark:via-teal-500 dark:to-emerald-500 rounded-lg opacity-25 pointer-events-none transform transition duration-500 hover:opacity-50"></div>
 
         {/* Quote Icon */}
         <FaQuoteLeft className="absolute top-4 left-4 text-5xl text-primary dark:text-secondary opacity-50" />

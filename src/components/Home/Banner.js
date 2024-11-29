@@ -19,7 +19,7 @@ const Banner = () => {
       }}
     >
       {/* Distorted Animated Lines */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
+      <div className="absolute inset-0 z-0 h-[380px] pointer-events-none">
         {[...Array(15)].map((_, index) => (
           <div
             key={index}

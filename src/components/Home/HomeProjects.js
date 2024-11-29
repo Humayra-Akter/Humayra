@@ -116,7 +116,7 @@ useEffect(() => {
           <div
             key={project.id}
             data-aos="fade-right"
-            className="p-4 rounded-lg shadow-md dark:bg-slate-800 bg-slate-300 dark:text-white hover:shadow-accent hover:shadow-md border-2 dark:border-primary border-rose-200"
+            className="p-4 rounded-lg shadow-md hover:shadow-lg dark:bg-black shadow-purple-400 dark:shadow-green-300 dark:text-white hover:shadow-accent  border-2 dark:border-primary border-rose-200"
           >
             <div className="mb-4">
               {project.screenshots.length > 1 ? (

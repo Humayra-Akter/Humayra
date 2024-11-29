@@ -31,7 +31,7 @@ const Projects = () => {
 
   return (
     <div
-      className="container mx-auto p-8 dark:bg-gray-900 bg-white"
+      className="container mx-auto p-8"
       style={{
         fontFamily: "'Poetsen One', sans-serif",
       }}
@@ -41,8 +41,8 @@ const Projects = () => {
           aria-hidden="true"
           className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
         >
-          <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300"></div>
+          <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-200 to-sky-100"></div>
         </div>
       </div>
       <h3 className="text-2xl mt-20 mb-10 font-semibold text-primary text-center dark:text-secondary">
@@ -53,7 +53,7 @@ const Projects = () => {
           <div
             key={project.id}
             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-            className="p-4 rounded-lg shadow-md dark:bg-slate-800 bg-slate-300 dark:text-white hover:shadow-accent hover:shadow-md border-2 dark:border-primary border-rose-200"
+            className="p-4 rounded-lg shadow-md hover:shadow-lg dark:bg-black shadow-purple-400 dark:shadow-green-300 dark:text-white hover:shadow-accent  border-2 dark:border-primary border-rose-200"
           >
             <div className="mb-4">
               {project.screenshots.length > 1 ? (

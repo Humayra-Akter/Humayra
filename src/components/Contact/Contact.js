@@ -143,7 +143,7 @@ const Contact = () => {
         <div className="flex-grow w-full lg:w-1/2">
           <form
             onSubmit={handleSubmit}
-            className="space-y-4 p-4 rounded-lg border-2 border-gradient-to-r from-blue-500 to-purple-500 bg-white shadow-lg"
+            className="space-y-4 p-4 rounded-lg shadow-accent border-2 border-gradient-to-r from-blue-500 to-purple-500 bg-white shadow-lg"
           >
             <div className="flex flex-col mb-2">
               <label htmlFor="name" className="mb-1 text-primary">
