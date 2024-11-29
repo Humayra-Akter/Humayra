@@ -46,7 +46,7 @@ const Projects = () => {
         {projects?.map((project) => (
           <div
             key={project.id}
-            className="p-4 rounded-lg shadow-md dark:bg-gray-800 bg-gradient-to-br from-rose-100 via-gray-200 to-gray-300 dark:text-white  hover:shadow-accent hover:shadow-md border-2 dark:border-primary border-rose-200 transition duration-300 ease-in-out"
+            className="p-4 rounded-lg shadow-md dark:bg-slate-800 bg-slate-300 dark:text-white hover:shadow-accent hover:shadow-md border-2 dark:border-primary border-rose-200"
           >
             <div className="mb-4">
               {project.screenshots.length > 1 ? (
