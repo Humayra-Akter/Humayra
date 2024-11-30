@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -14,6 +14,15 @@ const Navbar = () => {
   const handleSetActive = (path) => {
     setActive(path);
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
+
 
   return (
     <nav
@@ -86,7 +95,7 @@ const Navbar = () => {
           onClick={toggleMenu}
         >
           <div
-            className="fixed top-0 right-0 w-1/3 max-w-xs h-full bg-primary text-secondary text-center py-4 space-y-4 shadow-lg z-30"
+            className="fixed top-0 right-0 w-4/5 max-w-xs h-full bg-primary text-secondary text-center py-4 space-y-4 shadow-lg z-30"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -112,7 +121,7 @@ const Navbar = () => {
                 }`}
                 onClick={() => {
                   handleSetActive(item.path);
-                  setIsOpen(false); // Close the menu after selection
+                  setIsOpen(false);
                 }}
               >
                 {item.label}
