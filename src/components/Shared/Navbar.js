@@ -23,7 +23,6 @@ const Navbar = () => {
     }
   }, [isOpen]);
 
-
   return (
     <nav
       className="fixed w-full bg-primary text-secondary shadow-lg z-10 flex justify-center items-center"
@@ -46,7 +45,7 @@ const Navbar = () => {
               className={`cursor-pointer relative transition-all duration-500 ${
                 active === item.path
                   ? "text-yellow-300"
-                  : "hover:text-yellow-300"
+                  : "hover:text-yellow-300 dark:text-white"
               }`}
               onClick={() => handleSetActive(item.path)}
             >
@@ -116,8 +115,8 @@ const Navbar = () => {
                 to={item.path}
                 className={`block cursor-pointer relative transition-all duration-500 ${
                   active === item.path
-                    ? "text-yellow-300"
-                    : "hover:text-yellow-300"
+                    ? "text-yellow-300 dark:text-white"
+                    : "hover:text-yellow-300 dark:text-white"
                 }`}
                 onClick={() => {
                   handleSetActive(item.path);

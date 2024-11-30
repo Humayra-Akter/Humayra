@@ -4,7 +4,7 @@ import careerClub from "../../images/MISTCareerClub.jpg";
 import cyberClub from "../../images/MISTCyberSecurity.jpg";
 import bcc from "../../images/BCC.jpg";
 import leetcon from "../../images/leetcon.jpg";
-import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteLeft, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const slides = [
   {
@@ -57,13 +57,20 @@ const slides = [
 const WorkExperience = () => {
   const [current, setCurrent] = useState(0);
 
-  // Automatic slide transition
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000); 
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
+
+  const handlePrev = () => {
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const handleNext = () => {
+    setCurrent((prev) => (prev + 1) % slides.length);
+  };
 
   return (
     <div
@@ -92,7 +99,6 @@ const WorkExperience = () => {
 
         {/* Slide Content */}
         <div className="relative">
-          {/* Slide Text */}
           <p className="mt-10 text-xl text-primary dark:text-secondary font-medium text-center transition-opacity duration-500 opacity-100">
             {slides[current].text}
           </p>
@@ -105,32 +111,39 @@ const WorkExperience = () => {
         </div>
       </div>
 
-      {/* Dots for Slide Control */}
-      <div className="flex justify-center mt-6 space-x-3">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrent(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              current === index ? "bg-primary dark:bg-secondary" : "bg-gray-400"
-            }`}
-          ></button>
-        ))}
+      {/* Dots and Arrow Controls */}
+      <div className="flex items-center justify-center mt-6 space-x-4">
+        <button
+          onClick={handlePrev}
+          className="p-2 text-white bg-primary rounded-full hover:scale-110 transition-transform"
+        >
+          <FaArrowLeft />
+        </button>
+
+        <div className="flex space-x-2">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                current === index
+                  ? "bg-primary dark:bg-secondary"
+                  : "bg-gray-400"
+              }`}
+            ></button>
+          ))}
+        </div>
+
+        <button
+          onClick={handleNext}
+          className="p-2 text-white bg-primary rounded-full hover:scale-110 transition-transform"
+        >
+          <FaArrowRight />
+        </button>
       </div>
 
       {/* Inline CSS for Background Animation */}
       <style jsx>{`
-        @keyframes glow {
-          0% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.05);
-          }
-          100% {
-            transform: scale(1);
-          }
-        }
         @keyframes fadeIn {
           0% {
             opacity: 0;
@@ -140,9 +153,6 @@ const WorkExperience = () => {
             opacity: 1;
             transform: translateY(0);
           }
-        }
-        .animate-glow {
-          animation: glow 10s ease-in-out infinite;
         }
       `}</style>
     </div>

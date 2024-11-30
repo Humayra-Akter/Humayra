@@ -42,10 +42,10 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl dark:bg-gray-800"
+              className="shadow-lg border-x-4 hover:shadow-md hover:shadow-accent border-purple-200 border-y-0 dark:border-slate-700 p-4 rounded-lg transform transition-all duration-500 hover:scale-105"
               style={{ perspective: "1000px" }}
             >
-              <div className="absolute top-0 shadow-md shadow-accent hover:shadow-lg left-0 w-full h-full bg-gradient-to-l from-purple-800 via-purple-700 to-purple-500 dark:bg-gradient-to-t dark:from-green-700 dark:via-emerald-600 dark:to-teal-500  rounded-lg opacity-25 pointer-events-none transform transition duration-500 hover:opacity-50"></div>
+              <div className="absolute top-0 shadow-md shadow-accent hover:shadow-lg left-0 w-full h-full bg-gradient-to-l from-primary via-purple-700 to-fuchsia-500 dark:bg-gradient-to-t dark:from-green-700 dark:via-emerald-600 dark:to-teal-500  rounded-lg opacity-25 pointer-events-none transform transition duration-500 hover:opacity-50"></div>
               <div className="relative flex flex-col items-center text-center">
                 <div className="text-6xl mb-4">{service.icon}</div>
                 <h4 className="text-2xl mb-2 text-primary dark:text-secondary">

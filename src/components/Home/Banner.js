@@ -41,15 +41,15 @@ const Banner = () => {
             Akter
           </h2>{" "}
           <p className="text-lg lg:text-xl text-gray-300 mt-10">
-            <span className="text-lg text-primary dark:text-white">
+            <span className="text-lg text-accent dark:text-white">
               Full Stack Developer
             </span>{" "}
             |{" "}
-            <span className="text-lg text-primary dark:text-white">
+            <span className="text-lg text-accent dark:text-white">
               UI/UX Enthusiast
             </span>{" "}
             |{" "}
-            <span className="text-lg text-primary dark:text-white">
+            <span className="text-lg text-accent dark:text-white">
               Innovator
             </span>
           </p>

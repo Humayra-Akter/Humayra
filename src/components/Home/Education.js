@@ -30,7 +30,7 @@ const Education = () => {
 
   return (
     <div
-      className="my-20 px-6 lg:px-20"
+      className="lg:my-28 my-20 px-6 lg:px-20"
       style={{ fontFamily: "'Poetsen One', sans-serif" }}
     >
       <h3 className="text-3xl font-semibold text-center text-primary dark:text-secondary mb-10">
@@ -42,15 +42,14 @@ const Education = () => {
       </h3>
 
       {/* Education Timeline */}
-
       <div className="mt-12 max-w-6xl mx-auto text-center items-center justify-center flex">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {educationData.map((education, index) => (
             <Slide key={index} direction={index % 2 === 0 ? "left" : "right"}>
-              <ul className="flex space-x-8 shadow-lg border-x-4 border-y-0 dark:border-slate-800 p-4 rounded-lg transform transition-all duration-500 hover:scale-105">
-                <li className="flex flex-col items-center justify-center text-primary -mt-8 dark:text-secondary">
+              <ul className="flex flex-col items-center shadow-lg border-x-4 hover:shadow-md hover:shadow-accent border-purple-200 border-y-0 dark:border-slate-700 p-4 rounded-lg transform transition-all duration-500 hover:scale-105">
+                <li className="flex flex-col items-center justify-center text-primary dark:text-secondary">
                   <div
-                    className="w-20 h-20 flex items-center justify-center rounded-full border-4 border-primary relative"
+                    className="w-20 h-20 flex items-center justify-center rounded-full border-4 border-accent relative -mt-8"
                     style={{
                       animation: "bounce 2s infinite",
                     }}
@@ -59,10 +58,10 @@ const Education = () => {
                       {education.year}
                     </span>
                   </div>
-                  <h4 className="text-primary dark:text-secondary mt-4 text-lg font-semibold">
+                  <h4 className="text-primary dark:text-secondary mt-4 text-lg font-semibold text-center">
                     {education.institution}
                   </h4>
-                  <p className="text-black dark:text-white text-xs mt-2">
+                  <p className="text-black dark:text-white text-xs mt-2 text-center">
                     {education.degree}
                   </p>
                 </li>
