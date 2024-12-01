@@ -24,7 +24,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav
+    <div
       className="fixed w-full bg-primary text-secondary shadow-lg z-10 flex justify-center items-center"
       style={{
         fontFamily: "'Poetsen One', sans-serif",
@@ -94,7 +94,7 @@ const Navbar = () => {
           onClick={toggleMenu}
         >
           <div
-            className="fixed top-0 right-0 w-4/5 max-w-xs h-full bg-primary text-secondary text-center py-4 space-y-4 shadow-lg z-30"
+            className="fixed top-0 right-0 w-2/3 max-w-xs h-full bg-primary text-secondary text-center py-4 space-y-4 shadow-lg z-30"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -135,7 +135,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </nav>
+    </div>
   );
 };
 
