@@ -9,6 +9,7 @@ import Services from "./Services";
 import Hero from "./Hero";
 import HomeCertificatePreview from "./HomeCertificatePreview";
 import HomeProjects from "./HomeProjects";
+import ScrollToTop from "../Shared/ScrollToTop";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <HomeProjects />
       <HomeCertificatePreview />
       <Contact />
+      <ScrollToTop />
     </div>
   );
 };

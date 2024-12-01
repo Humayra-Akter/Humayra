@@ -26,6 +26,7 @@ import idpc2 from "../../images/idpc.jpg";
 import robot from "../../images/robotOlympiad.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ScrollToTop from "../Shared/ScrollToTop";
 
 const certificates = [
   {
@@ -195,6 +196,7 @@ const Certificate = () => {
           <div className="blur-[106px] h-32 bg-gradient-to-br from-cyan-400 to-sky-300 dark:to-white"></div>
         </div>
       </div>
+      <ScrollToTop />
     </div>
   );
 };

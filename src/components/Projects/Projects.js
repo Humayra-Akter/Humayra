@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import projects from "../../data/projects.json";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ScrollToTop from "../Shared/ScrollToTop";
 
 const Projects = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -174,6 +175,7 @@ const Projects = () => {
           <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300"></div>
         </div>
       </div>
+      <ScrollToTop />
     </div>
   );
 };

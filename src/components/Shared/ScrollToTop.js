@@ -28,10 +28,10 @@ const ScrollToTop = () => {
     <div>
       {isVisible && (
         <button
-          className="scroll-to-top bg-primary fixed bottom-20 right-30 left-10 z-50 text-white font-bold cursor-pointer px-3 py-2  rounded-full transition-colors duration-300 hover:bg-secondary"
+          className="scroll-to-top bg-accent fixed bottom-20 right-30 left-8 z-50 font-bold cursor-pointer p-2 duration-300 text-white rounded-full hover:scale-110 transition-transform"
           onClick={scrollToTop}
         >
-          Scroll To Top
+          <img src={scroll} className="h-4 w-4 text-white" />
         </button>
       )}
     </div>
