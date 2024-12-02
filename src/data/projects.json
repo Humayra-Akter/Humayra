@@ -20,7 +20,7 @@
     "github": "https://github.com/Humayra-Akter/book-catalog",
     "category": "Full-Stack Web Application"
   }, {
-    "id": 1,
+    "id": 2,
     "name": "Elite Dwell Assist",
     "description": "This project is a full-stack Event Book Application where users can add book, search book with many criteria using redux. User can add book to wish =list and read later.",
     "technologies": [
@@ -36,13 +36,13 @@
       "/project/elite-dwell-assist3.png",
       "/project/elite-dwell-assist4.png"
     ],
-    "video": "https://drive.google.com/file/d/1YtdSmiL8VVPTytpBx5KmsDu-C-4gf0JT/view?usp=drive_link",
-    "liveDemo": "https://comforting-swan-178107.netlify.app/",
-    "github": "https://github.com/Humayra-Akter/book-catalog",
+    "video": "https://drive.google.com/file/d/1_LR4JXiXtIm_3tJ3UQkPSqIyFbokUllY/view?usp=drive_link",
+    "liveDemo": "https://gorgeous-sunflower-64903b.netlify.app/",
+    "github": "https://github.com/Humayra-Akter/elite-dwell-assist",
     "category": "Full-Stack Web Application"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Ticket Booking",
     "description": "This project is a full-stack Event Booking Application where users can book events, both free and paid, using Stripe for payment processing.",
     "technologies": [
@@ -65,7 +65,7 @@
     "category": "E-Commerce Web Application"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "PC Builder",
     "description": "Create a PC Builder app using Next.js with SSG for product/category detail pages and SSR for the PC Builder page.",
     "technologies": [
@@ -88,7 +88,7 @@
     "category": "Productivity Tool"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Laundry Mate",
     "description": "Laundry mate is a mobile app that transforms traditional laundry service management. Users can choose convenient time slots, Clear pricing structures, efficient Service Delivery.",
     "technologies": [
@@ -112,7 +112,7 @@
     "category": "Service-Based Mobile Application"
   },
   {
-    "id": 5,
+    "id":6,
     "name": "EduTrio Dynamix",
     "description": "The Open-Source Project Hub fosters collaboration and skill development by connecting teachers and students through multidisciplinary projects, interactive tools, and impact-driven learning resources, empowering innovation and growth.",
     "technologies": [
@@ -128,7 +128,7 @@
     "category": "Education Platform"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Car Service",
     "description": "A project created with bootstrap framework for authorized user managing the product and control over the database",
     "technologies": [
@@ -150,7 +150,7 @@
     "category": "CRUD Management System"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Microsoft loop clone",
     "description": "A project created with bootstrap framework for authorized user managing the product and control over the database",
     "technologies": [
@@ -173,7 +173,7 @@
     "category": "Collaborative Productivity Tool"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Skill for Tomorrow",
     "description": "The Open-Source Project Hub fosters collaboration and skill development by connecting teachers and students through multidisciplinary projects, interactive tools, and impact-driven learning resources, empowering innovation and growth.",
     "technologies": [
@@ -194,7 +194,7 @@
     "category": "Vocational learning Platform"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Cyber Security Club",
     "description": "The Open-Source Project Hub fosters collaboration and skill development by connecting teachers and students through multidisciplinary projects, interactive tools, and impact-driven learning resources, empowering innovation and growth.",
     "technologies": [
@@ -215,7 +215,7 @@
     "category": "Cybersecurity Learning Platform"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Clock App",
     "description": "A visually stunning clock application with real-time transitions between day and night modes based on the current time. Features a user-friendly and dynamic interface built with React Native and Expo.",
     "technologies": ["React Native", "Expo"],
@@ -229,7 +229,7 @@
     "category": "Utility Mobile Application"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Blooming Elegance",
     "description": "A full-stack flower shop management application where users can browse, edit, and delete products. Built with a modern tech stack and responsive design for an enhanced user experience.",
     "technologies": [
@@ -252,7 +252,7 @@
     "category": "E-Commerce Management Application"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Currency Flatlist",
     "description": "A React Native application featuring a currency converter and a tic-tac-toe game. Uses flatlist components and personalized images for a polished look.",
     "technologies": ["React Native", "TypeScript"],
@@ -265,7 +265,7 @@
     "category": "Currency Converter and Game"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Password Generator",
     "description": "A secure and customizable password generator built with React Native and TypeScript. Features a sleek UI and generates strong passwords with ease.",
     "technologies": ["React Native", "TypeScript"],
@@ -274,7 +274,7 @@
     "category": "Security Tool"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Monthly Budget",
     "description": "A simple HTML and CSS project for managing monthly budgets. Provides a clean UI for entering expenses and calculating totals.",
     "technologies": ["HTML", "CSS", "JavaScript"],
@@ -283,7 +283,7 @@
     "category": "Financial Management Application"
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Convention Center",
     "description": "A visually appealing website for a convention center, showcasing its facilities and services. Built with HTML, CSS, and JavaScript.",
     "technologies": ["HTML", "CSS", "JavaScript"],
@@ -292,7 +292,7 @@
     "category": "Showcase Website"
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "Demo Front Page",
     "description": "A beautifully designed landing page created with HTML and CSS, demonstrating a modern and responsive layout.",
     "technologies": ["HTML", "CSS"],
@@ -301,7 +301,7 @@
     "category": "Landing Page"
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Weather App",
     "description": "A weather application leveraging APIs to fetch real-time weather data. Built with HTML, CSS, and JavaScript for a seamless user experience.",
     "technologies": ["HTML", "CSS", "JavaScript", "API"],
@@ -310,7 +310,7 @@
     "category": "Weather Forecast App"
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Pin Matcher",
     "description": "A secure PIN generator and verification tool. Allows users to create and validate 4-digit PINs with ease.",
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
@@ -319,7 +319,7 @@
     "category": "PIN Verification Tool"
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Shopping Cart",
     "description": "An interactive shopping cart system that enables users to manage items, adjust quantities, and view real-time price updates. Built with modern web technologies.",
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
@@ -328,7 +328,7 @@
     "category": "Shopping Cart Application"
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Baap er Bank",
     "description": "A banking application showcasing deposit and withdrawal functionality with real-time updates. Built using APIs for data management.",
     "technologies": ["HTML", "CSS", "JavaScript", "API"],
@@ -337,7 +337,7 @@
     "category": "Banking System"
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "Panda Commerce",
     "description": "A dummy e-commerce page built with HTML, CSS, and JavaScript, showcasing a modern and responsive design.",
     "technologies": ["HTML", "CSS", "JavaScript"],
@@ -346,7 +346,7 @@
     "category": "E-Commerce Dummy Website"
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Influencer Gear",
     "description": "A product showcase website for influencer gear, featuring dynamic content and a user-friendly layout. Built with HTML, CSS, and JavaScript.",
     "technologies": ["HTML", "CSS", "JavaScript"],
@@ -355,7 +355,7 @@
     "category": "Product Showcase Website"
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Amajon Shopping Cart",
     "description": "A dummy shopping cart page showcasing interactive features like item management and price calculation, built with modern web technologies.",
     "technologies": ["HTML", "CSS", "JavaScript"],
