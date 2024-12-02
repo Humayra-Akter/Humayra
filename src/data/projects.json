@@ -19,6 +19,27 @@
     "liveDemo": "https://comforting-swan-178107.netlify.app/",
     "github": "https://github.com/Humayra-Akter/book-catalog",
     "category": "Full-Stack Web Application"
+  }, {
+    "id": 1,
+    "name": "Elite Dwell Assist",
+    "description": "This project is a full-stack Event Book Application where users can add book, search book with many criteria using redux. User can add book to wish =list and read later.",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "Tailwind CSS", "DaisyUI", "Recharts","Express", "Cors" ,"MongoDB",
+      "Firebase"
+    ],
+    "screenshots": [
+      "/project/elite-dwell-assist1.png",
+      "/project/elite-dwell-assist2.png",
+      "/project/elite-dwell-assist3.png",
+      "/project/elite-dwell-assist4.png"
+    ],
+    "video": "https://drive.google.com/file/d/1YtdSmiL8VVPTytpBx5KmsDu-C-4gf0JT/view?usp=drive_link",
+    "liveDemo": "https://comforting-swan-178107.netlify.app/",
+    "github": "https://github.com/Humayra-Akter/book-catalog",
+    "category": "Full-Stack Web Application"
   },
   {
     "id": 2,
