@@ -30,6 +30,15 @@ const Projects = () => {
     }));
   };
 
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+  }, [isModalOpen]);
+
+
   return (
     <div
       className="container mx-auto p-8"
@@ -40,20 +49,19 @@ const Projects = () => {
       <div className="relative">
         <div
           aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+          className="absolute inset-0 grid grid-cols-2 space-x-52 opacity-40 dark:opacity-20"
         >
-          <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-100"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-200 to-sky-100"></div>
+          <div className="blur-[106px] lg:h-56  h-auto w-full bg-gradient-to-br from-primary to-purple-400 dark:from-gray-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-100 to-sky-300 dark:to-white"></div>
         </div>
       </div>
-      <h3 className="text-2xl mt-20 mb-10 font-semibold text-primary text-center dark:text-secondary">
+      <h3 className="text-3xl mb-10 font-semibold text-primary text-center dark:text-secondary">
         Projects
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects?.map((project, index) => (
           <div
             key={project.id}
-            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             className="p-4 rounded-lg shadow-md hover:shadow-lg dark:bg-black shadow-purple-400 dark:shadow-green-300 dark:text-white hover:shadow-accent  border-2 dark:border-primary border-rose-200"
           >
             <div className="mb-4">
@@ -111,7 +119,7 @@ const Projects = () => {
                 href={project.github}
                 className="flex items-center justify-center w-10 h-10 animate-spin-slow hover:scale-105 bg-slate-600 hover:bg-blue-700 rounded-full text-secondary"
                 target="_blank"
-                // rel="noopener noreferrer"
+                rel="noopener noreferrer"
                 title="GitHub"
               >
                 <i className="fab fa-github"></i>
@@ -143,7 +151,7 @@ const Projects = () => {
         ))}
       </div>
       {/* Modal for Image Preview */}
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
           onClick={closeModal}
@@ -161,11 +169,35 @@ const Projects = () => {
             <img
               src={selectedImage}
               alt="Selected Project Screenshot"
-              className="rounded-lg max-h-[80vh] max-w-full"
+              className="rounded-lg lg:max-h-[80vh] lg:max-w-full"
+            />
+          </div>
+        </div>
+      )} */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 overflow-hidden"
+          onClick={closeModal}
+        >
+          <div
+            className="relative p-4 bg-white dark:bg-black rounded-lg shadow-lg max-w-full sm:max-w-3xl w-[90%] max-h-[90vh] overflow-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="absolute top-2 right-2 bg-red-500 text-white p-2 rounded-full"
+              onClick={closeModal}
+            >
+              ✕
+            </button>
+            <img
+              src={selectedImage}
+              alt="Selected Project Screenshot"
+              className="rounded-lg max-h-[80vh] w-full object-contain"
             />
           </div>
         </div>
       )}
+
       <div className="relative">
         <div
           aria-hidden="true"

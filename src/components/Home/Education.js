@@ -45,7 +45,7 @@ const Education = () => {
       <div className="mt-12 max-w-6xl mx-auto text-center items-center justify-center flex">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {educationData.map((education, index) => (
-            <Slide key={index} direction={index % 2 === 0 ? "left" : "right"}>
+            <div>
               <ul className="flex flex-col items-center shadow-lg border-x-4 hover:shadow-md hover:shadow-accent border-purple-200 border-y-0 dark:border-slate-700 p-4 rounded-lg transform transition-all duration-500 hover:scale-105">
                 <li className="flex flex-col items-center justify-center text-primary dark:text-secondary">
                   <div
@@ -66,7 +66,7 @@ const Education = () => {
                   </p>
                 </li>
               </ul>
-            </Slide>
+            </div>
           ))}
         </div>
       </div>

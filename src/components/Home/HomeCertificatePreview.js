@@ -57,7 +57,7 @@ const HomeCertificatePreview = () => {
         {homeCertificates.map((certificate, index) => (
           <div
             key={index}
-            data-aos="fade-left"
+            // data-aos="fade-left"
             className="relative bg-primary text-secondary p-4 rounded-md shadow-md transition-transform transform hover:scale-105"
           >
             <div className="relative group h-64 overflow-hidden rounded-md">

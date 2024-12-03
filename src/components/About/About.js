@@ -25,7 +25,7 @@ const About = () => {
           ></div>
         ))}
       </div>
-      <h2 className="text-3xl text-primary mt-20 mb-8  dark:text-secondary">
+      <h2 className="text-3xl text-primary lg:mt-20 mb-8 dark:text-secondary">
         About Me
       </h2>
       <div className="relative">
@@ -33,13 +33,13 @@ const About = () => {
           aria-hidden="true"
           className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
         >
-          <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-gray-100"></div>
+          <div className="blur-[106px] lg:h-56  h-auto max-w-full bg-gradient-to-br from-primary to-purple-400 dark:from-gray-100"></div>
           <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-100 to-sky-300 dark:to-white"></div>
         </div>
       </div>
       <div className="lg:flex lg:mx-32 gap-8">
         <svg
-          className="absolute pt-10 w-auto h-96 text-primary"
+          className="absolute pt-10 lg:w-auto lg:h-96 h-64 text-primary"
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -49,7 +49,11 @@ const About = () => {
             transform="translate(100 100)"
           />
         </svg>
-        <img src={me} alt="Humayra" className="relative h-96 w-auto pl-10" />
+        <img
+          src={me}
+          alt="Humayra"
+          className="relative lg:h-96 h-auto max-w-full lg:w-auto pl-10"
+        />
 
         <Slide cascade damping={0.5}>
           <div className="text-primary font-extralight text-wrap text-justify w-full lg:w-auto dark:text-white">

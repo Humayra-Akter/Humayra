@@ -101,7 +101,7 @@ const Certificates = () => {
           ([certificate, image], index) => (
             <div
               key={index}
-              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+              // data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
               className="bg-primary text-secondary p-4 rounded-md shadow-md transition-transform transform hover:scale-105 cursor-pointer"
               onClick={() => handleCertificateClick(certificate, image)}
             >

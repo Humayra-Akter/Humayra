@@ -37,7 +37,6 @@ const Services = () => {
           <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-white"></div>
         </div>
       </div>
-      <Slide cascade damping={0.5} direction="down">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
@@ -58,7 +57,6 @@ const Services = () => {
             </div>
           ))}
         </div>
-      </Slide>
     </div>
   );
 };

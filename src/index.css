@@ -7,7 +7,17 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+   overflow-x: hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 code {

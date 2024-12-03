@@ -143,7 +143,7 @@ const Certificate = () => {
 
   return (
     <div
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
+      className="mx-auto px-4 sm:px-6 lg:px-8 py-8"
       style={{
         fontFamily: "'Poetsen One', sans-serif",
       }}
@@ -151,23 +151,23 @@ const Certificate = () => {
       <div className="relative">
         <div
           aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+          className="absolute inset-0 grid grid-cols-2 space-x-52 opacity-40 dark:opacity-20"
         >
-          <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-gray-100"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-white"></div>
+          <div className="blur-[106px] lg:h-56  h-auto max-w-full bg-gradient-to-br from-primary to-purple-400 dark:from-gray-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-100 to-sky-300 dark:to-white"></div>
         </div>
       </div>
-      <h3 className="text-2xl mt-20 mb-10 font-semibold text-primary text-center dark:text-secondary">
+      <h3 className="text-3xl mb-10 font-semibold text-primary text-center dark:text-secondary">
         Certificates
       </h3>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {certificates.map((certificate, index) => (
           <div
             key={index}
-            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+           
             className="relative bg-primary text-secondary p-4 rounded-md shadow-md transition-transform transform hover:scale-105"
           >
-            <div className="relative group h-64 overflow-hidden rounded-md">
+            <div className="relative group lg:h-64 h-48 overflow-hidden rounded-md">
               {/* First Image */}
               <img
                 src={certificate.image1}
@@ -192,8 +192,8 @@ const Certificate = () => {
           aria-hidden="true"
           className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
         >
-          <div className="blur-[106px] h-56 bg-gradient-to-r from-primary to-purple-400 dark:from-gray-100"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-br from-cyan-400 to-sky-300 dark:to-white"></div>
+          <div className="blur-[106px] lg:h-56  h-auto max-w-full bg-gradient-to-br from-primary to-purple-400 dark:from-gray-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-100 to-sky-300 dark:to-white"></div>
         </div>
       </div>
       <ScrollToTop />

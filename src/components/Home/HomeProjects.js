@@ -96,7 +96,13 @@ const HomeProjects = () => {
       [id]: !prev[id],
     }));
   };
-
+useEffect(() => {
+  if (isModalOpen) {
+    document.body.classList.add("modal-open");
+  } else {
+    document.body.classList.remove("modal-open");
+  }
+}, [isModalOpen]);
 useEffect(() => {
   Aos.init({ duration: 1000 });
 }, []);
@@ -115,7 +121,7 @@ useEffect(() => {
         {homeProjects?.map((project, index) => (
           <div
             key={project.id}
-            data-aos="fade-right"
+            // data-aos="fade-right"
             className="p-4 rounded-lg shadow-md hover:shadow-lg dark:bg-black shadow-purple-400 dark:shadow-green-300 dark:text-white hover:shadow-accent  border-2 dark:border-primary border-rose-200"
           >
             <div className="mb-4">
@@ -206,11 +212,11 @@ useEffect(() => {
       </div>
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 overflow-hidden"
           onClick={closeModal}
         >
           <div
-            className="relative p-4 dark:bg-black bg-white rounded-lg shadow-lg max-w-3xl"
+            className="relative p-4 bg-white dark:bg-black rounded-lg shadow-lg max-w-full sm:max-w-3xl w-[90%] max-h-[90vh] overflow-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -222,11 +228,12 @@ useEffect(() => {
             <img
               src={selectedImage}
               alt="Selected Project Screenshot"
-              className="rounded-lg max-h-[80vh] max-w-full"
+              className="rounded-lg max-h-[80vh] w-full object-contain"
             />
           </div>
         </div>
       )}
+
       <div className="text-center mt-6 mb-16">
         <Link
           to="/projects"

@@ -67,7 +67,7 @@ const TechStack = () => {
         {techStack?.map((tech, index) => (
           <div
             key={index}
-            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+            // data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             className="bg-primary text-secondary py-2 px-4 rounded-full text-sm hover:scale-105"
           >
             {tech}
