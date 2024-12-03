@@ -13,13 +13,13 @@ const Banner = () => {
 
   return (
     <div
-      className="lg:pt-24 mx-20 lg:grid grid-cols-3"
+      className="lg:pt-5 mx-20 lg:grid grid-cols-3"
       style={{
         fontFamily: "'Poetsen One', sans-serif",
       }}
     >
       {/* Distorted Animated Lines */}
-      <div className="absolute inset-0 z-0 h-[380px] pointer-events-none">
+      <div className="absolute inset-0 mt-20 z-0 h-[380px] pointer-events-none">
         {[...Array(15)].map((_, index) => (
           <div
             key={index}
@@ -65,7 +65,7 @@ const Banner = () => {
       {/* <Slide cascade damping={0.5} direction="up"> */}
       <div className="mt-10 flex justify-center items-center">
         <svg
-          className="absolute lg:pt-10 lg:w-auto lg:h-96 h-80 text-primary"
+          className="absolute lg:pt-10 lg:w-auto lg:h-96 h-72 text-primary"
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -79,7 +79,7 @@ const Banner = () => {
           src={humayra}
           alt="Humayra"
           // data-aos="fade-down"
-          className="relative w-auto lg:pl-10"
+          className="relative w-auto h-auto lg:pl-10"
           style={{ zIndex: 10 }}
         />
       </div>
@@ -90,7 +90,7 @@ const Banner = () => {
           <h3 className="text-2xl text-center lg:text-left font-semibold text-primary dark:text-secondary">
             About Me
           </h3>
-          <p className="lg:text base text-sm text-primary dark:text-white mt-2">
+          <p className="lg:text-base text-sm text-primary dark:text-white mt-2">
             Dedicated and innovative computer science undergraduate with a
             passion for programming and problem-solving. Committed to leveraging
             skills in C, CPP, and JavaScript, Typescript along with a keen

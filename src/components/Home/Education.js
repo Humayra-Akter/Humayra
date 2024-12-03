@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 const Education = () => {
-  // Array of education objects
   const educationData = [
     {
       institution: "Military Institute of Science and Technology",
@@ -46,7 +45,7 @@ const Education = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {educationData.map((education, index) => (
             <div>
-              <ul className="flex flex-col items-center shadow-lg border-x-4 hover:shadow-md hover:shadow-accent border-purple-200 border-y-0 dark:border-slate-700 p-4 rounded-lg transform transition-all duration-500 hover:scale-105">
+              <ul className="flex flex-col items-center shadow-lg border-x-4 hover:shadow-md hover:shadow-accent border-purple-200 border-y-0 dark:border-slate-700 p-4 rounded-lg transform transition-all duration-500 hover:scale-105 lg:h-44">
                 <li className="flex flex-col items-center justify-center text-primary dark:text-secondary">
                   <div
                     className="w-20 h-20 flex items-center justify-center rounded-full border-4 border-accent relative -mt-8"

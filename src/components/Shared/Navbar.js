@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
@@ -100,7 +99,7 @@ const Navbar = () => {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="fixed top-0 right-0 w-64 h-full bg-primary shadow-lg  max-w-xs  text-secondary text-center py-4 space-y-4 z-30">
+        <div className="fixed top-0 right-0 w-2/3 h-full bg-primary shadow-lg max-w-xs  text-secondary text-center py-4 space-y-4 z-30">
           {/* Menu Header */}
           <div className="flex items-center justify-between p-4">
             <button
@@ -119,9 +118,9 @@ const Navbar = () => {
                 key={option.path}
                 to={option.path}
                 onClick={() => setIsMenuOpen(false)}
-                className={`flex items-center text-lg px-4 py-3 rounded-md hover:bg-secondary transition-all ${
+                className={`flex items-center text-lg px-4 py-3 rounded-md hover:bg-accent transition-all ${
                   location.pathname === option.path
-                    ? "bg-secondary text-white"
+                    ? "bg-accent dark:bg-slate-700 text-white dark:text-secondary"
                     : "text-gray-300"
                 }`}
               >
