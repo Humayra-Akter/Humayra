@@ -146,15 +146,10 @@ import {
   FaHome,
   FaCalendarAlt,
   FaInfoCircle,
-  FaBook,
   FaHandshake,
-  FaEnvelope,
   FaBars,
   FaTimes,
 } from "react-icons/fa";
-import logo from "../../images/humayra.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -194,12 +189,7 @@ const Navbar = () => {
       }}
     >
       {/* Top Bar */}
-      <div className="flex justify-center items-center">
-        {/* Logo */}
-        {/* <Link to="/" aria-label="Home">
-          <img src={logo} alt="Logo" className="w-10 h-10" />
-        </Link> */}
-
+      <div className="flex lg:justify-center lg:items-center justify-end items-end">
         {/* Large Screen Navbar */}
         <div className="hidden md:flex items-center space-x-8">
           {navOptions.map((option, index) => (
@@ -208,11 +198,12 @@ const Navbar = () => {
               to={option.path}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className={`relative text-lg font-medium ${
-                location.pathname === option.path
-                  ? "text-secondary"
-                  : "text-gray-300"
-              } hover:text-secondary transition-all`}
+              className={`cursor-pointer relative transition-all duration-500 ${
+                active === option.path
+                  ? "text-yellow-300"
+                  : "hover:text-yellow-300 dark:text-white"
+              }`}
+              onClick={() => handleSetActive(option.path)}
             >
               <div className="flex items-center gap-2">
                 <span>{option.icon}</span>
@@ -220,10 +211,10 @@ const Navbar = () => {
               </div>
               {/* Underline indicator */}
               <div
-                className={`absolute bottom-0 left-0 h-1 w-full rounded transition-all duration-300 ${
+                className={`absolute left-0 right-0 bottom-[-2px] h-[2px] bg-yellow-300 transition-all duration-300 ${
                   location.pathname === option.path || hoveredIndex === index
-                    ? "bg-secondary"
-                    : "opacity-0"
+                    ? "w-full"
+                    : "w-0"
                 }`}
               ></div>
             </Link>
@@ -236,7 +227,11 @@ const Navbar = () => {
           onClick={() => setIsMenuOpen((prev) => !prev)}
           className="text-2xl md:hidden focus:outline-none"
         >
-          {isMenuOpen ? <FaTimes /> : <FaBars />}
+          {isMenuOpen ? (
+            <FaTimes className="h-6 w-6 text-secondary" />
+          ) : (
+            <FaBars className="h-6 w-6 text-secondary" />
+          )}
         </button>
       </div>
 
@@ -246,10 +241,9 @@ const Navbar = () => {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="fixed top-0 right-0 w-64 h-full bg-primary shadow-lg">
+        <div className="fixed top-0 right-0 w-64 h-full bg-primary shadow-lg  max-w-xs  text-secondary text-center py-4 space-y-4 z-30">
           {/* Menu Header */}
           <div className="flex items-center justify-between p-4">
-            <img src={logo} alt="Logo" className="w-10 h-10" />
             <button
               aria-label="Close Menu"
               onClick={() => setIsMenuOpen(false)}

@@ -13,7 +13,7 @@ const Banner = () => {
 
   return (
     <div
-      className="pt-24 mx-20 lg:grid grid-cols-3"
+      className="lg:pt-24 mx-20 lg:grid grid-cols-3"
       style={{
         fontFamily: "'Poetsen One', sans-serif",
       }}
@@ -34,22 +34,22 @@ const Banner = () => {
       </div>
       <Slide cascade damping={0.5} direction="right">
         <div className="lg:text-left text-center sm:pt-10 lg:mt-24">
-          <h1 className="text-6xl font-bold bg-clip-text  text-primary dark:text-secondary">
+          <h1 className="lg:text-6xl text-3xl font-bold bg-clip-text text-primary dark:text-secondary">
             Humayra
           </h1>
-          <h2 className="text-6xl font-bold bg-clip-text text-primary dark:text-secondary">
+          <h2 className="lg:text-6xl text-3xl font-bold bg-clip-text text-primary dark:text-secondary">
             Akter
           </h2>{" "}
           <p className="text-lg lg:text-xl text-gray-300 mt-10">
-            <span className="text-lg text-accent dark:text-white">
+            <span className="text-accent dark:text-white">
               Full Stack Developer
             </span>{" "}
             |{" "}
-            <span className="text-lg text-accent dark:text-white">
+            <span className="text-accent dark:text-white">
               UI/UX Enthusiast
             </span>{" "}
             |{" "}
-            <span className="text-lg text-accent dark:text-white">
+            <span className="text-accent dark:text-white">
               Innovator
             </span>
           </p>
