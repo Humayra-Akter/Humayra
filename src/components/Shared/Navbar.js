@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   FaHome,
-  FaCalendarAlt,
-  FaInfoCircle,
-  FaHandshake,
+  FaUserAlt,
+  FaProjectDiagram,
+  FaAward,
   FaBars,
   FaTimes,
 } from "react-icons/fa";
@@ -34,9 +34,9 @@ const Navbar = () => {
 
   const navOptions = [
     { name: "Home", path: "/", icon: <FaHome /> },
-    { name: "About", path: "/about", icon: <FaInfoCircle /> },
-    { name: "Projects", path: "/projects", icon: <FaCalendarAlt /> },
-    { name: "Certificate", path: "/certificate", icon: <FaHandshake /> },
+    { name: "About", path: "/about", icon: <FaUserAlt /> },
+    { name: "Projects", path: "/projects", icon: <FaProjectDiagram /> },
+    { name: "Certificate", path: "/certificate", icon: <FaAward /> },
   ];
 
   return (
