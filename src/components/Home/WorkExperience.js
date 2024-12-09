@@ -9,8 +9,14 @@ import { FaQuoteLeft, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const slides = [
   {
     text: "MIST Career Club",
+    text2: "Director of Creative Design",
+    year: "2024 Fall Term",
+    image: careerClub,
+  },
+  {
+    text: "MIST Career Club",
     text2: "Assistant Director of Event Management",
-    year: "2024 to present",
+    year: "2024 to 2024 Spring Term",
     image: careerClub,
   },
   {
