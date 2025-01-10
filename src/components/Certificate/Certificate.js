@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import txbd from "../../images/TechnocianBD.png";
 import txbd2 from "../../images/txbd.jpg";
 import devSprint from "../../images/devSprint.jpg";
+import nexus from "../../images/nexus.jpg";
+import nexus2 from "../../images/nexus2.jpg";
 import devSprint2 from "../../images/devSprint2.jpg";
 import caseCraft from "../../images/BUETCasecraft.jpg";
 import caseCraft2 from "../../images/casecraft.jpg";
@@ -40,6 +42,12 @@ const certificates = [
       "BUET DevSprint 2024: Inter-University Software Development Competition, finalist - 1 March 2024",
     image1: devSprint,
     image2: devSprint2,
+  },
+  {
+    title:
+      "Secured a spot among the Top 10 Finalists at Nexus of Wit National Business Case Competition, Rabindra University.",
+    image1: nexus,
+    image2: nexus2,
   },
   {
     title:
@@ -164,7 +172,6 @@ const Certificate = () => {
         {certificates.map((certificate, index) => (
           <div
             key={index}
-           
             className="relative bg-primary text-secondary p-4 rounded-md shadow-md transition-transform transform hover:scale-105"
           >
             <div className="relative group lg:h-64 h-48 overflow-hidden rounded-md">
