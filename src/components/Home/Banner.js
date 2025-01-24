@@ -90,7 +90,7 @@ const Banner = () => {
           <h3 className="text-2xl text-center lg:text-left font-semibold text-primary dark:text-secondary">
             About Me
           </h3>
-          <p className="lg:text-base text-sm text-primary dark:text-white mt-2">
+          <p className="lg:text-base text-sm text-black dark:text-white mt-2">
             Dedicated and innovative computer science undergraduate with a
             passion for programming and problem-solving. Committed to leveraging
             skills in C, CPP, and JavaScript, Typescript along with a keen
@@ -105,18 +105,18 @@ const Banner = () => {
           0%,
           100% {
             opacity: 0.2;
-            transform: scaleY(1) translateY(0);
+            transform: scaleY(07) translateY(0);
           }
           50% {
-            opacity: 0.8;
-            transform: scaleY(1.5) translateY(-20px);
+            opacity: 0.7;
+            transform: scaleY(.5) translateY(16px);
           }
         }
 
         @keyframes fade-in-up {
           from {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(16px);
           }
           to {
             opacity: 1;
