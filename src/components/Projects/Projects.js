@@ -38,7 +38,6 @@ const Projects = () => {
     }
   }, [isModalOpen]);
 
-
   return (
     <div
       className="container mx-auto p-8"
@@ -150,30 +149,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      {/* Modal for Image Preview */}
-      {/* {isModalOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
-          onClick={closeModal}
-        >
-          <div
-            className="relative p-4 dark:bg-black bg-white rounded-lg shadow-lg max-w-3xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="absolute top-2 right-2 bg-red-500 text-white p-2 rounded-full"
-              onClick={closeModal}
-            >
-              ✕
-            </button>
-            <img
-              src={selectedImage}
-              alt="Selected Project Screenshot"
-              className="rounded-lg lg:max-h-[80vh] lg:max-w-full"
-            />
-          </div>
-        </div>
-      )} */}
+
       {isModalOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 overflow-hidden"
