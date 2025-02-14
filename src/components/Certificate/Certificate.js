@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import txbd from "../../images/TechnocianBD.png";
 import txbd2 from "../../images/txbd.jpg";
 import devSprint from "../../images/devSprint.jpg";
+import nsuHackathon from "../../images/nsuHackathon.jpg";
+import nsuHackathon2 from "../../images/nsuHackathon2.jpg";
 import nexus from "../../images/nexus.jpg";
 import nexus2 from "../../images/nexus2.jpg";
 import devSprint2 from "../../images/devSprint2.jpg";
@@ -42,6 +44,12 @@ const certificates = [
       "BUET DevSprint 2024: Inter-University Software Development Competition, finalist - 1 March 2024",
     image1: devSprint,
     image2: devSprint2,
+  },
+  {
+    title:
+      "WebXtreme Hackathon 2025, powered by Gigabyte AORUS and co-powered by Programming Hero at NSU Tech Fest 2025 - 12 February 2025",
+    image1: nsuHackathon,
+    image2: nsuHackathon2,
   },
   {
     title:
