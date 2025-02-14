@@ -48,8 +48,8 @@ const certificates = [
   {
     title:
       "WebXtreme Hackathon 2025, powered by Gigabyte AORUS and co-powered by Programming Hero at NSU Tech Fest 2025 - 12 February 2025",
-    image1: nsuHackathon,
-    image2: nsuHackathon2,
+    image1: nsuHackathon2,
+    image2: nsuHackathon,
   },
   {
     title:
