@@ -26,6 +26,54 @@ const SpecialMoment = () => {
           dedication, and innovation.
         </p>
 
+        {/* Grid Layout */}
+        <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-3">
+          {images.map((img, index) => (
+            <motion.div
+              key={index}
+              className={`relative rounded-2xl overflow-hidden shadow-lg bg-[#151515] ${
+                index === 0 ? "col-span-2 row-span-1" : "col-span-1 row-span-1"
+              }`}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
+            >
+              <img
+                src={img}
+                alt={`MCC Moment ${index + 1}`}
+                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+              />
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Stats */}
+        <div className="mt-6 flex flex-wrap justify-center gap-6">
+          {[
+            {
+              value: "1st",
+              label: "Inaugrated Club Website",
+              color: "text-purple-500",
+            },
+            {
+              value: "100+",
+              label: "Hours of Dedication",
+              color: "text-[#ff00ff]",
+            },
+            { value: "1", label: "Proud Moment", color: "text-pink-700" },
+          ].map((stat, index) => (
+            <motion.div
+              key={index}
+              className="glassmorphism dark:bg-slate-900 bg-slate-200 p-4 rounded-xl shadow-lg w-32 text-center"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 * index }}
+            >
+              <p className={`text-3xl font-bold ${stat.color}`}>{stat.value}</p>
+              <p className="text-sm dark:text-white">{stat.label}</p>
+            </motion.div>
+          ))}
+        </div>
 
         {/* Call to Action */}
         <div className="mt-8 flex flex-wrap justify-center lg:gap-6">
