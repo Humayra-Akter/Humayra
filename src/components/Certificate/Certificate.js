@@ -9,6 +9,10 @@ import uiuFest2 from "../../images/uiuProject2.jpg";
 import nexus from "../../images/nexus.jpg";
 import nexus2 from "../../images/nexus2.jpg";
 import devSprint2 from "../../images/devSprint2.jpg";
+import mic from "../../images/micProject.jpg";
+import mic2 from "../../images/micProject2.jpg";
+import probSet from "../../images/problemSetter.jpg";
+import probSet2 from "../../images/problemSetter1.jpg";
 import caseCraft from "../../images/BUETCasecraft.jpg";
 import caseCraft2 from "../../images/casecraft.jpg";
 import kiron from "../../images/kironPython.png";
@@ -40,6 +44,17 @@ const certificates = [
       "IEEE Computer Society Bangladesh chapter Web and IT Committee Frontend Volunteer",
     image1: ieee,
     image2: ieee2,
+  },
+  {
+    title: "MIST Intra department Hackathon Problem setter",
+    image1: probSet,
+    image2: probSet2,
+  },
+  {
+    title:
+      "1st Runner-up at MIST Innovation Club presents Intervention 4.1 Project Showcase segment",
+    image1: mic2,
+    image2: mic,
   },
   {
     title:
