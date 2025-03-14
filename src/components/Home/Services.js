@@ -31,32 +31,32 @@ const Services = () => {
       <div className="relative">
         <div
           aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-50"
         >
-          <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-gray-100"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-white"></div>
+          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400 dark:from-slate-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r  to-sky-300 from-cyan-400 dark:to-white"></div>
         </div>
       </div>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="shadow-lg border-x-4 hover:shadow-md hover:shadow-accent border-purple-200 border-y-0 dark:border-slate-700 p-4 rounded-lg transform transition-all duration-500 hover:scale-105"
-              style={{ perspective: "1000px" }}
-            >
-              <div className="absolute top-0 shadow-md shadow-accent hover:shadow-lg left-0 w-full h-full bg-gradient-to-l from-primary via-purple-700 to-fuchsia-500 dark:bg-gradient-to-t dark:from-green-700 dark:via-emerald-600 dark:to-teal-500  rounded-lg opacity-25 pointer-events-none transform transition duration-500 hover:opacity-50"></div>
-              <div className="relative flex flex-col items-center text-center">
-                <div className="text-6xl mb-4">{service.icon}</div>
-                <h4 className="text-2xl mb-2 text-primary dark:text-secondary">
-                  {service.title}
-                </h4>
-                <p className="text-base text-gray-700 dark:text-gray-300">
-                  {service.description}
-                </p>
-              </div>
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="shadow-lg border-x-4 hover:shadow-md hover:shadow-accent border-purple-200 border-y-0 dark:border-slate-700 p-4 rounded-lg transform transition-all duration-500 hover:scale-105"
+            style={{ perspective: "1000px" }}
+          >
+            <div className="absolute top-0 shadow-md shadow-accent hover:shadow-lg left-0 w-full h-full bg-gradient-to-l from-primary via-purple-700 to-fuchsia-500 dark:bg-gradient-to-t dark:from-green-700 dark:via-emerald-600 dark:to-teal-500  rounded-lg opacity-25 pointer-events-none transform transition duration-500 hover:opacity-50"></div>
+            <div className="relative flex flex-col items-center text-center">
+              <div className="text-6xl mb-4">{service.icon}</div>
+              <h4 className="text-2xl mb-2 text-primary dark:text-secondary">
+                {service.title}
+              </h4>
+              <p className="text-base text-gray-700 dark:text-gray-300">
+                {service.description}
+              </p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

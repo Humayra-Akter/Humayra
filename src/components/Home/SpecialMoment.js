@@ -10,6 +10,16 @@ const SpecialMoment = () => {
 
   return (
     <section className="relative mt-10 py-10 px-6 md:px-12">
+      {" "}
+      <div className="relative">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-50"
+        >
+          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400 dark:from-slate-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r  to-sky-300 from-cyan-400 dark:to-white"></div>
+        </div>
+      </div>
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           className="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#00e6e6] to-accent"
@@ -19,9 +29,11 @@ const SpecialMoment = () => {
         >
           A Milestone to Remember
         </motion.h2>
-        <p className="text-base md:text-lg mt-2 leading-relaxed">
+        <p className="text-black dark:text-white md:text-lg mt-2 leading-relaxed">
           Launching the{" "}
-          <span className="font-semibold text-primary">MIST Career Club</span>{" "}
+          <span className="font-semibold text-primary dark:text-secondary">
+            MIST Career Club
+          </span>{" "}
           website was more than just a project—it was a journey of passion,
           dedication, and innovation.
         </p>
@@ -97,6 +109,15 @@ const SpecialMoment = () => {
           >
             Enjoy the Moment
           </motion.a>
+        </div>
+      </div>{" "}
+      <div className="relative">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-50"
+        >
+          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400 dark:from-slate-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r  to-sky-300 from-cyan-400 dark:to-white"></div>
         </div>
       </div>
     </section>
