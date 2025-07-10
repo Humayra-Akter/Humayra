@@ -2,13 +2,17 @@ import React, { useEffect } from "react";
 import txbd from "../../images/TechnocianBD.png";
 import txbd2 from "../../images/txbd.jpg";
 import devSprint from "../../images/devSprint.jpg";
+import devSprint2 from "../../images/devSprint2.jpg";
+import engibizOrganizer from "../../images/engibizOrganizer.jpg";
+import engibizOrganizer2 from "../../images/engibizOrganizer2.jpg";
+import engibizBestSubTeam from "../../images/engibizBestSubTeam.jpg";
+import engibizBestSubTeam2 from "../../images/engibizBestSubTeam2.jpg";
 import nsuHackathon from "../../images/nsuHackathon.jpg";
 import nsuHackathon2 from "../../images/nsuHackathon2.jpg";
 import uiuFest from "../../images/uiuProject.jpg";
 import uiuFest2 from "../../images/uiuProject2.jpg";
 import nexus from "../../images/nexus.jpg";
 import nexus2 from "../../images/nexus2.jpg";
-import devSprint2 from "../../images/devSprint2.jpg";
 import mic from "../../images/micProject.jpg";
 import mic2 from "../../images/micProject2.jpg";
 import probSet from "../../images/problemSetter.jpg";
@@ -44,6 +48,16 @@ const certificates = [
       "IEEE Computer Society Bangladesh chapter Web and IT Committee Frontend Volunteer",
     image1: ieee,
     image2: ieee2,
+  },
+  {
+    title: "Shestem presents Engibiz 2024, Organizer",
+    image1: engibizOrganizer2,
+    image2: engibizOrganizer,
+  },
+  {
+    title: "Shestem presents Engibiz 2024, Best Sub Team Award",
+    image1: engibizBestSubTeam,
+    image2: engibizBestSubTeam2,
   },
   {
     title: "MIST Intra department Hackathon Problem setter",
