@@ -1,12 +1,18 @@
 import React, { useEffect } from "react";
 import txbd from "../../images/TechnocianBD.png";
 import txbd2 from "../../images/txbd.jpg";
+import bcsIct from "../../images/bcsIct.jpg";
+import bcsIct2 from "../../images/bcsIct2.jpg";
 import devSprint from "../../images/devSprint.jpg";
 import devSprint2 from "../../images/devSprint2.jpg";
+import deptEvent from "../../images/deptEvent.jpg";
+import deptEvent2 from "../../images/deptEvent2.jpg";
 import engibizOrganizer from "../../images/engibizOrganizer.jpg";
 import engibizOrganizer2 from "../../images/engibizOrganizer2.jpg";
 import engibizBestSubTeam from "../../images/engibizBestSubTeam.jpg";
 import engibizBestSubTeam2 from "../../images/engibizBestSubTeam2.jpg";
+import jobFairOrganizer from "../../images/jobFairOrganizer.jpg";
+import jobFairOrganizer2 from "../../images/jobFairOrganizer2.jpg";
 import nsuHackathon from "../../images/nsuHackathon.jpg";
 import nsuHackathon2 from "../../images/nsuHackathon2.jpg";
 import uiuFest from "../../images/uiuProject.jpg";
@@ -50,6 +56,11 @@ const certificates = [
     image2: ieee2,
   },
   {
+    title: "Shestem presents Job Fair 2024, Organizer",
+    image1: jobFairOrganizer,
+    image2: jobFairOrganizer2,
+  },
+  {
     title: "Shestem presents Engibiz 2024, Organizer",
     image1: engibizOrganizer2,
     image2: engibizOrganizer,
@@ -58,6 +69,12 @@ const certificates = [
     title: "Shestem presents Engibiz 2024, Best Sub Team Award",
     image1: engibizBestSubTeam,
     image2: engibizBestSubTeam2,
+  },
+  {
+    title:
+      "1st Runner-Up position at BCS ICT Fest 2025, organized by Bangladesh Computer Society (BCS) and co-hosted by IICT, BUET",
+    image1: bcsIct,
+    image2: bcsIct2,
   },
   {
     title: "MIST Intra department Hackathon Problem setter",
@@ -108,19 +125,25 @@ const certificates = [
   {
     title:
       "Hosting and volunteering in 'MIST Campus Townhall' by GP Academy 2023 at MIST",
-    image1: gpTownhall,
-    image2: gpTownhall2,
+    image1: gpTownhall2,
+    image2: gpTownhall,
   },
   {
     title: "IDPC (Independence Day Programming Contest) 2023 -- Position: 23rd",
-    image1: idpc,
-    image2: idpc2,
+    image1: idpc2,
+    image2: idpc,
   },
   {
     title:
       "Certificate of Volunteering on MIST LeetCon 2023: HackMeIfYouCan - 20 May 2023",
     image1: leetcon2,
     image2: leetcon,
+  },
+  {
+    title:
+      "Certificate for department event participation in MIST CSE Department",
+    image1: deptEvent2,
+    image2: deptEvent,
   },
   {
     title:
