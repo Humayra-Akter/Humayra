@@ -15,6 +15,8 @@ import jobFairOrganizer from "../../images/jobFairOrganizer.jpg";
 import jobFairOrganizer2 from "../../images/jobFairOrganizer2.jpg";
 import nsuHackathon from "../../images/nsuHackathon.jpg";
 import nsuHackathon2 from "../../images/nsuHackathon2.jpg";
+import qpain from "../../images/qpain.png";
+import qpain2 from "../../images/qpain2.jpg";
 import uiuFest from "../../images/uiuProject.jpg";
 import uiuFest2 from "../../images/uiuProject2.jpg";
 import nexus from "../../images/nexus.jpg";
@@ -49,6 +51,12 @@ import "aos/dist/aos.css";
 import ScrollToTop from "../Shared/ScrollToTop";
 
 const certificates = [
+  {
+    title:
+      "IEEE International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN 2025) at Bangladesh Army University of Science and Technology (BAUST), Bangladesh",
+    image1: qpain,
+    image2: qpain2,
+  },
   {
     title:
       "IEEE Computer Society Bangladesh chapter Web and IT Committee Frontend Volunteer",
