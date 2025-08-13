@@ -79,7 +79,7 @@ const About = () => {
       <a
         href="/Humayra_Akter_CV.pdf"
         download
-        className="bg-primary text-secondary py-2 px-4 rounded-md hover:bg-secondary hover:text-primary transition-colors mt-8 inline-block"
+        className="bg-primary text-secondary py-2 px-4 rounded-md hover:bg-secondary hover:text-primary hover:border-2 hover:border-primary transition-colors mt-8 inline-block"
       >
         Download My CV
       </a>{" "}
