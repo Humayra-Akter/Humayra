@@ -46,6 +46,8 @@ import gpTownhall2 from "../../images/gpTownhall.jpg";
 import idpc from "../../images/idpc.png";
 import idpc2 from "../../images/idpc.jpg";
 import robot from "../../images/robotOlympiad.jpg";
+import sciblitz from "../../images/sciblitz.png";
+import bearSummit from "../../images/bearSummit.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "../Shared/ScrollToTop";
@@ -57,12 +59,7 @@ const certificates = [
     image1: qpain,
     image2: qpain2,
   },
-  {
-    title:
-      "IEEE Computer Society Bangladesh chapter Web and IT Committee Frontend Volunteer",
-    image1: ieee,
-    image2: ieee2,
-  },
+
   {
     title: "Shestem presents Job Fair 2024, Organizer",
     image1: jobFairOrganizer,
@@ -72,6 +69,12 @@ const certificates = [
     title: "Shestem presents Engibiz 2024, Organizer",
     image1: engibizOrganizer2,
     image2: engibizOrganizer,
+  },
+  {
+    title:
+      "IEEE Computer Society Bangladesh chapter Web and IT Committee Frontend Volunteer",
+    image1: ieee,
+    image2: ieee2,
   },
   {
     title: "Shestem presents Engibiz 2024, Best Sub Team Award",
@@ -121,9 +124,21 @@ const certificates = [
   },
   {
     title:
+      "Participation in IEEE CUET Three-Minute Thesis (3MT) segment of SciBlitz 2025.",
+    image1: sciblitz,
+    image2: sciblitz,
+  },
+  {
+    title:
       "BUET CaseCraft AutoRealm competition: 2nd Runner-up - 26 January 2024",
     image1: caseCraft2,
     image2: caseCraft,
+  },
+  {
+    title:
+      "Participated in BEAR SUMMIT AND NATIONAL SEMICONDUCTOR SYMPOSIUM 2025r",
+    image1: bearSummit,
+    image2: bearSummit,
   },
   {
     title: "1st Technoxian Bangladesh: National Round, Finalist - 8 March 2024",
