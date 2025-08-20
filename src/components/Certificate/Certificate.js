@@ -47,7 +47,8 @@ import idpc from "../../images/idpc.png";
 import idpc2 from "../../images/idpc.jpg";
 import robot from "../../images/robotOlympiad.jpg";
 import sciblitz from "../../images/sciblitz.png";
-import bearSummit from "../../images/bearSummit.png";
+import bearSummit from "../../images/bearSummit3.jpg";
+import bearSummit1 from "../../images/bearSummit1.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "../Shared/ScrollToTop";
@@ -137,7 +138,7 @@ const certificates = [
   {
     title:
       "Participated in BEAR SUMMIT AND NATIONAL SEMICONDUCTOR SYMPOSIUM 2025r",
-    image1: bearSummit,
+    image1: bearSummit1,
     image2: bearSummit,
   },
   {
