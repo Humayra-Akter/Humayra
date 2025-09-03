@@ -25,8 +25,9 @@ function App() {
   };
 
   return (
-    <div className={`min-h-screen ${darkMode && "dark"}`}>
-      <div className="bg-white dark:bg-black min-h-screen">
+    // <div className={`min-h-screen ${darkMode && "dark"}`}>
+    <div>
+      <div className="min-h-screen">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -37,7 +38,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
-        <button
+        {/* <button
           onClick={toggleDarkMode}
           className="p-2 bg-primary text-secondary fixed bottom-5 left-5 rounded-full"
         >
@@ -45,8 +46,8 @@ function App() {
             <img className="w-10 h-10" src={sun} alt="Light Mode" />
           ) : (
             <img className="w-10 h-10" src={moon} alt="Dark Mode" />
-          )}
-        </button>
+          )} 
+        </button> */}
       </div>
     </div>
   );

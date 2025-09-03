@@ -56,11 +56,10 @@ import ScrollToTop from "../Shared/ScrollToTop";
 const certificates = [
   {
     title:
-      "IEEE International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN 2025) at Bangladesh Army University of Science and Technology (BAUST), Bangladesh",
+      "IEEE International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN 2025) at BAUST",
     image1: qpain,
     image2: qpain2,
   },
-
   {
     title: "Shestem presents Job Fair 2024, Organizer",
     image1: jobFairOrganizer,
@@ -190,20 +189,17 @@ const certificates = [
     image1: bohubrihi2,
     image2: bohubrihi2,
   },
-
   {
     title: "Certificate of Participation: LaunchPad by UIHP@UIU Program UIUEDF",
     image1: uiu,
     image2: uiu,
   },
-
   {
     title:
       "Certificate of Completion on Python Fundamentals Kiron, Ascend International Limited - 14 July 2021",
     image1: kiron,
     image2: kiron,
   },
-
   {
     title:
       "Certificate for successful completion of ADAPTATION TO CUSTOMER BEHAVIOR in GP Academy",
@@ -228,7 +224,6 @@ const certificates = [
     image1: gpOnlineSafety,
     image2: gpOnlineSafety,
   },
-
   {
     title: "Robot Olympiad Quiz 2019 -- Position: 14th",
     image1: robot,
@@ -251,27 +246,25 @@ const Certificate = () => {
       <div className="relative">
         <div
           aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-50"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40"
         >
-          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400 dark:from-slate-100"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r  to-sky-300 from-cyan-400 dark:to-white"></div>
+          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-slate-200 to-purple-400"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-white"></div>
         </div>
       </div>
-      <h3 className="text-3xl mb-10 font-semibold text-primary text-center dark:text-secondary">
-        Certificates
-      </h3>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <h3 className="text-3xl mb-10 text-primary text-center">Certificates</h3>
+      <div className="grid gap-x-7 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
         {certificates.map((certificate, index) => (
           <div
             key={index}
-            className="relative bg-primary text-secondary p-4 rounded-md shadow-md transition-transform transform hover:scale-105"
+            className="p-4 rounded-lg shadow-sm hover:shadow-md bg-black glass shadow-purple-200 text-white hover:shadow-accent border border-primary"
           >
             <div className="relative group lg:h-64 h-48 overflow-hidden rounded-md">
               {/* First Image */}
               <img
                 src={certificate.image1}
                 alt={certificate.title}
-                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                className="absolute border border-secondary inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0"
               />
               {/* Second Image */}
               <img
@@ -280,19 +273,17 @@ const Certificate = () => {
                 className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
               />
             </div>
-            <p className="mt-4 text-center text-sm font-medium">
-              {certificate.title}
-            </p>
+            <p className="mt-4 text-center text-sm">{certificate.title}</p>
           </div>
         ))}
       </div>
       <div className="relative">
         <div
           aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-50"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-50"
         >
-          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400 dark:from-slate-100"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r  to-sky-300 from-cyan-400 dark:to-white"></div>
+          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br to-purple-400 from-slate-100"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-white"></div>
         </div>
       </div>
       <ScrollToTop />

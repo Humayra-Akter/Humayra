@@ -57,7 +57,7 @@ const TechStack = () => {
       style={{ fontFamily: "'Poetsen One', sans-serif" }}
     >
       <h3
-        className="text-3xl mt-20 mb-10 font-semibold text-primary text-center dark:text-secondary"
+        className="text-3xl mt-20 mb-10 text-primary text-center"
         style={{ fontFamily: "'Poetsen One', sans-serif" }}
       >
         Tech Stack
@@ -68,7 +68,7 @@ const TechStack = () => {
           <div
             key={index}
             // data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-            className="bg-primary text-secondary py-2 px-4 rounded-full text-sm hover:scale-105"
+            className="bg-secondary py-2 px-4 rounded-full text-sm font-thin hover:scale-105"
           >
             {tech}
           </div>
@@ -77,10 +77,10 @@ const TechStack = () => {
       <div className="relative">
         <div
           aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-50"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-50"
         >
-          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400 dark:from-slate-100"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r  to-sky-300 from-cyan-400 dark:to-white"></div>
+          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-cyan-200"></div>
         </div>
       </div>
     </div>

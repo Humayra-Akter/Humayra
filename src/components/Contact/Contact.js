@@ -69,7 +69,7 @@ const Contact = () => {
     animation: "animate 20s linear infinite",
     zIndex: 1,
     bottom: 0,
-    opacity: 0.9,
+    opacity: 0.2,
   };
 
   const wave2Style = {
@@ -127,26 +127,26 @@ const Contact = () => {
         {keyframesAnimate}
         {keyframesAnimate2}
       </style>
-      <h3 className="text-3xl font-semibold text-center text-primary mt-20 mb-8 dark:text-secondary">
+      <h3 className="text-3xl text-center text-primary mt-20 mb-8">
         Contact Me
       </h3>
       <div className="relative">
         <div
           aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-50"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-50"
         >
-          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400 dark:from-slate-100"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r  to-sky-300 from-cyan-400 dark:to-white"></div>
+          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-white"></div>
         </div>
       </div>
       <div className="lg:max-w-5xl mx-auto p-8 flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-8">
         <div className="flex-grow w-full lg:w-1/2">
           <form
             onSubmit={handleSubmit}
-            className="space-y-4 p-4 rounded-lg shadow-accent border-2 border-gradient-to-r from-blue-500 to-purple-500 bg-white shadow-lg"
+            className="space-y-4 p-4 rounded-lg shadow-accent border shadow-md"
           >
             <div className="flex flex-col mb-2">
-              <label htmlFor="name" className="mb-1 text-primary">
+              <label htmlFor="name" className="mb-1">
                 Name
               </label>
               <input
@@ -155,12 +155,12 @@ const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="p-2 border rounded-md z-10 relative"
+                className="p-2 border bg-transparent rounded-md z-10 relative"
                 required
               />
             </div>
             <div className="flex flex-col mb-2">
-              <label htmlFor="email" className="mb-1 text-primary">
+              <label htmlFor="email" className="mb-1">
                 Email
               </label>
               <input
@@ -169,12 +169,12 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="p-2 border rounded-md z-10 relative"
+                className="p-2 border bg-transparent rounded-md z-10 relative"
                 required
               />
             </div>
             <div className="flex flex-col mb-2">
-              <label htmlFor="message" className="mb-1 text-primary">
+              <label htmlFor="message" className="mb-1">
                 Message
               </label>
               <textarea
@@ -182,14 +182,14 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="p-2 border rounded-md z-10 relative"
+                className="p-2 border bg-transparent rounded-md z-10 relative"
                 rows="6"
                 required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="bg-primary text-secondary py-2 px-4 rounded-md hover:bg-secondary hover:border-2 hover:border-slate-600 hover:text-primary transition-colors"
+              className="hover:bg-primary hover:text-secondary py-2 px-6 rounded-md bg-secondary text-primary border-2  hover:border-secondary transition-colors mt-4 inline-block"
             >
               Send Message
             </button>
@@ -202,10 +202,8 @@ const Contact = () => {
               alt="Contact Us"
               className="w-full bg-cover lg:w-96 border border-primary rounded-md mx-auto"
             />
-            <h3 className="text-2xl font-semibold text-primary mb-4 dark:text-secondary">
-              Get in Touch
-            </h3>
-            <p className="text-primary text-wrap text-justify w-96 mb-8 dark:text-secondary">
+            <h3 className="text-2xl mb-4 text-primary">Get in Touch</h3>
+            <p className="text-accent text-wrap text-justify w-96 mb-8">
               Don't be shy!!!
               <br />
               Feel free to get in touch with me. I am always open to discussing

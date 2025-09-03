@@ -28,7 +28,7 @@ const ScrollToTop = () => {
     <div>
       {isVisible && (
         <button
-          className="scroll-to-top bg-accent fixed bottom-20 right-30 left-8 z-50 font-bold cursor-pointer p-2 duration-300 text-white rounded-full hover:scale-110 transition-transform"
+          className="scroll-to-top bg-primary hover:bg-accent fixed bottom-10 right-30 left-8 z-50 font-bold cursor-pointer p-2 duration-300 text-white rounded-full hover:scale-110 transition-transform"
           onClick={scrollToTop}
         >
           <img src={scroll} className="h-4 w-4 text-white" />

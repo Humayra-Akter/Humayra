@@ -105,46 +105,45 @@ const WorkExperience = () => {
 
   return (
     <div style={{ fontFamily: "'Poetsen One', sans-serif" }}>
-      <h3 className="text-3xl font-semibold text-center text-primary mb-10 mt-16 dark:text-secondary">
+      <h3 className="text-3xl text-center text-primary mb-10 mt-10">
         Experiences
       </h3>
 
-      <div className="relative max-w-4xl mx-auto shadow-2xl rounded-xl overflow-hidden bg-white dark:bg-gray-900 transition duration-500">
+      <div className="relative max-w-4xl mx-auto shadow-2xl rounded-xl overflow-hidden transition duration-500">
         {/* Header with Icon */}
         <div className="absolute top-4 left-4">
           <img
             src={slide?.image}
             alt="icon"
-            className="w-16 h-16 rounded-full border-4 border-white shadow-lg object-cover"
+            className="w-16 h-16 rounded-full border-2 border-white shadow-lg object-cover"
           />
         </div>
 
         {/* Background Glow */}
-        <div className="absolute inset-0 bg-gradient-to-bl from-indigo-400 via-purple-200 to-pink-400 dark:from-green-500 dark:via-teal-500 dark:to-emerald-500 opacity-20 pointer-events-none"></div>
-        {/* <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-purple-500 via-pink-500 to-fuchsia-500 dark:bg-gradient-to-l dark:from-green-500 dark:via-teal-500 dark:to-emerald-500 rounded-lg opacity-25 pointer-events-none transform transition duration-500 hover:opacity-50"></div> */}
+        <div className="absolute inset-0 bg-gradient-to-bl from-green-300 via-purple-300 to-emerald-300 opacity-10 pointer-events-none"></div>
         {/* Quote Icon */}
-        <FaQuoteRight className="absolute top-4 right-4 text-3xl text-primary dark:text-secondary opacity-50" />
+        <FaQuoteRight className="absolute top-4 right-4 text-3xl text-primary opacity-40" />
 
         {/* Main Post Image */}
         <div className="flex justify-center">
           <img
             src={mainImage}
             alt="post"
-            className="mt-20 max-h-60 rounded-lg shadow-md object-contain"
+            className="mt-20 max-h-60 border rounded-lg shadow-md object-contain"
           />
         </div>
 
         {/* Text Content */}
         <div className="p-6 text-center">
-          <p className="mt-4 text-xl font-semibold text-primary dark:text-secondary">
+          <p className="mt-4 text-xl text-primary">
             {slide.text}
           </p>
           {slide.text2 && (
-            <p className="text-lg text-gray-700 dark:text-gray-300">
+            <p className="text-lg text-gray-300">
               {slide.text2}
             </p>
           )}
-          <p className="mt-1 text-md text-gray-600 dark:text-gray-400">
+          <p className="mt-1 text-md text-gray-400">
             {slide.year}
           </p>
         </div>
@@ -154,7 +153,7 @@ const WorkExperience = () => {
       <div className="flex items-center justify-center mt-6 space-x-4">
         <button
           onClick={handlePrev}
-          className="p-2 text-white bg-primary rounded-full hover:scale-110 transition-transform"
+          className="p-2 text-black bg-primary rounded-full hover:scale-110 transition-transform"
         >
           <FaArrowLeft />
         </button>
@@ -164,9 +163,9 @@ const WorkExperience = () => {
             <button
               key={index}
               onClick={() => setCurrent(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
+              className={`w-2 h-2 rounded-full transition-all ${
                 current === index
-                  ? "bg-primary dark:bg-secondary scale-110"
+                  ? "bg-primary scale-110"
                   : "bg-gray-400"
               }`}
             ></button>
@@ -175,7 +174,7 @@ const WorkExperience = () => {
 
         <button
           onClick={handleNext}
-          className="p-2 text-white bg-primary rounded-full hover:scale-110 transition-transform"
+          className="p-2 text-black bg-primary rounded-full hover:scale-110 transition-transform"
         >
           <FaArrowRight />
         </button>

@@ -20,7 +20,7 @@ const Home = () => {
       <Education />
       <WorkExperience />
       {/* <Services /> */}
-      <SpecialMoment/>
+      <SpecialMoment />
       <TechStack />
       <HomeProjects />
       <HomeCertificatePreview />

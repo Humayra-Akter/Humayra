@@ -48,20 +48,18 @@ const Projects = () => {
       <div className="relative">
         <div
           aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-50"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-50"
         >
-          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400 dark:from-slate-100"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r  to-sky-300 from-cyan-400 dark:to-white"></div>
+          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br to-purple-400 from-primary"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-white"></div>
         </div>
       </div>
-      <h3 className="text-3xl mb-10 font-semibold text-primary text-center dark:text-secondary">
-        Projects
-      </h3>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <h3 className="text-3xl mb-10 text-primary text-center">Projects</h3>
+      <div className="grid gap-x-10 gap-y-10 md:grid-cols-2 lg:grid-cols-4" data-aos="fade-up">
         {projects?.map((project, index) => (
           <div
             key={project.id}
-            className="p-4 rounded-lg shadow-md hover:shadow-lg dark:bg-black shadow-purple-400 dark:shadow-green-300 dark:text-white hover:shadow-accent  border-2 dark:border-primary border-rose-200"
+            className="p-4 rounded-lg shadow-sm hover:shadow-md bg-black glass shadow-purple-200 text-white hover:shadow-accent border border-primary"
           >
             <div className="mb-4">
               {project.screenshots.length > 1 ? (
@@ -71,7 +69,7 @@ const Projects = () => {
                       key={index}
                       src={screenshot}
                       alt={`${project.name} screenshot ${index + 1}`}
-                      className="h-40 w-full object-cover rounded-lg border border-rose-100 dark:border-secondary shadow-xl hover:scale-95 cursor-pointer"
+                      className="h-40 w-full object-cover rounded-lg border border-rose-100 shadow-xl hover:scale-95 cursor-pointer"
                       onClick={() => openModal(screenshot)}
                     />
                   ))}
@@ -80,23 +78,23 @@ const Projects = () => {
                 <img
                   src={project.screenshots[0]}
                   alt={project?.name}
-                  className="mb-4 border border-rose-100 dark:border-secondary shadow-xl hover:scale-95 rounded-lg h-40 w-full object-cover cursor-pointer"
+                  className="mb-4 border border-rose-100 shadow-xl hover:scale-95 rounded-lg h-40 w-full object-cover cursor-pointer"
                   onClick={() => openModal(project.screenshots[0])}
                 />
               )}
             </div>
-            <h3 className="text-xl font-semibold mb-2">{project.name}</h3>{" "}
-            <p className="text-sm font-medium text-accent dark:text-accent mb-2">
+            <h3 className="text-xl mb-2">{project.name}</h3>{" "}
+            <p className="text-md text-slate-300 text-accent mb-2">
               <span>Category: </span>
               {project.category}
             </p>
-            <p className="text-sm font-thin mb-4">
+            <p className="text-sm font-sans font-thin mb-4">
               {expandedDescriptions[project.id]
                 ? project.description
                 : `${project.description.slice(0, 100)}... `}
               {project.description.length > 100 && (
                 <button
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-300 hover:underline"
                   onClick={() => toggleDescription(project.id)}
                 >
                   {expandedDescriptions[project.id] ? "Read Less" : "Read More"}
@@ -107,7 +105,7 @@ const Projects = () => {
               {project?.technologies?.map((tech) => (
                 <span
                   key={tech}
-                  className="bg-primary hover:scale-105 hover:font-bold text-secondary px-2 py-1 rounded text-sm"
+                  className="text-primary hover:scale-105 hover:font-bold bg-secondary px-2 py-1 rounded text-sm border"
                 >
                   {tech}
                 </span>
@@ -116,20 +114,22 @@ const Projects = () => {
             <div className="flex justify-end gap-3 mt-4">
               <a
                 href={project.github}
-                className="flex items-center justify-center w-10 h-10 animate-spin-slow hover:scale-105 bg-slate-600 hover:bg-blue-700 rounded-full text-secondary"
+                className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full bg-secondary"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="GitHub"
+                tooltip="GitHub"
               >
                 <i className="fab fa-github"></i>
               </a>
               {project?.liveDemo && (
                 <a
                   href={project?.liveDemo}
-                  className="flex items-center justify-center w-10 h-10 animate-spin-slow hover:scale-105 bg-slate-600 hover:bg-blue-700 rounded-full text-secondary"
+                  className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full bg-secondary"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Live Demo"
+                  tooltip="Live Demo"
                 >
                   <i className="fas fa-link"></i>
                 </a>
@@ -137,10 +137,11 @@ const Projects = () => {
               {project?.video && (
                 <a
                   href={project?.video}
-                  className="flex items-center justify-center w-10 h-10 animate-spin-slow hover:scale-105 bg-slate-600 hover:bg-blue-700 rounded-full text-secondary"
+                  className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full bg-secondary"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Video Link"
+                  tooltip="Video Link"
                 >
                   <i className="fas fa-video"></i>
                 </a>

@@ -11,16 +11,14 @@ const About = () => {
         fontFamily: "'Poetsen One', sans-serif",
       }}
     >
-      <h2 className="text-3xl text-primary lg:mt-7 mb-8 dark:text-secondary">
-        About Me
-      </h2>
+      <h2 className="text-3xl lg:mt-7 mb-8 text-primary">About Me</h2>
       <div className="relative">
         <div
           aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-50"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-50"
         >
-          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400 dark:from-slate-100"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r  to-sky-300 from-cyan-400 dark:to-white"></div>
+          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-primary to-purple-400"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-white"></div>
         </div>
       </div>
       <div className="lg:flex lg:mx-32 gap-8">
@@ -42,7 +40,7 @@ const About = () => {
         />
 
         <Slide cascade damping={0.5}>
-          <div className="text-black font-extralight text-wrap text-justify w-full lg:w-auto dark:text-white">
+          <div className="text-wrap font-thin text-justify w-full lg:w-auto text-white">
             <p className="mb-4">
               Hi, I'm Humayra Akter, a passionate and dedicated junior software
               developer with a strong interest in web development and software
@@ -79,7 +77,7 @@ const About = () => {
       <a
         href="/Humayra_Akter_CV.pdf"
         download
-        className="bg-primary text-secondary py-2 px-4 rounded-md hover:bg-secondary hover:text-primary hover:border-2 hover:border-primary transition-colors mt-8 inline-block"
+        className="hover:bg-primary hover:text-secondary py-2 px-4 rounded-md bg-secondary text-primary border-2  hover:border-secondary transition-colors mt-8 inline-block"
       >
         Download My CV
       </a>{" "}

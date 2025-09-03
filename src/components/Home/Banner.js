@@ -3,7 +3,8 @@ import humayra from "../../images/humayra.png";
 import download from "../../images/file.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Slide } from "react-awesome-reveal";
+import { ReactTyped as Typed } from "react-typed";
+import { motion } from "framer-motion";
 import SocialMedia from "./SocialMedia";
 
 const Banner = () => {
@@ -18,50 +19,46 @@ const Banner = () => {
         fontFamily: "'Poetsen One', sans-serif",
       }}
     >
-      {" "}
-    
-      {/* Distorted Animated Lines */}
-      {/* <div className="absolute inset-0 mt-10 z-0 h-[380px] pointer-events-none">
-          {[...Array(15)].map((_, index) => (
-            <div
-              key={index}
-              className={`absolute bg-slate-200 dark:bg-slate-800 opacity-60 w-[2px] h-full animate-flicker line-${index}`}
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                transform: `rotate(${Math.random() * 45 - 22.5}deg)`,
-              }}
-            ></div>
-          ))}
-        </div> */}
-      {/* <Slide cascade damping={0.5} direction="right"> */}
       <div className="lg:text-left text-center pt-10 lg:mt-24">
-        <h1 className="lg:text-6xl text-3xl font-bold bg-clip-text text-primary dark:text-secondary">
-          Humayra
-        </h1>
-        <h2 className="lg:text-6xl text-3xl font-bold bg-clip-text text-primary dark:text-secondary">
-          Akter
-        </h2>{" "}
-        <p className="text-md lg:text-xl text-gray-300 lg:mt-10 mt-6">
+        {/* <h1 className="text-4xl md:text-6xl xl:text-7xl leading-tight">
+          <span className="bg-gradient-to-r from-primary via-purple-400 to-purple-100 bg-clip-text text-transparent">
+            Humayra Akter
+          </span>
+        </h1> */}
+        <motion.div className="text-center md:text-left">
+          <h1 className="text-4xl md:text-6xl xl:text-6xl leading-tight">
+            <span className="glitch text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-400 to-purple-100 block">
+              <Typed
+                strings={["Humayra Akter"]}
+                typeSpeed={100}
+                backSpeed={20}
+                backDelay={2000}
+                loop
+              />
+            </span>
+          </h1>
+          <SocialMedia />
+
+          <div className="mt-8 inline-flex">
+            <a
+              href="/Humayra_Akter_CV.pdf"
+              download
+              className="hover:bg-primary hover:text-secondary py-2.5 px-4 rounded-md bg-secondary text-primary border-2 flex gap-2 hover:border-secondary transition-colors"
+            >
+              <img src={download} className="w-5 h-5" alt="download" />
+              Download My CV
+            </a>
+          </div>
+        </motion.div>
+
+        {/* <p className="text-md lg:text-xl text-gray-300 lg:mt-10 mt-6">
           <span className="text-accent dark:text-white">
             Full Stack Developer
           </span>{" "}
           |{" "}
           <span className="text-accent dark:text-white">UI/UX Enthusiast</span>{" "}
           | <span className="text-accent dark:text-white">Innovator</span>
-        </p>
-        <div className="inline-block">
-          <a
-            href="/Humayra_Akter_CV.pdf"
-            download
-            className="bg-primary text-secondary py-2 px-4 rounded-md hover:bg-secondary border-primary dark:border-secondary text-sm lg:text-md hover:text-primary transition-colors mt-8 flex gap-2"
-          >
-            <img src={download} className="lg:w-6 lg:h-6 w-4 h-4" />
-            Download My CV
-          </a>
-        </div>
-        {/* Social Icons */}
-        <SocialMedia />
+        </p> */}
       </div>
       {/* </Slide> */}
       {/* <Slide cascade damping={0.5} direction="up"> */}
@@ -87,12 +84,11 @@ const Banner = () => {
       </div>
       {/* </Slide> */}
       <div>
-        {/* <Slide cascade damping={0.5}> */}
         <div className="text-justify mt-10 lg:mt-32">
-          <h3 className="text-2xl text-center lg:text-left font-semibold text-primary dark:text-secondary">
+          <h3 className="text-2xl text-center lg:text-left text-primary">
             About Me
           </h3>
-          <p className="lg:text-base text-sm text-black dark:text-white mt-2">
+          <p className="lg:text-base text-sm text-slate-200 mt-2">
             Dedicated and innovative computer science undergraduate with a
             passion for programming and problem-solving. Committed to leveraging
             skills in C, CPP, and JavaScript, Typescript along with a keen
@@ -103,18 +99,6 @@ const Banner = () => {
         {/* </Slide> */}
       </div>{" "}
       <style jsx>{`
-        @keyframes flicker {
-          0%,
-          100% {
-            opacity: 0.2;
-            transform: scaleY(07) translateY(0);
-          }
-          50% {
-            opacity: 0.7;
-            transform: scaleY(0.5) translateY(16px);
-          }
-        }
-
         @keyframes fade-in-up {
           from {
             opacity: 0;
@@ -143,24 +127,6 @@ const Banner = () => {
             opacity: 1;
           }
         }
-
-        .animate-flicker {
-          animation: flicker 3s infinite ease-in-out;
-        }
-        .animate-fade-in-up {
-          animation: fade-in-up 1.5s ease-out forwards;
-        }
-        .animate-fade-in {
-          animation: fade-in 2s ease-out forwards;
-        }
-        .animate-fade-in-delay {
-          animation: fade-in 3s ease-out forwards;
-        }
-
-        /* Randomized line animation delays */
-        ${[...Array(15)].map(
-          (_, i) => `.line-${i} { animation-delay: ${Math.random() * 2}s; }`
-        )}
       `}</style>
     </div>
   );
