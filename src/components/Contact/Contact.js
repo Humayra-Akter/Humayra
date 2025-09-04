@@ -203,7 +203,12 @@ const Contact = () => {
               className="w-full bg-cover lg:w-96 border border-primary rounded-md mx-auto"
             />
             <h3 className="text-2xl mb-4 text-primary">Get in Touch</h3>
-            <p className="text-accent text-wrap text-justify w-96 mb-8">
+            <p
+              style={{
+                fontFamily: "'Esteban'",
+              }}
+              className="text-accent text-wrap text-justify w-96 mb-8"
+            >
               Don't be shy!!!
               <br />
               Feel free to get in touch with me. I am always open to discussing

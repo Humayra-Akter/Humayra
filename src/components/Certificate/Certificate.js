@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { motion } from "framer-motion";
 import txbd from "../../images/TechnocianBD.png";
 import txbd2 from "../../images/txbd.jpg";
 import bcsIct from "../../images/bcsIct.jpg";
@@ -112,7 +113,7 @@ const certificates = [
   },
   {
     title:
-      "among top 40 selected teams for project showcase in the national event UIU CSE Fest 2025 by the Dept. of CSE at United International University",
+      "Among top 40 selected teams for project showcase in the national event UIU CSE Fest 2025 by the Dept. of CSE at United International University",
     image1: uiuFest,
     image2: uiuFest2,
   },
@@ -238,10 +239,8 @@ const Certificate = () => {
 
   return (
     <div
-      className="mx-auto px-4 sm:px-6 lg:px-8 py-8"
-      style={{
-        fontFamily: "'Poetsen One', sans-serif",
-      }}
+      className="max-w-7xl mx-auto px-6 py-16 relative"
+      style={{ fontFamily: "'Poetsen One', sans-serif" }}
     >
       <div className="relative">
         <div
@@ -252,29 +251,39 @@ const Certificate = () => {
           <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-white"></div>
         </div>
       </div>
-      <h3 className="text-3xl mb-10 text-primary text-center">Certificates</h3>
-      <div className="grid gap-x-7 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
+      <h3 className="text-4xl text-center text-primary mb-14">Certificates</h3>
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         {certificates.map((certificate, index) => (
-          <div
+          <motion.div
             key={index}
-            className="p-4 rounded-lg shadow-sm hover:shadow-md bg-black glass shadow-purple-200 text-white hover:shadow-accent border border-primary"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            className="group relative rounded-2xl border border-slate-600/40 bg-white/5 backdrop-blur-md shadow-lg hover:shadow-primary/40 transition-all overflow-hidden"
           >
-            <div className="relative group lg:h-64 h-48 overflow-hidden rounded-md">
-              {/* First Image */}
+            {/* Hover Image Swap */}
+            <div className="relative h-64 overflow-hidden">
               <img
                 src={certificate.image1}
                 alt={certificate.title}
-                className="absolute border border-secondary inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:opacity-0 group-hover:scale-110"
               />
-              {/* Second Image */}
               <img
                 src={certificate.image2}
                 alt={certificate.title}
-                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-700 group-hover:opacity-100 group-hover:scale-110"
               />
             </div>
-            <p className="mt-4 text-center text-sm">{certificate.title}</p>
-          </div>
+
+            {/* Title */}
+            <p
+              style={{ fontFamily: "'Esteban'" }}
+              className="p-4 text-center text-slate-200 text-sm leading-relaxed"
+            >
+              {certificate.title}
+            </p>
+          </motion.div>
         ))}
       </div>
       <div className="relative">

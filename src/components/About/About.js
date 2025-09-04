@@ -40,7 +40,12 @@ const About = () => {
         />
 
         <Slide cascade damping={0.5}>
-          <div className="text-wrap font-thin text-justify w-full lg:w-auto text-white">
+          <div
+            style={{
+              fontFamily: "'Esteban'",
+            }}
+            className="text-wrap font-thin text-justify w-full lg:w-auto text-white"
+          >
             <p className="mb-4">
               Hi, I'm Humayra Akter, a passionate and dedicated junior software
               developer with a strong interest in web development and software
@@ -74,13 +79,16 @@ const About = () => {
           </div>
         </Slide>
       </div>
-      <a
-        href="/Humayra_Akter_CV.pdf"
-        download
-        className="hover:bg-primary hover:text-secondary py-2 px-4 rounded-md bg-secondary text-primary border-2  hover:border-secondary transition-colors mt-8 inline-block"
-      >
-        Download My CV
-      </a>{" "}
+      <div className="mt-10">
+        <a
+          href="/Humayra_Akter_CV.pdf"
+          download
+          className="bg-gradient-to-r from-primary to-cyan-400 text-slate-900 rounded-full
+              hover:bg-primary shadow-lg hover:scale-105 transition hover:text-secondary px-6 py-2 bg-secondary border-2 hover:border-secondary"
+        >
+          Download My CV
+        </a>
+      </div>
     </div>
   );
 };

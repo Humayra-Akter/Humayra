@@ -1,8 +1,6 @@
-
 import { Slide } from "react-awesome-reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
 
 const Education = () => {
   const bachelors = {
@@ -28,19 +26,12 @@ const Education = () => {
     ],
   };
 
-  const capAnim = {
-    animate: {
-      y: [0, -5, 0],
-      transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
-    },
-  };
-
   return (
     <div
-      className="lg:my-28 my-20 px-6 lg:px-20"
+      className="my-20 px-6 lg:px-20 relative"
       style={{ fontFamily: "'Poetsen One', sans-serif" }}
     >
-      <h3 className="text-3xl text-center text-primary mb-10 flex items-center justify-center gap-3">
+      <h3 className="text-3xl text-center text-primary mb-12 flex items-center justify-center gap-3">
         <FontAwesomeIcon
           icon={faGraduationCap}
           className="text-primary text-3xl"
@@ -48,94 +39,84 @@ const Education = () => {
         Education
       </h3>
 
-      <div className="max-w-5xl mx-auto grid grid-cols-1 gap-5">
-        {/* Bachelor's Card */}
-        <Slide direction="up" triggerOnce>
-          <div className="flex flex-col sm:flex-row items-center gap-6 rounded-2xl border border-purple-200 p-6 shadow-lg hover:shadow-accent/30 transition-all bg-slate-900">
-            {/* Animated Icon */}
-            <motion.div
-              className="w-20 h-20 rounded-full border-2 border-accent flex items-center justify-center bg-slate-800"
-              {...capAnim}
-            >
-              <FontAwesomeIcon
-                className="text-primary text-3xl"
-                icon={faGraduationCap}
-              />
-            </motion.div>
+      <div className="relative max-w-4xl mx-auto">
+        {/* Vertical Line */}
+        <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 via-primary to-pink-400 rounded-full"></div>
 
-            {/* Info */}
-            <div className="text-center sm:text-left">
-              <h4 className="text-lg text-primary">
-                {bachelors.institution}
-              </h4>
-              <p className="text-white mt-1">
-                {bachelors.degree}
-              </p>
-              <p className="text-sm text-gray-300">
-                {bachelors.year}
-              </p>
+        <div className="space-y-12">
+          {/* Bachelor's Card - Highlighted */}
+          <Slide direction="up" triggerOnce>
+            <div className="relative flex items-start gap-6">
+              {/* Timeline Dot */}
+              <div className="relative z-10">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-400 to-primary flex items-center justify-center text-white shadow-lg">
+                  <FontAwesomeIcon icon={faGraduationCap} />
+                </div>
+              </div>
+
+              {/* Main Highlight Card */}
+              <div className="flex-1 p-6 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl hover:shadow-purple-500/30 transition-all">
+                <div className="flex justify-between items-center flex-wrap gap-2">
+                  <h4 className="text-xl text-primary">
+                    {bachelors.institution}
+                  </h4>
+                  <span className="text-sm text-gray-300">
+                    {bachelors.year}
+                  </span>
+                </div>
+                <p
+                  style={{ fontFamily: "'Esteban'" }}
+                  className="text-white mt-3 text-lg"
+                >
+                  {bachelors.degree}
+                </p>
+              </div>
             </div>
-          </div>
-        </Slide>
+          </Slide>
 
-        {/* School Group Card */}
-        <Slide direction="up" delay={100} triggerOnce>
-          <div className="flex flex-col sm:flex-row items-center gap-6 rounded-2xl border border-slate-700 p-6 shadow-lg hover:shadow-accent/30 transition-all bg-slate-900">
-            {/* Animated Icon */}
-            <motion.div
-              className="w-20 h-20 rounded-full border-2 border-accent flex items-center justify-center bg-slate-800"
-              {...capAnim}
-            >
-              <FontAwesomeIcon
-                className="text-primary text-3xl"
-                icon={faGraduationCap}
-              />
-            </motion.div>
+          {/* School Group Card - Compact */}
+          <Slide direction="up" delay={150} triggerOnce>
+            <div className="relative flex items-start gap-6">
+              {/* Timeline Dot */}
+              <div className="relative z-10">
+                <div className="w-11 h-11 rounded-full bg-gradient-to-r from-purple-400 to-primary flex items-center justify-center text-white shadow-lg">
+                  <FontAwesomeIcon icon={faGraduationCap} />
+                </div>
+              </div>
 
-            {/* Info */}
-            <div className="flex-1 text-center sm:text-left">
-              <h4 className="text-lg text-primary">
-                {schoolGroup.institution}
-              </h4>
-              <ul className="mt-2 space-y-2">
-                {schoolGroup.items.map((item, idx) => (
-                  <li
-                    key={idx}
-                    className="p-3 rounded-lg border border-slate-700 bg-slate-800/50"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="font-medium text-white">
-                        {item.level}
-                      </span>
-                      <span className="text-sm text-gray-300">
-                        {item.year}
-                      </span>
-                    </div>
-                    <p className="text-xs text-gray-300 mt-1">
-                      {item.note}
-                    </p>
-                  </li>
-                ))}
-              </ul>
+              {/* Grouped Card */}
+              <div className="flex-1 p-6 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg hover:shadow-purple-500/30 transition-all">
+                <h4 className="text-lg text-primary mb-3">
+                  {schoolGroup.institution}
+                </h4>
+                <ul className="space-y-3">
+                  {schoolGroup.items.map((item, idx) => (
+                    <li
+                      key={idx}
+                      className="p-3 rounded-lg backdrop-blur-lg border border-white/20 transition-all"
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="font-medium text-white">
+                          {item.level}
+                        </span>
+                        <span className="text-gray-300">{item.year}</span>
+                      </div>
+                      <p
+                        style={{ fontFamily: "'Esteban'" }}
+                        className="text-sm text-gray-300 mt-1"
+                      >
+                        {item.note}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-        </Slide>
+          </Slide>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Education;
-<style jsx>{
-  `@keyframes bounce {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }`
-}</style>;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import devSprint from "../../images/devSprint.jpg";
 import devSprint2 from "../../images/devSprint2.jpg";
@@ -8,6 +8,7 @@ import nsuHackathon from "../../images/nsuHackathon.jpg";
 import nsuHackathon2 from "../../images/nsuHackathon2.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 const homeCertificates = [
   {
@@ -34,61 +35,69 @@ const HomeCertificatePreview = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+
   return (
-    <div
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
-      style={{
-        fontFamily: "'Poetsen One', sans-serif",
-      }}
+    <section
+      className="max-w-7xl mx-auto px-6 py-16 relative"
+      style={{ fontFamily: "'Poetsen One', sans-serif" }}
     >
-      <div className="relative">
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40"
-        >
-          <div className="blur-[106px] lg:h-56 h-44 bg-gradient-to-br from-slate-200 to-purple-400"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-white"></div>
-        </div>
-      </div>
-      <h3 className="text-3xl mt-10 mb-6 text-primary text-center">
+      {/* Title */}
+      <h3 className="text-4xl text-center text-primary mb-14 tracking-wide">
         Featured Certificates
       </h3>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      {/* Grid */}
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         {homeCertificates.map((certificate, index) => (
-          <div
+          <motion.div
             key={index}
-            // data-aos="fade-left"
-            className="p-4 rounded-lg shadow-sm hover:shadow-md bg-transparent shadow-purple-200 text-white hover:shadow-accent border border-primary"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            className="group relative rounded-2xl border border-slate-600/40 bg-white/5 backdrop-blur-md shadow-lg hover:shadow-primary/40 transition-all overflow-hidden"
           >
-            <div className="relative group h-64 overflow-hidden rounded-md">
-              {/* First Image */}
+            {/* Hover Image Swap */}
+            <div className="relative h-64 overflow-hidden">
               <img
                 src={certificate.image1}
                 alt={certificate.title}
-                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:opacity-0 group-hover:scale-110"
               />
-              {/* Second Image */}
               <img
                 src={certificate.image2}
                 alt={certificate.title}
-                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-700 group-hover:opacity-100 group-hover:scale-110"
               />
             </div>
-            <p className="mt-4 text-center text-sm font-medium">
+
+            {/* Title */}
+            <p
+              style={{ fontFamily: "'Esteban'" }}
+              className="p-4 text-center text-slate-200 text-sm leading-relaxed"
+            >
               {certificate.title}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
-      <div className="text-center mt-6 mb-16">
+
+      {/* See All Button */}
+      <div className="text-center mt-12">
         <Link
-        to="/certificate"
-          className="hover:bg-primary hover:text-secondary py-2 px-6 rounded-md bg-secondary text-primary border-2  hover:border-secondary transition-colors mt-4 inline-block"
+          to="/certificate"
+          className="px-6 py-2 rounded-full border-cyan-400/50 text-cyan-300 hover:bg-cyan-400 hover:text-slate-900 shadow-md transition border-2"
         >
           See All
         </Link>
       </div>
-    </div>
+
+      {/* Background Blobs */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl opacity-25 animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-cyan-400 rounded-full blur-3xl opacity-25 animate-pulse"></div>
+      </div>
+    </section>
   );
 };
 

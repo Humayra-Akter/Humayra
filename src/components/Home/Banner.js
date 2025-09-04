@@ -16,7 +16,7 @@ const Banner = () => {
     <div
       className="lg:pt-5 mx-20 lg:grid grid-cols-3"
       style={{
-        fontFamily: "'Poetsen One', sans-serif",
+        fontFamily: "'Poetsen One','Esteban'",
       }}
     >
       <div className="lg:text-left text-center pt-10 lg:mt-24">
@@ -43,7 +43,8 @@ const Banner = () => {
             <a
               href="/Humayra_Akter_CV.pdf"
               download
-              className="hover:bg-primary hover:text-secondary py-2.5 px-4 rounded-md bg-secondary text-primary border-2 flex gap-2 hover:border-secondary transition-colors"
+              className="bg-gradient-to-r from-primary to-cyan-400 text-slate-900 rounded-full
+              hover:bg-primary shadow-lg hover:scale-105 transition hover:text-secondary px-6 py-2 bg-secondary border-2 flex gap-2 hover:border-secondary"
             >
               <img src={download} className="w-5 h-5" alt="download" />
               Download My CV
@@ -88,7 +89,12 @@ const Banner = () => {
           <h3 className="text-2xl text-center lg:text-left text-primary">
             About Me
           </h3>
-          <p className="lg:text-base text-sm text-slate-200 mt-2">
+          <p
+            style={{
+              fontFamily: "'Esteban'",
+            }}
+            className="lg:text-base text-sm text-slate-200 mt-2"
+          >
             Dedicated and innovative computer science undergraduate with a
             passion for programming and problem-solving. Committed to leveraging
             skills in C, CPP, and JavaScript, Typescript along with a keen

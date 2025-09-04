@@ -18,7 +18,8 @@
     "video": "https://drive.google.com/file/d/1YtdSmiL8VVPTytpBx5KmsDu-C-4gf0JT/view?usp=drive_link",
     "liveDemo": "https://comforting-swan-178107.netlify.app/",
     "github": "https://github.com/Humayra-Akter/book-catalog",
-    "category": "Full-Stack Web Application"
+    "category": "Full-Stack Web Application",
+    "type": "e-commerce"
   },
   {
     "id": 2,
@@ -45,7 +46,8 @@
     "video": "https://drive.google.com/file/d/1_LR4JXiXtIm_3tJ3UQkPSqIyFbokUllY/view?usp=drive_link",
     "liveDemo": "https://gorgeous-sunflower-64903b.netlify.app/",
     "github": "https://github.com/Humayra-Akter/elite-dwell-assist",
-    "category": "Full-Stack Web Application"
+    "category": "Full-Stack Web Application",
+    "type": "e-commerce"
   },
   {
     "id": 3,
@@ -68,7 +70,8 @@
     "video": "https://drive.google.com/file/d/1YZE4Pua3B79ZMTO-tjI1RmcIV4r2NaQ1/view?usp=drive_link",
     "liveDemo": "https://ticket-booking-tawny.vercel.app/",
     "github": "https://github.com/Humayra-Akter/ticket-booking",
-    "category": "E-Commerce Web Application"
+    "category": "Full-Stack Web Application",
+    "type": "e-commerce"
   },
   {
     "id": 4,
@@ -91,7 +94,8 @@
     "video": "https://drive.google.com/file/d/1jWTzOmadK1whnSSFishYFu-hySMrcugK/view?usp=drive_link",
     "liveDemo": "https://pc-builder-sage-pi.vercel.app",
     "github": "https://github.com/Humayra-Akter/pc-builder",
-    "category": "Productivity Tool"
+    "category": "Full-Stack Web Application",
+    "type": "Productivity Tool"
   },
   {
     "id": 5,
@@ -115,7 +119,8 @@
     "video": "https://drive.google.com/file/d/14HGTF1TmVMq3SuOrOL01NFURsnQFCk2G/view?usp=drive_link",
     "liveDemo": "https://drive.google.com/file/d/1nJpN_Z8nNqN0dFGOD3T6sb6ioSBKvY2L/view?usp=drive_link",
     "github": "https://github.com/Humayra-Akter/laundry-mate-app",
-    "category": "Service-Based Mobile Application"
+    "category": "Full-Stack Web Application",
+    "type": "Service-Based Mobile Application"
   },
   {
     "id": 6,
@@ -131,7 +136,8 @@
     "screenshots": ["/project/edutrio-dynamix.png"],
     "video": "https://drive.google.com/file/d/1qtCXIMNVPCfX6119QxPnBOJX5jvWY_av/view?usp=drive_link",
     "github": "https://github.com/edu-trio-dynamix/edu-trio-dynamix",
-    "category": "Education Platform"
+    "category": "Full-Stack Web Application",
+    "type": "Education Platform"
   },
   {
     "id": 7,
@@ -153,7 +159,8 @@
     ],
     "video": "https://drive.google.com/file/d/1gyWjfn5_PKdhflx79OqtqTSzbBpMm8G1/view?usp=drive_link",
     "github": "https://github.com/Humayra-Akter/car-service",
-    "category": "CRUD Management System"
+    "category": "Full-Stack Web Application",
+    "type": "CRUD Management System"
   },
   {
     "id": 8,
@@ -176,7 +183,8 @@
     ],
     "video": "https://drive.google.com/file/d/1B-jNXosdccWRTrbmNhO8EPFgySyRpq-7/view?usp=drive_link",
     "github": "https://github.com/Humayra-Akter/microsoft-loop-clone",
-    "category": "Collaborative Productivity Tool"
+    "category": "Full-Stack Web Application",
+    "type": "Collaborative Productivity Tool"
   },
   {
     "id": 9,
@@ -197,7 +205,8 @@
     ],
     "video": "https://drive.google.com/file/d/1fQ8j8EzxGzez38ysErfCD9alXpY6sIMH/view?usp=drive_link",
     "github": "https://github.com/Humayra-Akter/skillsForTomorrow",
-    "category": "Vocational learning Platform"
+    "category": "Frontend Web Application",
+    "type": "Vocational learning Platform"
   },
   {
     "id": 10,
@@ -218,7 +227,8 @@
     ],
     "video": "https://drive.google.com/file/d/1hEl7djYkSPpV2nZyDI3luD4GFNV1Gd3l/view?usp=drive_link",
     "github": "https://github.com/Humayra-Akter/cyber-security-club",
-    "category": "Cybersecurity Learning Platform"
+    "category": "Frontend Web Application",
+    "type": "Cybersecurity Learning Platform"
   },
   {
     "id": 11,
@@ -232,7 +242,8 @@
       "/project/clock-app4.png"
     ],
     "github": "https://github.com/Humayra-Akter/clock-app",
-    "category": "Utility Mobile Application"
+    "category": "Frontend Web Application",
+    "type": "Utility Mobile Application"
   },
   {
     "id": 12,
@@ -255,7 +266,8 @@
       "/project/blooming-elegance4.png"
     ],
     "github": "https://github.com/Humayra-Akter/Blooming-Elegance",
-    "category": "E-Commerce Management Application"
+    "category": "Full-Stack Web Application",
+    "type": "E-Commerce Management Application"
   },
   {
     "id": 13,
@@ -268,7 +280,8 @@
       "/project/currancy3.png"
     ],
     "github": "https://github.com/Humayra-Akter/currency-flatlist",
-    "category": "Currency Converter and Game"
+    "category": "Frontend Web Application",
+    "type": "Currency Converter and Game"
   },
   {
     "id": 14,
@@ -281,7 +294,8 @@
       "/project/surfaceDis3.png"
     ],
     "github": "https://github.com/Humayra-Akter/Surface-Disinfecting-Obstacle-Avoiding-Robot-Using-UV-Light",
-    "category": "Robot"
+    "category": "Robot",
+    "type": "Robot"
   },
   {
     "id": 15,
@@ -290,7 +304,8 @@
     "technologies": ["React Native", "TypeScript"],
     "screenshots": ["/project/pass-gen1.png", "/project/pass-gen2.png"],
     "github": "https://github.com/Humayra-Akter/password-generator",
-    "category": "Security Tool"
+    "category": "Frontend Web Application",
+    "type": "Security Tool"
   },
   {
     "id": 16,
@@ -299,7 +314,8 @@
     "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/monthly-budget.png"],
     "github": "https://github.com/Humayra-Akter/monthly-budget",
-    "category": "Financial Management Application"
+    "category": "Frontend Web Application",
+    "type": "Financial Management Application"
   },
   {
     "id": 17,
@@ -308,7 +324,8 @@
     "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/convention-center.png"],
     "github": "https://github.com/Humayra-Akter/Convention-centre",
-    "category": "Showcase Website"
+    "category": "Frontend Web Application",
+    "type": "Showcase Website"
   },
   {
     "id": 18,
@@ -317,7 +334,8 @@
     "technologies": ["HTML", "CSS"],
     "screenshots": ["/project/front-pg.png"],
     "github": "https://github.com/Humayra-Akter/front-page-demo",
-    "category": "Landing Page"
+    "category": "Frontend Web Application",
+    "type": "Landing Page"
   },
   {
     "id": 19,
@@ -326,7 +344,8 @@
     "technologies": ["HTML", "CSS", "JavaScript", "API"],
     "screenshots": ["/project/weather1.png", "/project/weather2.png"],
     "github": "https://github.com/Humayra-Akter/weather-app",
-    "category": "Weather Forecast App"
+    "category": "Frontend Web Application",
+    "type": "Weather Forecast App"
   },
   {
     "id": 20,
@@ -335,7 +354,8 @@
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
     "screenshots": ["/project/pin-generator.png"],
     "github": "https://github.com/Humayra-Akter/pin-matcher",
-    "category": "PIN Verification Tool"
+    "category": "Frontend Web Application",
+    "type": "PIN Verification Tool"
   },
   {
     "id": 21,
@@ -344,7 +364,8 @@
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
     "screenshots": ["/project/Shopping-cart.png"],
     "github": "https://github.com/Humayra-Akter/shopping-cart",
-    "category": "Shopping Cart Application"
+    "category": "Frontend Web Application",
+    "type": "Shopping Cart Application"
   },
   {
     "id": 22,
@@ -353,7 +374,8 @@
     "technologies": ["HTML", "CSS", "JavaScript", "API"],
     "screenshots": ["/project/baperbank1.png", "/project/baperbank2.png"],
     "github": "https://github.com/Humayra-Akter/baap-er-bank",
-    "category": "Banking System"
+    "category": "Frontend Web Application",
+    "type": "Banking System"
   },
   {
     "id": 23,
@@ -362,7 +384,8 @@
     "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/panda.png"],
     "github": "https://github.com/Humayra-Akter/panda-commerce-bootstrap",
-    "category": "E-Commerce Dummy Website"
+    "category": "Frontend Web Application",
+    "type": "E-Commerce Dummy Website"
   },
   {
     "id": 24,
@@ -371,7 +394,8 @@
     "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/influencer-gears.png"],
     "github": "https://github.com/Humayra-Akter/influencer-gear",
-    "category": "Product Showcase Website"
+    "category": "Frontend Web Application",
+    "type": "Product Showcase Website"
   },
   {
     "id": 25,
@@ -380,6 +404,7 @@
     "technologies": ["HTML", "CSS", "JavaScript"],
     "screenshots": ["/project/amazon-shop.png"],
     "github": "https://github.com/Humayra-Akter/amajon-shopping-cart",
-    "category": "Shopping Cart Management"
+    "category": "Frontend Web Application",
+    "type": "Shopping Cart Management"
   }
 ]

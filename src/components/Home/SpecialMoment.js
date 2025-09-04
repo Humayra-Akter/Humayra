@@ -31,7 +31,10 @@ const SpecialMoment = () => {
         >
           A Milestone to Remember
         </motion.h2>
-        <p className="text-white md:text-lg mt-3 leading-relaxed">
+        <p
+          style={{ fontFamily: "'Esteban'" }}
+          className="text-white md:text-lg mt-3 leading-relaxed"
+        >
           Launching the{" "}
           <span className="text-purple-300">MIST Career Club</span> website was
           more than just a project—it was a journey of passion, dedication, and
@@ -58,41 +61,51 @@ const SpecialMoment = () => {
             </motion.div>
           ))}
         </div>
-
         {/* Stats */}
-        <div className="mt-6 flex flex-wrap justify-center gap-6">
+
+        <div className="mt-8 flex flex-wrap gap-6 justify-center">
           {[
             {
               value: "1st",
-              label: "Inaugrated Club Website",
-              color: "text-purple-500",
+              label: "Inaugurated Website",
+              color: "from-pink-500 to-purple-500",
             },
             {
               value: "100+",
               label: "Hours of Dedication",
-              color: "text-[#ff00ff]",
+              color: "from-cyan-400 to-blue-500",
             },
-            { value: "1", label: "Proud Moment", color: "text-pink-700" },
-          ].map((stat, index) => (
-            <motion.div
-              key={index}
-              className="glassmorphism bg-slate-900 bg-slate-200 p-4 rounded-xl shadow-lg w-32 text-center"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 * index }}
+            {
+              value: "1",
+              label: "Proud Moment",
+              color: "from-yellow-400 to-orange-500",
+            },
+          ].map((stat, i) => (
+            <div
+              key={i}
+              className="rounded-xl p-4 w-32 text-center bg-slate-800/40 border border-white/10 backdrop-blur-md shadow-md hover:shadow-lg hover:-translate-y-1 transition"
             >
-              <p className={`text-3xl font-bold ${stat.color}`}>{stat.value}</p>
-              <p className="text-sm text-white">{stat.label}</p>
-            </motion.div>
+              <p
+                className={`text-3xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}
+              >
+                {stat.value}
+              </p>
+              <p
+                style={{ fontFamily: "'Esteban'" }}
+                className="text-sm text-gray-300"
+              >
+                {stat.label}
+              </p>
+            </div>
           ))}
         </div>
 
         {/* Call to Action */}
-        <div className="mt-8 flex flex-wrap justify-center lg:gap-6">
+        <div className="mt-8 flex flex-wrap justify-center gap-6">
           <motion.a
             href="https://career-club.mist.ac.bd/"
             target="_blank"
-            className="hover:bg-primary hover:text-secondary py-2 px-4 rounded-md bg-secondary text-primary border-2 flex gap-2 hover:border-secondary transition-colors mt-8 hover:scale-105"
+            className="px-6 py-2 rounded-full bg-gradient-to-r from-primary to-cyan-400 text-slate-900 shadow-lg hover:scale-105 transition"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -102,7 +115,7 @@ const SpecialMoment = () => {
           <motion.a
             href="https://drive.google.com/file/d/18DeOJnv5WVp_237qmynpp9OFjbxxR_X-/view?usp=sharing"
             target="_blank"
-            className="hover:bg-primary hover:text-secondary py-2 px-4 rounded-md bg-secondary text-primary border-2 flex gap-2 hover:border-secondary transition-colors mt-8 hover:scale-105 "
+            className="px-6 py-2 rounded-full border border-cyan-400/50 text-cyan-300 hover:bg-cyan-400 hover:text-slate-900 shadow-md transition"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}

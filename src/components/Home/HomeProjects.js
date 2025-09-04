@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 const homeProjects = [
   {
@@ -119,10 +120,11 @@ const HomeProjects = () => {
       </h3>
       <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
         {homeProjects?.map((project, index) => (
-          <div
+          <motion.div
             key={project.id}
-            // data-aos="fade-right"
-            className="p-4 rounded-lg shadow-sm hover:shadow-md bg-transparent shadow-purple-200 text-white hover:shadow-accent border border-primary"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.98 }}
+            className="p-4 rounded-lg shadow-sm hover:shadow-md bg-transparent shadow-purple-200 text-white hover:shadow-accent border-x"
           >
             <div className="mb-4">
               {project.screenshots.length > 1 ? (
@@ -151,7 +153,7 @@ const HomeProjects = () => {
               <span>Category: </span>
               {project.category}
             </p>
-            <p className="text-sm font-sans font-thin mb-4">
+            <p style={{ fontFamily: "'Esteban'" }} className="text-sm mb-4">
               {expandedDescriptions[project.id]
                 ? project.description
                 : `${project.description.slice(0, 100)}... `}
@@ -164,22 +166,24 @@ const HomeProjects = () => {
                 </button>
               )}
             </p>
+            {/* Tech stack  */}
             <div className="flex gap-2 flex-wrap mb-4">
               {project?.technologies?.map((tech) => (
                 <span
                   key={tech}
-                  className="text-primary hover:scale-105 hover:font-bold bg-secondary px-2 py-1 rounded text-sm border"
+                  style={{ fontFamily: "'Esteban'" }}
+                  className="px-3 py-1 text-xs rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary text-primary hover:scale-105 transition-transform"
                 >
                   {tech}
                 </span>
               ))}
             </div>
+            {/* Links  */}
             <div className="flex justify-end gap-3 mt-4">
               <a
                 href={project.github}
-                className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full bg-secondary"
+                className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full glass"
                 target="_blank"
-                // rel="noopener noreferrer"
                 title="GitHub"
                 tooltip="GitHub"
               >
@@ -188,7 +192,7 @@ const HomeProjects = () => {
               {project?.liveDemo && (
                 <a
                   href={project?.liveDemo}
-                  className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full bg-secondary"
+                  className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full glass"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Live Demo"
@@ -200,7 +204,7 @@ const HomeProjects = () => {
               {project?.video && (
                 <a
                   href={project?.video}
-                  className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full bg-secondary"
+                  className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full glass"
                   tooltip="Video Link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -210,16 +214,16 @@ const HomeProjects = () => {
                 </a>
               )}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 overflow-hidden"
+          className="fixed inset-0 bg-black/70 flex justify-center items-center z-50"
           onClick={closeModal}
         >
           <div
-            className="relative p-4 bg-white dark:bg-black rounded-lg shadow-lg max-w-full sm:max-w-3xl w-[90%] max-h-[90vh] overflow-auto"
+            className="relative p-4 bg-white/10 backdrop-blur-lg rounded-xl shadow-lg max-w-full sm:max-w-4xl w-[90%] max-h-[90vh] overflow-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -237,10 +241,10 @@ const HomeProjects = () => {
         </div>
       )}
 
-      <div className="text-center mt-6 mb-16">
+      <div className="text-center mt-8 mb-16">
         <Link
           to="/projects"
-          className="hover:bg-primary hover:text-secondary py-2 px-6 rounded-md bg-secondary text-primary border-2  hover:border-secondary transition-colors mt-4 inline-block"
+          className="px-6 py-2 rounded-full border-cyan-400/50 text-cyan-300 hover:bg-cyan-400 hover:text-slate-900 shadow-md transition border-2"
         >
           See All
         </Link>
