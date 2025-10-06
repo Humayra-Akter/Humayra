@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import txbd from "../../images/TechnocianBD.png";
 import txbd2 from "../../images/txbd.jpg";
+import nasa from "../../images/NASA2025.png";
 import bcsIct from "../../images/bcsIct.jpg";
 import bcsIct2 from "../../images/bcsIct2.jpg";
 import devSprint from "../../images/devSprint.jpg";
@@ -60,6 +61,11 @@ const certificates = [
       "IEEE International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN 2025) at BAUST",
     image1: qpain,
     image2: qpain2,
+  },
+  {
+    title: "NASA Space Apps 2025: Global Challenge - A World Away: Hunting for Exoplanets with AI",
+    image1: nasa,
+    image2: nasa,
   },
   {
     title: "Shestem presents Job Fair 2024, Organizer",
