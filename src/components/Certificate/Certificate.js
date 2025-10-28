@@ -232,7 +232,7 @@ const Certificate = () => {
           onClick={() => setIsFilterOpen((prev) => !prev)}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="p-3 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full shadow-xl text-white backdrop-blur-md hover:shadow-cyan-400/50 transition-all"
+          className="p-2 bg-gradient-to-r from-primary to-green-800 rounded-full shadow-md text-black backdrop-blur-md hover:shadow-primary transition-all"
         >
           <i className="fas fa-filter text-xl"></i>
         </motion.button>
