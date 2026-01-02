@@ -1,6 +1,7 @@
-import React from "react";
 import {
   FaReact,
+  FaChartLine,
+  FaWaveSquare,
   FaJava,
   FaNode,
   FaDatabase,
@@ -41,7 +42,22 @@ import {
   SiVite,
   SiZod,
   SiCisco,
+  SiGo,
+  SiPython,
+  SiScikitlearn,
+  SiTensorflow,
+  SiPytorch,
+  SiPandas,
+  SiNumpy,
+  SiKeras,
+  SiOpencv,
+  SiJupyter,
+  SiStreamlit,
+  SiGooglecolab,
 } from "react-icons/si";
+
+import { MdDashboard } from "react-icons/md";
+
 
 const techCategories = {
   "Programming Languages": [
@@ -50,6 +66,7 @@ const techCategories = {
     { name: "Java", icon: <FaJava className="text-red-500" /> },
     { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
     { name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
+    { name: "Python", icon: <SiPython className="text-yellow-300" /> },
   ],
   Frontend: [
     { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
@@ -69,11 +86,42 @@ const techCategories = {
     { name: "Firebase", icon: <SiFirebase className="text-yellow-400" /> },
     { name: "Nodemon", icon: <SiNodemon className="text-green-400" /> },
     { name: "JWT", icon: <SiJsonwebtokens className="text-red-400" /> },
+    { name: "Go", icon: <SiGo className="text-cyan-400" /> },
   ],
   Databases: [
     { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
     { name: "MySQL", icon: <FaDatabase className="text-orange-400" /> },
     { name: "Oracle", icon: <FaDatabase className="text-red-500" /> },
+  ],
+  "Machine Learning & Data Science": [
+    {
+      name: "Scikit-learn",
+      icon: <SiScikitlearn className="text-orange-400" />,
+    },
+    { name: "TensorFlow", icon: <SiTensorflow className="text-orange-500" /> },
+    { name: "PyTorch", icon: <SiPytorch className="text-red-400" /> },
+    { name: "Keras", icon: <SiKeras className="text-red-500" /> },
+    { name: "NumPy", icon: <SiNumpy className="text-blue-400" /> },
+    { name: "Pandas", icon: <SiPandas className="text-indigo-400" /> },
+    { name: "OpenCV", icon: <SiOpencv className="text-green-400" /> },
+    {
+      name: "MediaPipe (Pose)",
+      icon: <FaWaveSquare className="text-teal-400" />,
+    },
+    { name: "Matplotlib", icon: <FaChartLine className="text-blue-300" /> },
+    { name: "Seaborn", icon: <FaChartLine className="text-cyan-300" /> },
+    {
+      name: "Signal Preprocessing",
+      icon: <FaWaveSquare className="text-purple-400" />,
+    },
+    {
+      name: "Feature Extraction (MFCC)",
+      icon: <FaWaveSquare className="text-pink-400" />,
+    },
+    {
+      name: "Statistical Analysis",
+      icon: <FaChartLine className="text-green-300" />,
+    },
   ],
   Deployment: [
     { name: "Heroku", icon: <SiHeroku className="text-purple-400" /> },
@@ -100,6 +148,16 @@ const techCategories = {
     { name: "Figma", icon: <FaFigma className="text-pink-500" /> },
     { name: "Canva", icon: <SiCanva className="text-sky-500" /> },
     { name: "Adobe Lightroom", icon: <SiAdobe className="text-pink-400" /> },
+    {
+      name: "Jupyter Notebook",
+      icon: <SiJupyter className="text-orange-400" />,
+    },
+    {
+      name: "Google Colab",
+      icon: <SiGooglecolab className="text-yellow-400" />,
+    },
+    { name: "Streamlit", icon: <SiStreamlit className="text-red-400" /> },
+    { name: "Power BI", icon: <MdDashboard className="text-yellow-500" /> },
   ],
 };
 
@@ -113,7 +171,7 @@ const TechStack = () => {
         Tech Stack
       </h3>
 
-      <div className="flex flex-wrap justify-between gap-y-7">
+      <div className="flex flex-wrap justify-center gap-y-7">
         {Object.entries(techCategories).map(([category, skills], i) => (
           <div
             key={i}
