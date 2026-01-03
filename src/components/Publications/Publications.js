@@ -1,7 +1,7 @@
 import React from "react";
 
 const PublicationCard = ({ title, status, statusColor, description, doi }) => (
-  <div className="rounded-2xl border-x border-slate-500 backdrop-blur-xl py-5 px-6 shadow-xl hover:shadow-primary/30 transition-transform duration-300 hover:-translate-y-0.5">
+  <div className="rounded-2xl border-x border-slate-500 bg-slate-900 backdrop-blur-xl py-5 px-6 shadow-xl hover:shadow-primary/30 transition-transform duration-300 hover:-translate-y-0.5">
     <h4 className="text-lg">{title}</h4>
 
     <div className="flex flex-wrap items-center gap-3 mt-1">
