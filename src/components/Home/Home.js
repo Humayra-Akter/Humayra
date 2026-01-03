@@ -11,6 +11,7 @@ import HomeCertificatePreview from "./HomeCertificatePreview";
 import HomeProjects from "./HomeProjects";
 import ScrollToTop from "../Shared/ScrollToTop";
 import SpecialMoment from "./SpecialMoment";
+import PublicationHome from "./PublicationHome";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Hero />
       <Banner />
       <Education />
+      <PublicationHome />
       <WorkExperience />
       {/* <Services /> */}
       <SpecialMoment />

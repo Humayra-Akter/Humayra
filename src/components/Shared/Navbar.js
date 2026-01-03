@@ -34,9 +34,10 @@ const Navbar = () => {
 
   const navOptions = [
     { name: "Home", path: "/", icon: <FaHome /> },
-    { name: "About", path: "/about", icon: <FaUserAlt /> },
+    { name: "Publications", path: "/publications", icon: <FaAward /> },
     { name: "Projects", path: "/projects", icon: <FaProjectDiagram /> },
     { name: "Certificate", path: "/certificate", icon: <FaAward /> },
+    { name: "About", path: "/about", icon: <FaUserAlt /> },
   ];
 
   return (

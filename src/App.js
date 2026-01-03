@@ -11,6 +11,7 @@ import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
 import Certificate from "./components/Certificate/Certificate";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Publications from "./components/Publications/Publications";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -33,6 +34,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/publications" element={<Publications />} />
           <Route path="/about" element={<About />} />
           <Route path="/certificate" element={<Certificate />} />
           <Route path="*" element={<Error />} />

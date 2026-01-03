@@ -58,7 +58,6 @@ import {
 
 import { MdDashboard } from "react-icons/md";
 
-
 const techCategories = {
   "Programming Languages": [
     { name: "C", icon: <SiC className="text-blue-400" /> },
