@@ -40,7 +40,7 @@ const About = () => {
         />
 
         <Slide cascade damping={0.5}>
-          <div
+          {/* <div
             style={{
               fontFamily: "'Esteban'",
             }}
@@ -75,6 +75,65 @@ const About = () => {
               which helps me stay balanced and inspired. Feel free to download
               my CV below to learn more about my background, skills, and
               experience. I look forward to connecting with you!
+            </p>
+          </div> */}
+          <div
+            style={{ fontFamily: "'Esteban'" }}
+            className="relative z-10 text-justify text-gray-200 leading-relaxed w-full lg:w-auto"
+          >
+            <p className="mb-4">
+              I am{" "}
+              <span className="text-primary font-semibold">Humayra Akter</span>,
+              a Computer Science graduate from the Military Institute of Science
+              and Technology (MIST), with a strong focus on{" "}
+              <span className="text-primary">
+                machine learning, data-driven systems, and applied analytics
+              </span>
+              .
+            </p>
+
+            <p className="mb-4">
+              My work spans{" "}
+              <span className="text-primary">
+                predictive modeling, ensemble learning, explainable AI, and
+                deployment-oriented ML systems
+              </span>
+              . I have conducted large-scale empirical studies using real-world
+              datasets and developed end-to-end pipelines—from feature
+              engineering and model evaluation to reproducible deployment.
+            </p>
+
+            <p className="mb-4">
+              I have authored and co-authored{" "}
+              <span className="text-primary">
+                peer-reviewed conference publications
+              </span>{" "}
+              and am currently preparing a journal manuscript targeting a
+              Springer venue. My research interests include{" "}
+              <span className="text-primary">
+                robust machine learning, data leakage mitigation, human-centered
+                analytics, and interpretable models
+              </span>
+              .
+            </p>
+
+            <p className="mb-4">
+              Alongside research, I have experience building{" "}
+              <span className="text-primary">
+                full-stack and mobile applications
+              </span>{" "}
+              using React, React Native, Node.js, and modern data-driven
+              architectures, with an emphasis on usability and real-world
+              impact.
+            </p>
+
+            <p>
+              I am motivated by problems that lie at the intersection of{" "}
+              <span className="text-primary">
+                machine learning, systems, and societal relevance
+              </span>
+              , and I am actively preparing for research-oriented roles and
+              doctoral studies.
             </p>
           </div>
         </Slide>

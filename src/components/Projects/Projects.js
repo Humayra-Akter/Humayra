@@ -452,7 +452,7 @@ const Projects = () => {
             </p>
 
             <div className="flex flex-wrap gap-2 mb-4">
-              {project.technologies?.map((tech, i) => (
+              {project?.technologies?.map((tech, i) => (
                 <span
                   key={i}
                   className="px-3 py-1 text-xs rounded-full border border-cyan-400 text-cyan-300 bg-cyan-400/10"
@@ -463,7 +463,7 @@ const Projects = () => {
             </div>
 
             <div className="flex justify-end gap-3">
-              {project.github && (
+              {project?.github && (
                 <a
                   href={project.github}
                   className="w-9 h-9 flex items-center justify-center border rounded-full hover:bg-cyan-400 hover:text-black transition"
@@ -473,7 +473,7 @@ const Projects = () => {
                   <i className="fab fa-github"></i>
                 </a>
               )}
-              {project.liveDemo && (
+              {project?.liveDemo && (
                 <a
                   href={project.liveDemo}
                   className="w-9 h-9 flex items-center justify-center border rounded-full hover:bg-cyan-400 hover:text-black transition"
@@ -481,6 +481,19 @@ const Projects = () => {
                   rel="noopener noreferrer"
                 >
                   <i className="fas fa-link"></i>
+                </a>
+              )}
+              
+              {project?.video && (
+                <a
+                  href={project?.video}
+                  className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full glass"
+                  tooltip="Video Link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Video Link"
+                >
+                  <i className="fas fa-video"></i>
                 </a>
               )}
             </div>

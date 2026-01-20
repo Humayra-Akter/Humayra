@@ -171,7 +171,7 @@ const Certificate = () => {
       <motion.div
         layout
         className="grid gap-10 md:grid-cols-2 lg:grid-cols-3"
-        data-aos="fade-up"
+        // data-aos="fade-up"
       >
         {filteredCertificates.length > 0 ? (
           filteredCertificates.map((certificate, index) => (
