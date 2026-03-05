@@ -41,43 +41,6 @@ const About = () => {
 
         <Slide cascade damping={0.5}>
           {/* <div
-            style={{
-              fontFamily: "'Esteban'",
-            }}
-            className="text-wrap font-thin text-justify w-full lg:w-auto text-white"
-          >
-            <p className="mb-4">
-              Hi, I'm Humayra Akter, a passionate and dedicated junior software
-              developer with a strong interest in web development and software
-              engineering. I hold a degree in Computer Science from Military
-              Institute of Science and Technology, where I honed my skills in
-              various programming languages and software development
-              methodologies.
-            </p>
-            <p className="mb-4">
-              Over the past few years, I have gained hands-on experience working
-              on several projects, both academic and personal. My technical
-              skills include proficiency in JavaScript, React, Node.js, and C,
-              C++. I am also familiar with databases such as MySQL and MongoDB,
-              and have experience with version control systems like Git.
-            </p>
-            <p className="mb-4">
-              I am always eager to learn new technologies and take on
-              challenging projects. My goal is to continuously grow as a
-              developer and contribute to impactful projects that make a
-              difference. In addition to my technical skills, I have strong
-              problem-solving abilities, excellent communication skills, and a
-              collaborative mindset that allows me to work effectively in team
-              environments.
-            </p>
-            <p className="mb-4">
-              Outside of coding, I enjoy time with my cat and also do crafting,
-              which helps me stay balanced and inspired. Feel free to download
-              my CV below to learn more about my background, skills, and
-              experience. I look forward to connecting with you!
-            </p>
-          </div> */}
-          <div
             style={{ fontFamily: "'Esteban'" }}
             className="relative z-10 text-justify text-gray-200 leading-relaxed w-full lg:w-auto"
           >
@@ -134,6 +97,81 @@ const About = () => {
               </span>
               , and I am actively preparing for research-oriented roles and
               doctoral studies.
+            </p>
+            <p>
+              Outside of coding, I enjoy time with my cat and also do crafting,
+              which helps me stay balanced and inspired. Feel free to download
+              my CV below to learn more about my background, skills, and
+              experience. I look forward to connecting with you!
+            </p>
+          </div> */}
+          <div
+            style={{ fontFamily: "'Esteban'" }}
+            className="relative z-10 text-justify text-gray-200 leading-relaxed w-full lg:w-auto"
+          >
+            <p className="mb-4">
+              I am{" "}
+              <span className="text-primary font-semibold">Humayra Akter</span>,
+              a Computer Science graduate from the Military Institute of Science
+              and Technology (MIST), currently working as a{" "}
+              <span className="text-primary">
+                Software Developer at TRPGLOBAL
+              </span>
+              . My work involves designing and delivering client-facing software
+              systems, translating complex regulatory and risk-related
+              requirements into scalable, production-ready web platforms.
+            </p>
+
+            <p className="mb-4">
+              Alongside industry practice, I actively conduct research in{" "}
+              <span className="text-primary">
+                interpretable machine learning, robust modeling, multimodal
+                sensing, and human-centered AI systems
+              </span>
+              . My work emphasizes leak-aware modeling, reproducibility, and
+              deployment-oriented experimentation using real-world datasets.
+            </p>
+
+            <p className="mb-4">
+              I have authored and co-authored multiple{" "}
+              <span className="text-primary">
+                peer-reviewed conference publications
+              </span>{" "}
+              and maintain an active{" "}
+              <span className="text-primary">
+                Google Scholar research profile
+              </span>{" "}
+              documenting my academic contributions. I am currently developing
+              research targeting journal-level venues with a focus on
+              methodological rigor and societal impact.
+            </p>
+
+            <p className="mb-4">
+              Technically, I work across{" "}
+              <span className="text-primary">
+                Python, PyTorch, Scikit-learn, React, Next.js, Node.js, and
+                modern data architectures
+              </span>
+              , building end-to-end systems from experimental validation to
+              user-facing deployment.
+            </p>
+
+            <p className="mb-4">
+              My long-term goal is to pursue doctoral research at the
+              intersection of{" "}
+              <span className="text-primary">
+                machine learning, interactive systems, and real-world decision
+                support
+              </span>
+              , where rigorous modeling meets deployable software
+              infrastructure.
+            </p>
+
+            <p>
+              Outside of research and engineering, I enjoy creative crafting and
+              quiet time with my cat — practices that help me maintain focus and
+              balance. Feel free to explore my publications, projects, or
+              download my CV to learn more about my work.
             </p>
           </div>
         </Slide>

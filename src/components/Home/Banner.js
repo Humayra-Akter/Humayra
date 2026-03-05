@@ -20,11 +20,6 @@ const Banner = () => {
       }}
     >
       <div className="lg:text-left text-center pt-10 lg:mt-24">
-        {/* <h1 className="text-4xl md:text-6xl xl:text-7xl leading-tight">
-          <span className="bg-gradient-to-r from-primary via-purple-400 to-purple-100 bg-clip-text text-transparent">
-            Humayra Akter
-          </span>
-        </h1> */}
         <motion.div className="text-center md:text-left">
           <h1 className="text-4xl md:text-6xl xl:text-6xl leading-tight">
             <span className="glitch text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-400 to-purple-100 block">
@@ -37,6 +32,11 @@ const Banner = () => {
               />
             </span>
           </h1>
+          <p className="mt-5">
+            <span className="bg-gradient-to-r from-primary via-purple-400 to-purple-100 bg-clip-text text-transparent">
+              Software Developer | Machine Learning Researcher
+            </span>
+          </p>
           <SocialMedia />
 
           <div className="mt-8 inline-flex">
@@ -95,11 +95,11 @@ const Banner = () => {
             }}
             className="lg:text-base text-sm text-slate-200 mt-2"
           >
-            Dedicated and innovative computer science undergraduate with a
-            passion for programming and problem-solving. Committed to leveraging
-            skills in C, CPP, and JavaScript, Typescript along with a keen
-            interest in environmental conservation, to contribute effectively to
-            challenging roles and organizational success.
+            I am a Software Developer with a strong interest in machine learning
+            and human-centered AI. I enjoy solving complex problems, building
+            scalable web systems, and turning research ideas into working
+            software. I aim to grow as a researcher and engineer by working on
+            projects that combine technical depth with real-world impact.
           </p>
         </div>
         {/* </Slide> */}

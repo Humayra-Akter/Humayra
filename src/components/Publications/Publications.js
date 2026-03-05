@@ -19,7 +19,7 @@ const PublicationCard = ({ title, status, statusColor, description, doi }) => (
           rel="noopener noreferrer"
           className="text-xs px-3 py-1 rounded-full border border-primary text-primary hover:bg-primary hover:text-black transition"
         >
-          DOI
+          View Paper
         </a>
       )}
     </div>
@@ -41,27 +41,30 @@ const Publications = () => {
     >
       <h2 className="text-4xl text-primary mb-12 text-center">Publications</h2>
 
-      {/* Thesis */}
+      {/* Thesis / Conference Publication */}
       <div className="mb-14 text-justify">
-        <h3 className="text-2xl text-primary mb-4">Undergraduate Thesis</h3>
+        <h3 className="text-2xl text-primary mb-4">
+          Thesis & Conference Publication
+        </h3>
 
         <PublicationCard
           title="Smart Pricing in Online Marketplaces: A Machine Learning and Analytics Framework"
-          status="Published — STI 2025"
+          status="Published — IEEE STI 2025"
           statusColor="text-green-300"
+          doi="https://ieeexplore.ieee.org/document/11367595/"
           description="Developed a machine learning-based pricing framework for online marketplaces using extensive feature engineering and ensemble learning. Evaluated 14 regression models and proposed a stacked ensemble achieving R² = 0.8633, RMSE = 303.83, and MAE = 215.88 on laptop price prediction. The final model was deployed as a real-time Streamlit web application for practical decision support."
         />
       </div>
 
-      {/* Journal Articles */}
+      {/* Journal Article */}
       <div className="mb-14 text-justify">
-        <h3 className="text-2xl text-primary mb-4">Journal Articles</h3>
+        <h3 className="text-2xl text-primary mb-4">Journal Article</h3>
 
         <PublicationCard
           title="Leak-Aware and Explainable Machine Learning for Population-Level ADHD Risk Modeling"
-          status="Manuscript in Preparation — Target Journal: Springer"
+          status="Under Review — Springer Journal (Desk Review Stage)"
           statusColor="text-purple-300"
-          description="Designed a dual-pipeline, leak-aware machine learning framework to distinguish diagnostic replication from genuine population-level ADHD risk using nationally representative survey data (n ≈ 50,280). Engineered theory-driven contextual composites and age- and sex-moderated interaction terms, and compared linear and ensemble models under behavior-informed vs. context-only regimes. Quantified performance inflation due to diagnostic leakage (ROC-AUC ≈ 1 vs. ≈ 0.77) and used SHAP analysis and bootstrap validation to reveal developmentally heterogeneous socioeconomic risk patterns."
+          description="Designed a dual-pipeline, leak-aware machine learning framework to distinguish diagnostic replication from genuine population-level ADHD risk using nationally representative survey data (n ≈ 50,280). Engineered theory-driven contextual composites and interaction terms, compared linear and ensemble models, quantified performance inflation due to diagnostic leakage (ROC-AUC ≈ 1 vs. ≈ 0.77), and applied SHAP analysis with bootstrap validation to reveal heterogeneous socioeconomic risk patterns."
         />
       </div>
 
@@ -80,16 +83,16 @@ const Publications = () => {
 
           <PublicationCard
             title="A Reproducible Baseline Study of Closed-Set Speaker Identification Using MFCCs and a Lightweight DNN"
-            status="Manuscript Submitted — QPAIN 2026"
-            statusColor="text-yellow-300"
-            description="Developed a lightweight MFCC-DNN pipeline for speaker identification, achieving 95% validation accuracy and 0.60% EER on the TIMIT dataset, demonstrating efficiency and interpretability for controlled biometric applications."
+            status="Accepted — IEEE QPAIN 2026"
+            statusColor="text-green-300"
+            description="Developed a lightweight MFCC-DNN pipeline for speaker identification, achieving 95% validation accuracy and 0.60% EER on the TIMIT dataset, demonstrating efficiency and reproducibility in controlled biometric settings."
           />
 
           <PublicationCard
             title="An IoT-Based Multisensor System for Real-Time Sleep Stage Monitoring"
-            status="Manuscript Submitted — QPAIN 2026"
-            statusColor="text-yellow-300"
-            description="Designed a low-cost, open-source IoT system integrating multimodal biosensors for real-time sleep stage classification."
+            status="Accepted — IEEE QPAIN 2026"
+            statusColor="text-green-300"
+            description="Designed a low-cost IoT system integrating multimodal biosensors for real-time sleep stage classification with mobile interface support."
           />
         </div>
       </div>

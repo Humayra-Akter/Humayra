@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaGithub, FaEnvelope, FaGraduationCap } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SocialMedia = () => {
@@ -28,6 +28,12 @@ const SocialMedia = () => {
         className="text-2xl text-purple-200 hover:text-accent hover:scale-125  transition-colors duration-200 border-b-2 border-transparent hover:border-accent"
       >
         <FaEnvelope />
+      </Link>
+      <Link
+        to="https://scholar.google.com/citations?hl=en&user=1-A5a1AAAAAJ"
+        className="text-2xl text-purple-200 hover:text-accent hover:scale-125  transition-colors duration-200 border-b-2 border-transparent hover:border-accent"
+      >
+        <FaGraduationCap />
       </Link>
     </div>
   );
