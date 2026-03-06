@@ -3,11 +3,12 @@ import {
   FaChartLine,
   FaWaveSquare,
   FaJava,
-  FaNode,
   FaDatabase,
   FaFigma,
   FaGitAlt,
+  FaBehance,
 } from "react-icons/fa";
+
 import {
   SiMongodb,
   SiTypescript,
@@ -16,11 +17,10 @@ import {
   SiC,
   SiCplusplus,
   SiHtml5,
-  SiCss3,
+  SiCss, // ✅ react-icons v5: SiCss (NOT SiCss3)
   SiJavascript,
   SiNextdotjs,
   SiBootstrap,
-  SiAdobe,
   SiCanva,
   SiPostman,
   SiHeroku,
@@ -69,7 +69,7 @@ const techCategories = {
   ],
   Frontend: [
     { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
-    { name: "CSS3", icon: <SiCss3 className="text-blue-500" /> },
+    { name: "CSS3", icon: <SiCss className="text-blue-500" /> }, // ✅ fixed
     { name: "React", icon: <FaReact className="text-cyan-400" /> },
     { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
     { name: "React Native", icon: <FaReact className="text-cyan-300" /> },
@@ -146,7 +146,7 @@ const techCategories = {
     { name: "Cisco", icon: <SiCisco className="text-blue-400" /> },
     { name: "Figma", icon: <FaFigma className="text-pink-500" /> },
     { name: "Canva", icon: <SiCanva className="text-sky-500" /> },
-    { name: "Adobe Lightroom", icon: <SiAdobe className="text-pink-400" /> },
+    { name: "Adobe Lightroom", icon: <FaBehance className="text-pink-400" /> },
     {
       name: "Jupyter Notebook",
       icon: <SiJupyter className="text-orange-400" />,
@@ -179,6 +179,7 @@ const TechStack = () => {
             <h4 className="text-xl text-primary mb-6 text-center">
               {category}
             </h4>
+
             <ul className="flex flex-wrap gap-6 justify-center">
               {skills.map((s, j) => (
                 <li
