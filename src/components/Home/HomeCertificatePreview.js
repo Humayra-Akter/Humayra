@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+// src/components/Home/HomeCertificatePreview.js
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import devSprint from "../../images/devSprint.jpg";
 import devSprint2 from "../../images/devSprint2.jpg";
@@ -41,12 +42,10 @@ const HomeCertificatePreview = () => {
       className="max-w-7xl mx-auto px-6 py-16 relative"
       style={{ fontFamily: "'Poetsen One', sans-serif" }}
     >
-      {/* Title */}
       <h3 className="text-4xl text-center text-primary mb-14 tracking-wide">
         Featured Certificates
       </h3>
 
-      {/* Grid */}
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         {homeCertificates.map((certificate, index) => (
           <motion.div
@@ -57,7 +56,6 @@ const HomeCertificatePreview = () => {
             viewport={{ once: true }}
             className="group relative rounded-2xl border border-slate-600/40 bg-white/5 backdrop-blur-md shadow-lg hover:shadow-primary/40 transition-all overflow-hidden"
           >
-            {/* Hover Image Swap */}
             <div className="relative h-64 overflow-hidden">
               <img
                 src={certificate.image1}
@@ -71,7 +69,6 @@ const HomeCertificatePreview = () => {
               />
             </div>
 
-            {/* Title */}
             <p
               style={{ fontFamily: "'Esteban'" }}
               className="p-4 text-center text-slate-200 text-sm leading-relaxed"
@@ -82,7 +79,6 @@ const HomeCertificatePreview = () => {
         ))}
       </div>
 
-      {/* See All Button */}
       <div className="text-center mt-12">
         <Link
           to="/certificate"
@@ -92,7 +88,6 @@ const HomeCertificatePreview = () => {
         </Link>
       </div>
 
-      {/* Background Blobs */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl opacity-25 animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-80 h-80 bg-cyan-400 rounded-full blur-3xl opacity-25 animate-pulse"></div>

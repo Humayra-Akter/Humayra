@@ -1,3 +1,4 @@
+// src/components/Home/HomeProjects.js
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Aos from "aos";
@@ -97,6 +98,7 @@ const HomeProjects = () => {
       [id]: !prev[id],
     }));
   };
+
   useEffect(() => {
     if (isModalOpen) {
       document.body.classList.add("modal-open");
@@ -104,6 +106,7 @@ const HomeProjects = () => {
       document.body.classList.remove("modal-open");
     }
   }, [isModalOpen]);
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -111,15 +114,14 @@ const HomeProjects = () => {
   return (
     <div
       className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
-      style={{
-        fontFamily: "'Poetsen One', sans-serif",
-      }}
+      style={{ fontFamily: "'Poetsen One', sans-serif" }}
     >
       <h3 className="text-3xl mt-10 mb-8 text-primary text-center">
         Featured Projects
       </h3>
+
       <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
-        {homeProjects?.map((project, index) => (
+        {homeProjects.map((project) => (
           <motion.div
             key={project.id}
             whileHover={{ scale: 1.03 }}
@@ -129,11 +131,11 @@ const HomeProjects = () => {
             <div className="mb-4">
               {project.screenshots.length > 1 ? (
                 <div className="flex overflow-x-auto space-x-4">
-                  {project.screenshots.map((screenshot, index) => (
+                  {project.screenshots.map((screenshot, idx) => (
                     <img
-                      key={index}
+                      key={idx}
                       src={screenshot}
-                      alt={`${project.name} screenshot ${index + 1}`}
+                      alt={`${project.name} screenshot ${idx + 1}`}
                       className="h-40 w-full object-cover rounded-lg border border-rose-100 shadow-xl hover:scale-95 cursor-pointer"
                       onClick={() => openModal(screenshot)}
                     />
@@ -142,23 +144,27 @@ const HomeProjects = () => {
               ) : (
                 <img
                   src={project.screenshots[0]}
-                  alt={project?.name}
+                  alt={project.name}
                   className="mb-4 border border-rose-100 shadow-xl hover:scale-95 rounded-lg h-40 w-full object-cover cursor-pointer"
                   onClick={() => openModal(project.screenshots[0])}
                 />
               )}
             </div>
-            <h3 className="text-xl mb-2">{project.name}</h3>{" "}
+
+            <h3 className="text-xl mb-2">{project.name}</h3>
+
             <p className="text-md text-slate-300 text-accent mb-2">
               <span>Category: </span>
               {project.category}
             </p>
+
             <p style={{ fontFamily: "'Esteban'" }} className="text-sm mb-4">
               {expandedDescriptions[project.id]
                 ? project.description
                 : `${project.description.slice(0, 100)}... `}
               {project.description.length > 100 && (
                 <button
+                  type="button"
                   className="text-blue-300 hover:underline"
                   onClick={() => toggleDescription(project.id)}
                 >
@@ -166,9 +172,9 @@ const HomeProjects = () => {
                 </button>
               )}
             </p>
-            {/* Tech stack  */}
+
             <div className="flex gap-2 flex-wrap mb-4">
-              {project?.technologies?.map((tech) => (
+              {project.technologies.map((tech) => (
                 <span
                   key={tech}
                   style={{ fontFamily: "'Esteban'" }}
@@ -178,34 +184,34 @@ const HomeProjects = () => {
                 </span>
               ))}
             </div>
-            {/* Links  */}
+
             <div className="flex justify-end gap-3 mt-4">
               <a
                 href={project.github}
                 className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full glass"
                 target="_blank"
+                rel="noreferrer"
                 title="GitHub"
-                tooltip="GitHub"
               >
                 <i className="fab fa-github"></i>
               </a>
-              {project?.liveDemo && (
+
+              {project.liveDemo && (
                 <a
-                  href={project?.liveDemo}
+                  href={project.liveDemo}
                   className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full glass"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Live Demo"
-                  tooltip="Live Demo"
                 >
                   <i className="fas fa-link"></i>
                 </a>
               )}
-              {project?.video && (
+
+              {project.video && (
                 <a
-                  href={project?.video}
+                  href={project.video}
                   className="flex items-center justify-center border w-10 h-10 animate-spin-slow hover:scale-105 hover:bg-blue-300 hover:text-black rounded-full glass"
-                  tooltip="Video Link"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Video Link"
@@ -217,24 +223,30 @@ const HomeProjects = () => {
           </motion.div>
         ))}
       </div>
+
       {isModalOpen && (
         <div
           className="fixed inset-0 bg-black/70 flex justify-center items-center z-50"
           onClick={closeModal}
+          role="presentation"
         >
           <div
             className="relative p-4 bg-white/10 backdrop-blur-lg rounded-xl shadow-lg max-w-full sm:max-w-4xl w-[90%] max-h-[90vh] overflow-auto"
             onClick={(e) => e.stopPropagation()}
+            role="presentation"
           >
             <button
+              type="button"
               className="absolute top-2 right-2 bg-red-500 text-white p-2 rounded-full"
               onClick={closeModal}
+              aria-label="Close modal"
             >
               ✕
             </button>
+
             <img
               src={selectedImage}
-              alt="Selected Project Screenshot"
+              alt="Selected project screenshot"
               className="rounded-lg max-h-[80vh] w-full object-contain"
             />
           </div>
