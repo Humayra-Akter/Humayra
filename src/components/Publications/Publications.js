@@ -44,7 +44,7 @@ const Publications = () => {
       {/* Thesis / Conference Publication */}
       <div className="mb-14 text-justify">
         <h3 className="text-2xl text-primary mb-4">
-          Thesis & Conference Publication
+          Undergraduate Thesis & Publication
         </h3>
 
         <PublicationCard
@@ -90,7 +90,7 @@ const Publications = () => {
           />
           <PublicationCard
             title="A Terrain-Aware Instance Segmentation Framework for Building-Level Flood Risk Mapping from High-Resolution Satellite Imagery"
-            status="Menuscript under Preparation"
+            status="Under Preparation"
             statusColor="text-green-300"
             description="Coastal and deltaic areas of Bangladesh are often affected by floods and other environmental hazards, with traditional disaster planning relying on slow and expensive field surveys. This study introduces an automated approach using high-resolution satellite imagery to identify structurally vulnerable buildings. By classifying roofs into lightweight or reinforced categories using a YOLO-based segmentation model, the method creates geographic building polygons. These are analyzed alongside hazard layers to assign risk scores based on roof vulnerability and local hazards, facilitating quicker risk assessment for flood preparedness in affected regions."
           />
