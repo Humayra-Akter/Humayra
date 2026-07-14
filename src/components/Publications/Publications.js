@@ -52,7 +52,7 @@ const Publications = () => {
           status="Published — IEEE STI 2025"
           statusColor="text-green-300"
           doi="https://ieeexplore.ieee.org/document/11367595/"
-          description="Developed a machine learning-based pricing framework for online marketplaces using extensive feature engineering and ensemble learning. Evaluated 14 regression models and proposed a stacked ensemble achieving R² = 0.8633, RMSE = 303.83, and MAE = 215.88 on laptop price prediction. The final model was deployed as a real-time Streamlit web application for practical decision support."
+          description="Accurately predicting prices of electronic devices, particularly laptops, in online marketplaces is crucial for fair competition. This research uses a machine learning approach to estimate prices based on hardware specifications, evaluating fourteen regression models. The best-performing model, a stacked ensemble combining various regression techniques, achieved a price prediction accuracy of R28633. Deployed as a Streamlit web application, it allows users to input specifications for real-time price predictions, with the potential for extension to other electronic devices, offering a flexible tool for e-commerce platforms."
         />
       </div>
 
@@ -61,10 +61,10 @@ const Publications = () => {
         <h3 className="text-2xl text-primary mb-4">Journal Article</h3>
 
         <PublicationCard
-          title="Leak-Aware and Explainable Machine Learning for Population-Level ADHD Risk Modeling"
+          title="Leakage-Audited Machine Learning for Childhood ADHD: Separating Symptom Overlap, Contextual Risk, and Diagnosis Discordance in National Survey Data"
           status="Under Review — Springer Journal (Desk Review Stage)"
           statusColor="text-purple-300"
-          description="Designed a dual-pipeline, leak-aware machine learning framework to distinguish diagnostic replication from genuine population-level ADHD risk using nationally representative survey data (n ≈ 50,280). Engineered theory-driven contextual composites and interaction terms, compared linear and ensemble models, quantified performance inflation due to diagnostic leakage (ROC-AUC ≈ 1 vs. ≈ 0.77), and applied SHAP analysis with bootstrap validation to reveal heterogeneous socioeconomic risk patterns."
+          description="Developed a leakage-audited machine learning framework to predict caregiver-reported current ADHD diagnosis using national child health survey data, separating diagnosis, treatment, symptom-overlap, demographic, and contextual variables before modeling. Instead of maximizing accuracy through possible information leakage, it shows how machine learning can support responsible population-level ADHD risk stratification and diagnosis-discordance analysis."
         />
       </div>
 
@@ -78,21 +78,29 @@ const Publications = () => {
             status="Accepted — IEEE QPAIN 2025"
             statusColor="text-green-300"
             doi="https://ieeexplore.ieee.org/document/11171674"
-            description="Developed a cross-platform mobile application using React Native to streamline laundry management for busy individuals."
+            description="Mobile-based laundry service, LaundryMate, aims to enhance user experience through digital automation. Built with React Native, it offers features like smart scheduling, secure payments via Stripe, real-time order tracking, and transparent pricing. The paper covers system architecture, technology stack, implementation details, and user convenience impacts. Future updates may include AI service recommendations and real-time location tracking, marking a shift from traditional to modern digital laundry services."
           />
 
           <PublicationCard
             title="A Reproducible Baseline Study of Closed-Set Speaker Identification Using MFCCs and a Lightweight DNN"
             status="Accepted — IEEE QPAIN 2026"
             statusColor="text-green-300"
-            description="Developed a lightweight MFCC-DNN pipeline for speaker identification, achieving 95% validation accuracy and 0.60% EER on the TIMIT dataset, demonstrating efficiency and reproducibility in controlled biometric settings."
+            doi="https://ieeexplore.ieee.org/document/11546469"
+            description="This paper evaluates the use of handcrafted Mel-Frequency Cepstral Coefficient (MFCC) features in a lightweight deep neural network for closed-set speaker identification. The study is conducted on the TIMIT Acoustic-Phonetic Continuous Speech Corpus, employing an utterance-disjoint protocol where speakers are trained but evaluated on unseen utterances. The system achieves high classification accuracy and low error rates, indicating effective speaker discrimination in clean conditions. The focus is on providing a reproducible diagnostic baseline for MFCC-based identification rather than presenting novel algorithms, offering comprehensive performance analysis for future research in controlled scenarios."
+          />
+          <PublicationCard
+            title="A Terrain-Aware Instance Segmentation Framework for Building-Level Flood Risk Mapping from High-Resolution Satellite Imagery"
+            status="Menuscript under Preparation"
+            statusColor="text-green-300"
+            description="Coastal and deltaic areas of Bangladesh are often affected by floods and other environmental hazards, with traditional disaster planning relying on slow and expensive field surveys. This study introduces an automated approach using high-resolution satellite imagery to identify structurally vulnerable buildings. By classifying roofs into lightweight or reinforced categories using a YOLO-based segmentation model, the method creates geographic building polygons. These are analyzed alongside hazard layers to assign risk scores based on roof vulnerability and local hazards, facilitating quicker risk assessment for flood preparedness in affected regions."
           />
 
           <PublicationCard
             title="An IoT-Based Multisensor System for Real-Time Sleep Stage Monitoring"
             status="Accepted — IEEE QPAIN 2026"
             statusColor="text-green-300"
-            description="Designed a low-cost IoT system integrating multimodal biosensors for real-time sleep stage classification with mobile interface support."
+            doi="https://ieeexplore.ieee.org/document/11545574"
+            description="Sleep disorders are increasingly prevalent, contributing to various health risks. Polysomnography (PSG) is the gold standard for sleep assessment but is limited by cost and complexity. In contrast, consumer wearable devices offer partial alternatives but have moderate accuracy compared to PSG. This paper introduces a cost-effective, open-source IoT multisensor system for real-time home sleep monitoring, utilizing motion, heart-rate, and temperature sensors on an Arduino Mega. A lightweight, rule-based algorithm classifies sleep stages without cloud dependency. Preliminary tests indicate feasibility for basic sleep-stage differentiation, warranting further development with extensive evaluation."
           />
         </div>
       </div>
